@@ -9,6 +9,47 @@
 <meta name="description" content="Zista Inn is a peaceful stay in Walwati near Aravi Beach and Shrivardhan, Konkan. Enjoy comfortable rooms, a swimming pool, Wi-Fi, parking and easy access to the beautiful Konkan coast.">
 
 <meta name="robots" content="index, follow">
+<link rel="canonical" href="https://zistainn.github.io/zistainn-website/">
+
+<!-- Zista Inn Hotel Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Hotel",
+  "@id": "https://zistainn.github.io/zistainn-website/#hotel",
+  "name": "Zista Inn",
+  "url": "https://zistainn.github.io/zistainn-website/",
+  "telephone": "+919270740015",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Aravi–Diveagar Road, Walwati",
+    "addressLocality": "Shrivardhan",
+    "addressRegion": "Maharashtra",
+    "postalCode": "402113",
+    "addressCountry": "IN"
+  },
+  "numberOfRooms": 6,
+  "checkinTime": "12:00",
+  "checkoutTime": "10:00",
+  "amenityFeature": [
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Swimming Pool",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Free Wi-Fi",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Free Parking",
+      "value": true
+    }
+  ]
+}
+</script>
 
 <style>
 :root{
@@ -21,9 +62,15 @@
   --line:#ddd8cc;
 }
 
-*{box-sizing:border-box;margin:0;padding:0}
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
 
-html{scroll-behavior:smooth}
+html{
+  scroll-behavior:smooth;
+}
 
 body{
   font-family:Georgia,"Times New Roman",serif;
@@ -32,7 +79,10 @@ body{
   line-height:1.7;
 }
 
-a{text-decoration:none;color:inherit}
+a{
+  text-decoration:none;
+  color:inherit;
+}
 
 .container{
   width:min(1160px,92%);
@@ -53,9 +103,17 @@ h1,h2,h3{
   line-height:1.15;
 }
 
-h1{font-size:clamp(48px,7vw,88px)}
-h2{font-size:clamp(38px,5vw,62px)}
-h3{font-size:27px}
+h1{
+  font-size:clamp(48px,7vw,88px);
+}
+
+h2{
+  font-size:clamp(38px,5vw,62px);
+}
+
+h3{
+  font-size:27px;
+}
 
 p{
   font-family:Arial,sans-serif;
@@ -80,7 +138,7 @@ p{
   background:#203027;
 }
 
-/* NAV */
+/* NAVIGATION */
 
 header{
   position:absolute;
@@ -130,7 +188,9 @@ nav{
   padding:160px 0 90px;
 }
 
-.hero .eyebrow{color:#e0c69b}
+.hero .eyebrow{
+  color:#e0c69b;
+}
 
 .hero h1{
   max-width:850px;
@@ -179,7 +239,7 @@ nav{
   margin-top:6px;
 }
 
-/* ABOUT */
+/* INTRO */
 
 .intro{
   padding:120px 0;
@@ -312,7 +372,7 @@ nav{
   margin-bottom:8px;
 }
 
-/* KONKAN */
+/* EXPLORE */
 
 .explore{
   padding:110px 0;
@@ -345,7 +405,9 @@ nav{
   text-align:center;
 }
 
-.place:last-child{border-right:0}
+.place:last-child{
+  border-right:0;
+}
 
 .place strong{
   font-size:16px;
@@ -458,7 +520,9 @@ footer p{
   margin-top:10px;
 }
 
-footer h3{font-size:22px}
+footer h3{
+  font-size:22px;
+}
 
 .footer-links{
   display:flex;
@@ -481,9 +545,13 @@ footer h3{font-size:22px}
 
 @media(max-width:850px){
 
-  .nav-links{display:none}
+  .nav-links{
+    display:none;
+  }
 
-  .hero{min-height:80vh}
+  .hero{
+    min-height:80vh;
+  }
 
   .hero-content{
     padding:140px 0 60px;
@@ -529,9 +597,13 @@ footer h3{font-size:22px}
 
 @media(max-width:550px){
 
-  h1{font-size:48px}
+  h1{
+    font-size:48px;
+  }
 
-  h2{font-size:40px}
+  h2{
+    font-size:40px;
+  }
 
   .amenity-grid,
   .experience-grid{
@@ -562,6 +634,7 @@ footer h3{font-size:22px}
 
 <header>
 <nav>
+
 <a href="#" class="logo">ZISTA INN</a>
 
 <div class="nav-links">
@@ -571,6 +644,7 @@ footer h3{font-size:22px}
 <a href="#gallery">Gallery</a>
 <a href="#reviews">Reviews</a>
 </div>
+
 </nav>
 </header>
 
@@ -579,6 +653,7 @@ footer h3{font-size:22px}
 <!-- HERO -->
 
 <section class="hero">
+
 <div class="hero-content">
 
 <div class="eyebrow">
@@ -599,6 +674,7 @@ Call Zista Inn
 </a>
 
 </div>
+
 </section>
 
 
@@ -637,7 +713,7 @@ Call Zista Inn
 </section>
 
 
-<!-- ABOUT -->
+<!-- INTRO -->
 
 <section class="intro">
 
@@ -694,13 +770,13 @@ Rooms made for slowing down.
 
 <p>
 Choose the room that suits your stay — from a comfortable
-Standard Room to our Deluxe Room and Family Suite.
+Standard Room to our Deluxe Room and Family Room with Balcony.
 </p>
 
 </div>
 
 
-<!-- STANDARD -->
+<!-- STANDARD ROOM -->
 
 <article class="room-card">
 
@@ -739,7 +815,7 @@ Check Availability
 </article>
 
 
-<!-- DELUXE -->
+<!-- DELUXE ROOM -->
 
 <article class="room-card">
 
@@ -758,16 +834,16 @@ Deluxe Room
 </h3>
 
 <p>
-A more spacious stay with a balcony and a relaxing
-garden or pool setting.
+A comfortable room with a balcony, offering a relaxing
+setting for your Konkan stay.
 </p>
 
 <ul class="room-features">
-<li>King Bed</li>
-<li>Balcony</li>
 <li>Air Conditioning</li>
+<li>Balcony</li>
 <li>Private Bathroom</li>
 <li>Wi-Fi</li>
+<li>Comfortable Stay</li>
 <li>Pool / Garden Setting</li>
 </ul>
 
@@ -780,12 +856,12 @@ Check Availability
 </article>
 
 
-<!-- FAMILY -->
+<!-- FAMILY ROOM -->
 
 <article class="room-card">
 
 <div class="room-photo">
-Family Suite Photo
+Family Room with Balcony Photo
 </div>
 
 <div class="room-content">
@@ -795,17 +871,17 @@ Stay 03
 </div>
 
 <h3>
-Family Suite
+Family Room with Balcony
 </h3>
 
 <p>
-A spacious option designed for families and groups
-looking to stay together.
+A spacious room designed for families looking to stay
+together and enjoy a comfortable Konkan getaway.
 </p>
 
 <ul class="room-features">
 <li>Family Friendly</li>
-<li>Comfortable Space</li>
+<li>Balcony</li>
 <li>Air Conditioning</li>
 <li>Private Bathroom</li>
 <li>Wi-Fi</li>
@@ -918,7 +994,7 @@ of Konkan.
 </section>
 
 
-<!-- EXPLORE -->
+<!-- EXPLORE KONKAN -->
 
 <section class="explore" id="explore">
 
@@ -1076,7 +1152,7 @@ View Google Reviews
 </section>
 
 
-<!-- CTA -->
+<!-- FINAL CTA -->
 
 <section class="final-cta">
 
@@ -1168,7 +1244,6 @@ Google Reviews
 </div>
 
 </div>
-
 
 <div class="copyright">
 © 2026 Zista Inn. All rights reserved.
