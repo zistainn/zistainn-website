@@ -1,1068 +1,1107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Zista Inn | Stay Near Aravi Beach, Shrivardhan, Konkan</title>
-
-  <meta name="description" content="Stay at Zista Inn near Aravi Beach and Shrivardhan, Konkan. Enjoy a peaceful stay, swimming pool, comfortable rooms, on-site dining and easy access to the Konkan coast.">
-
-  <meta name="keywords" content="Zista Inn, Zista Inn Shrivardhan, resort in Shrivardhan, hotels in Shrivardhan, resort near Aravi Beach, stay near Aravi Beach, Konkan resort">
-
-  <meta name="robots" content="index, follow">
-
-  <meta property="og:title" content="Zista Inn | A Peaceful Stay in Konkan">
-  <meta property="og:description" content="A peaceful stay near Aravi Beach and the Konkan coast.">
-  <meta property="og:type" content="website">
-
-  <link rel="canonical" href="https://zistainn.com/">
-
-  <style>
-    :root {
-      --cream: #f5f1e8;
-      --warm-white: #fbfaf7;
-      --green: #33483b;
-      --dark: #202722;
-      --muted: #687168;
-      --gold: #b08b57;
-      --line: #ddd8cc;
-      --white: #ffffff;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: Georgia, "Times New Roman", serif;
-      color: var(--dark);
-      background: var(--warm-white);
-      line-height: 1.7;
-    }
-
-    img {
-      width: 100%;
-      display: block;
-      object-fit: cover;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .container {
-      width: min(1160px, 92%);
-      margin: auto;
-    }
-
-    .eyebrow {
-      font-family: Arial, sans-serif;
-      font-size: 12px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 14px;
-    }
-
-    h1, h2, h3 {
-      font-weight: 400;
-      line-height: 1.15;
-    }
-
-    h1 {
-      font-size: clamp(48px, 7vw, 88px);
-    }
-
-    h2 {
-      font-size: clamp(36px, 5vw, 62px);
-    }
-
-    h3 {
-      font-size: 27px;
-    }
-
-    p {
-      font-family: Arial, sans-serif;
-      color: var(--muted);
-      font-size: 16px;
-    }
-
-    .btn {
-      display: inline-block;
-      background: var(--green);
-      color: white;
-      padding: 15px 25px;
-      font-family: Arial, sans-serif;
-      font-size: 12px;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      transition: 0.25s ease;
-    }
-
-    .btn:hover {
-      background: #1f3026;
-      transform: translateY(-2px);
-    }
-
-    /* NAVIGATION */
-
-    header {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 10;
-      color: white;
-    }
-
-    nav {
-      width: min(1200px, 92%);
-      margin: auto;
-      padding: 25px 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      font-size: 28px;
-      letter-spacing: 2px;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 28px;
-      font-family: Arial, sans-serif;
-      font-size: 13px;
-    }
-
-    .nav-links a:hover {
-      opacity: 0.7;
-    }
-
-    /* HERO */
-
-    .hero {
-      min-height: 92vh;
-      display: flex;
-      align-items: flex-end;
-      position: relative;
-      background:
-        linear-gradient(to top, rgba(15,25,19,.72), rgba(15,25,19,.08)),
-        url("images/hero.jpg") center/cover no-repeat,
-        #52685b;
-      color: white;
-    }
-
-    .hero-content {
-      width: min(1160px, 92%);
-      margin: 0 auto;
-      padding: 160px 0 90px;
-    }
-
-    .hero .eyebrow {
-      color: #e0c69b;
-    }
-
-    .hero h1 {
-      max-width: 850px;
-      margin-bottom: 22px;
-    }
-
-    .hero p {
-      color: #f1f1ed;
-      max-width: 580px;
-      font-size: 18px;
-      margin-bottom: 30px;
-    }
-
-    .hero .btn {
-      background: white;
-      color: var(--green);
-    }
-
-    /* AMENITIES */
-
-    .amenities {
-      background: var(--green);
-      color: white;
-      padding: 38px 0;
-    }
-
-    .amenity-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 25px;
-    }
-
-    .amenity {
-      text-align: center;
-      padding: 10px;
-    }
-
-    .amenity-number {
-      color: #d4b47e;
-      font-family: Arial, sans-serif;
-      font-size: 11px;
-      letter-spacing: 2px;
-    }
-
-    .amenity h3 {
-      font-size: 18px;
-      margin-top: 6px;
-    }
-
-    /* INTRO */
-
-    .intro {
-      padding: 120px 0;
-    }
-
-    .intro-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 70px;
-      align-items: center;
-    }
-
-    .image {
-      min-height: 540px;
-      background:
-        linear-gradient(rgba(60,70,60,.08), rgba(60,70,60,.08)),
-        #d7d4ca;
-    }
-
-    .intro-copy p {
-      margin: 25px 0;
-      max-width: 510px;
-    }
-
-    /* ROOMS */
-
-    .rooms {
-      padding: 100px 0;
-      background: var(--cream);
-    }
-
-    .section-heading {
-      max-width: 700px;
-      margin-bottom: 55px;
-    }
-
-    .section-heading p {
-      margin-top: 18px;
-    }
-
-    .room-card {
-      display: grid;
-      grid-template-columns: 1.1fr .9fr;
-      background: white;
-      margin-bottom: 40px;
-    }
-
-    .room-image {
-      min-height: 480px;
-      background: #d8d4ca;
-    }
-
-    .room-content {
-      padding: 55px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .room-content p {
-      margin: 20px 0;
-    }
-
-    .room-features {
-      list-style: none;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      margin: 5px 0 30px;
-      font-family: Arial, sans-serif;
-      font-size: 13px;
-      color: var(--muted);
-    }
-
-    .room-features li::before {
-      content: "• ";
-      color: var(--gold);
-    }
-
-    /* EXPERIENCES */
-
-    .experiences {
-      padding: 110px 0;
-    }
-
-    .experience-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-    }
-
-    .experience-card {
-      background: white;
-      border: 1px solid var(--line);
-    }
-
-    .experience-image {
-      height: 280px;
-      background: #d5d1c7;
-    }
-
-    .experience-content {
-      padding: 25px;
-    }
-
-    .experience-content h3 {
-      font-size: 22px;
-      margin-bottom: 8px;
-    }
-
-    /* DINING */
-
-    .dining {
-      padding: 110px 0;
-      background: var(--cream);
-    }
-
-    .dining-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 70px;
-      align-items: center;
-    }
-
-    .dining-image {
-      min-height: 520px;
-      background: #d6d1c6;
-    }
-
-    .dining-copy p {
-      margin: 22px 0 30px;
-    }
-
-    /* KONKAN */
-
-    .explore {
-      padding: 110px 0;
-    }
-
-    .explore-image {
-      min-height: 500px;
-      margin-bottom: 40px;
-      background:
-        linear-gradient(rgba(30,50,40,.1), rgba(30,50,40,.1)),
-        #aeb6a8;
-    }
-
-    .places {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      border-top: 1px solid var(--line);
-    }
-
-    .place {
-      padding: 25px 10px;
-      border-right: 1px solid var(--line);
-      text-align: center;
-    }
-
-    .place:last-child {
-      border-right: 0;
-    }
-
-    .place strong {
-      font-size: 16px;
-      font-weight: 400;
-    }
-
-    /* GALLERY */
-
-    .gallery {
-      padding: 110px 0;
-      background: var(--cream);
-    }
-
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr;
-      grid-auto-rows: 230px;
-      gap: 12px;
-    }
-
-    .gallery-item {
-      background: #d4d0c5;
-    }
-
-    .gallery-item:first-child {
-      grid-row: span 2;
-    }
-
-    /* REVIEWS */
-
-    .reviews {
-      padding: 110px 0;
-    }
-
-    .review-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-    }
-
-    .review {
-      border-top: 1px solid var(--line);
-      padding-top: 25px;
-    }
-
-    .stars {
-      color: var(--gold);
-      letter-spacing: 3px;
-      margin-bottom: 15px;
-      font-family: Arial, sans-serif;
-    }
-
-    .review p {
-      font-family: Georgia, serif;
-      font-size: 18px;
-      color: var(--dark);
-    }
-
-    .reviewer {
-      font-family: Arial, sans-serif;
-      font-size: 12px;
-      margin-top: 18px;
-      color: var(--muted);
-    }
-
-    /* CTA */
-
-    .final-cta {
-      padding: 130px 20px;
-      text-align: center;
-      background: var(--green);
-      color: white;
-    }
-
-    .final-cta p {
-      color: #dfe5df;
-      max-width: 550px;
-      margin: 20px auto 30px;
-    }
-
-    .final-cta .btn {
-      background: white;
-      color: var(--green);
-    }
-
-    /* FOOTER */
-
-    footer {
-      background: #1d2921;
-      color: white;
-      padding: 60px 0 30px;
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr;
-      gap: 50px;
-    }
-
-    footer p {
-      color: #b9c0ba;
-      margin-top: 10px;
-    }
-
-    footer h3 {
-      font-size: 22px;
-    }
-
-    .footer-links {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      font-family: Arial, sans-serif;
-      font-size: 13px;
-    }
-
-    .copyright {
-      border-top: 1px solid #3b463f;
-      margin-top: 45px;
-      padding-top: 20px;
-      font-family: Arial, sans-serif;
-      font-size: 11px;
-      color: #9ea69f;
-    }
-
-    /* MOBILE */
-
-    @media (max-width: 850px) {
-
-      .nav-links {
-        display: none;
-      }
-
-      .hero {
-        min-height: 80vh;
-      }
-
-      .hero-content {
-        padding: 140px 0 60px;
-      }
-
-      .amenity-grid,
-      .experience-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .intro-grid,
-      .dining-grid,
-      .room-card {
-        grid-template-columns: 1fr;
-        gap: 0;
-      }
-
-      .image,
-      .room-image,
-      .dining-image {
-        min-height: 360px;
-      }
-
-      .room-content {
-        padding: 40px 25px;
-      }
-
-      .places {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .place {
-        border-bottom: 1px solid var(--line);
-      }
-
-      .review-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-      }
-
-      .footer-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 550px) {
-
-      h1 {
-        font-size: 48px;
-      }
-
-      h2 {
-        font-size: 40px;
-      }
-
-      .amenity-grid,
-      .experience-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .gallery-grid {
-        grid-template-columns: 1fr 1fr;
-        grid-auto-rows: 180px;
-      }
-
-      .gallery-item:first-child {
-        grid-row: span 1;
-      }
-
-      .places {
-        grid-template-columns: 1fr;
-      }
-
-      .place {
-        border-right: 0;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Zista Inn | Stay Near Aravi Beach, Shrivardhan, Konkan</title>
+
+<meta name="description" content="Zista Inn is a peaceful stay in Walwati near Aravi Beach and Shrivardhan, Konkan. Enjoy comfortable rooms, a swimming pool, Wi-Fi, parking and easy access to the beautiful Konkan coast.">
+
+<meta name="robots" content="index, follow">
+
+<style>
+:root{
+  --green:#33483b;
+  --dark:#202722;
+  --cream:#f4f0e7;
+  --white:#fff;
+  --gold:#b28b58;
+  --muted:#687168;
+  --line:#ddd8cc;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+html{scroll-behavior:smooth}
+
+body{
+  font-family:Georgia,"Times New Roman",serif;
+  color:var(--dark);
+  background:#fbfaf7;
+  line-height:1.7;
+}
+
+a{text-decoration:none;color:inherit}
+
+.container{
+  width:min(1160px,92%);
+  margin:auto;
+}
+
+.eyebrow{
+  font-family:Arial,sans-serif;
+  font-size:12px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  color:var(--gold);
+  margin-bottom:14px;
+}
+
+h1,h2,h3{
+  font-weight:400;
+  line-height:1.15;
+}
+
+h1{font-size:clamp(48px,7vw,88px)}
+h2{font-size:clamp(38px,5vw,62px)}
+h3{font-size:27px}
+
+p{
+  font-family:Arial,sans-serif;
+  color:var(--muted);
+  font-size:16px;
+}
+
+.btn{
+  display:inline-block;
+  background:var(--green);
+  color:white;
+  padding:15px 25px;
+  font-family:Arial,sans-serif;
+  font-size:12px;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  transition:.25s;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+  background:#203027;
+}
+
+/* NAV */
+
+header{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:10;
+  color:white;
+}
+
+nav{
+  width:min(1200px,92%);
+  margin:auto;
+  padding:25px 0;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-size:28px;
+  letter-spacing:2px;
+}
+
+.nav-links{
+  display:flex;
+  gap:28px;
+  font-family:Arial,sans-serif;
+  font-size:13px;
+}
+
+/* HERO */
+
+.hero{
+  min-height:90vh;
+  display:flex;
+  align-items:flex-end;
+  color:white;
+  background:
+    linear-gradient(to top,rgba(15,25,19,.75),rgba(15,25,19,.08)),
+    #6f806f;
+}
+
+.hero-content{
+  width:min(1160px,92%);
+  margin:auto;
+  padding:160px 0 90px;
+}
+
+.hero .eyebrow{color:#e0c69b}
+
+.hero h1{
+  max-width:850px;
+  margin-bottom:22px;
+}
+
+.hero p{
+  color:#f1f1ed;
+  max-width:600px;
+  font-size:18px;
+  margin-bottom:30px;
+}
+
+.hero .btn{
+  background:white;
+  color:var(--green);
+}
+
+/* AMENITIES */
+
+.amenities{
+  background:var(--green);
+  color:white;
+  padding:38px 0;
+}
+
+.amenity-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:25px;
+}
+
+.amenity{
+  text-align:center;
+}
+
+.amenity-number{
+  color:#d4b47e;
+  font-family:Arial,sans-serif;
+  font-size:11px;
+  letter-spacing:2px;
+}
+
+.amenity h3{
+  font-size:18px;
+  margin-top:6px;
+}
+
+/* ABOUT */
+
+.intro{
+  padding:120px 0;
+}
+
+.intro-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:70px;
+  align-items:center;
+}
+
+.photo-placeholder{
+  min-height:540px;
+  background:#d8d5cc;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#8a8b84;
+  font-family:Arial,sans-serif;
+  font-size:12px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+
+.intro-copy p{
+  margin:25px 0;
+  max-width:520px;
+}
+
+/* ROOMS */
+
+.rooms{
+  padding:100px 0;
+  background:var(--cream);
+}
+
+.section-heading{
+  max-width:700px;
+  margin-bottom:55px;
+}
+
+.section-heading p{
+  margin-top:18px;
+}
+
+.room-card{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  background:white;
+  margin-bottom:40px;
+}
+
+.room-photo{
+  min-height:480px;
+  background:#d8d5cc;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#8a8b84;
+  font-family:Arial,sans-serif;
+  font-size:12px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+
+.room-content{
+  padding:55px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.room-content p{
+  margin:20px 0;
+}
+
+.room-features{
+  list-style:none;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  margin:5px 0 30px;
+  font-family:Arial,sans-serif;
+  font-size:13px;
+  color:var(--muted);
+}
+
+.room-features li::before{
+  content:"• ";
+  color:var(--gold);
+}
+
+/* EXPERIENCES */
+
+.experiences{
+  padding:110px 0;
+}
+
+.experience-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+
+.experience-card{
+  background:white;
+  border:1px solid var(--line);
+}
+
+.experience-photo{
+  height:280px;
+  background:#d5d1c7;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#8a8b84;
+  font-family:Arial,sans-serif;
+  font-size:11px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+
+.experience-content{
+  padding:25px;
+}
+
+.experience-content h3{
+  font-size:22px;
+  margin-bottom:8px;
+}
+
+/* KONKAN */
+
+.explore{
+  padding:110px 0;
+  background:var(--cream);
+}
+
+.explore-photo{
+  min-height:500px;
+  background:#b6bcb1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#70776f;
+  font-family:Arial,sans-serif;
+  font-size:12px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  margin-bottom:40px;
+}
+
+.places{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  border-top:1px solid var(--line);
+}
+
+.place{
+  padding:25px 10px;
+  border-right:1px solid var(--line);
+  text-align:center;
+}
+
+.place:last-child{border-right:0}
+
+.place strong{
+  font-size:16px;
+  font-weight:400;
+}
+
+/* GALLERY */
+
+.gallery{
+  padding:110px 0;
+}
+
+.gallery-grid{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr;
+  grid-auto-rows:230px;
+  gap:12px;
+}
+
+.gallery-photo{
+  background:#d4d0c5;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#8a8b84;
+  font-family:Arial,sans-serif;
+  font-size:11px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+
+.gallery-photo:first-child{
+  grid-row:span 2;
+}
+
+/* REVIEWS */
+
+.reviews{
+  padding:110px 0;
+  background:var(--cream);
+}
+
+.review-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+
+.review{
+  border-top:1px solid var(--line);
+  padding-top:25px;
+}
+
+.stars{
+  color:var(--gold);
+  letter-spacing:3px;
+  margin-bottom:15px;
+  font-family:Arial,sans-serif;
+}
+
+.review p{
+  font-family:Georgia,serif;
+  font-size:18px;
+  color:var(--dark);
+}
+
+.reviewer{
+  font-family:Arial,sans-serif;
+  font-size:12px;
+  margin-top:18px;
+  color:var(--muted);
+}
+
+/* CTA */
+
+.final-cta{
+  padding:130px 20px;
+  text-align:center;
+  background:var(--green);
+  color:white;
+}
+
+.final-cta p{
+  color:#dfe5df;
+  max-width:550px;
+  margin:20px auto 30px;
+}
+
+.final-cta .btn{
+  background:white;
+  color:var(--green);
+}
+
+/* FOOTER */
+
+footer{
+  background:#1d2921;
+  color:white;
+  padding:60px 0 30px;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr;
+  gap:50px;
+}
+
+footer p{
+  color:#b9c0ba;
+  margin-top:10px;
+}
+
+footer h3{font-size:22px}
+
+.footer-links{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  font-family:Arial,sans-serif;
+  font-size:13px;
+}
+
+.copyright{
+  border-top:1px solid #3b463f;
+  margin-top:45px;
+  padding-top:20px;
+  font-family:Arial,sans-serif;
+  font-size:11px;
+  color:#9ea69f;
+}
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+  .nav-links{display:none}
+
+  .hero{min-height:80vh}
+
+  .hero-content{
+    padding:140px 0 60px;
+  }
+
+  .amenity-grid,
+  .experience-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .intro-grid,
+  .room-card{
+    grid-template-columns:1fr;
+    gap:0;
+  }
+
+  .photo-placeholder,
+  .room-photo{
+    min-height:360px;
+  }
+
+  .room-content{
+    padding:40px 25px;
+  }
+
+  .places{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .place{
+    border-bottom:1px solid var(--line);
+  }
+
+  .review-grid{
+    grid-template-columns:1fr;
+    gap:40px;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:550px){
+
+  h1{font-size:48px}
+
+  h2{font-size:40px}
+
+  .amenity-grid,
+  .experience-grid{
+    grid-template-columns:1fr;
+  }
+
+  .gallery-grid{
+    grid-template-columns:1fr 1fr;
+    grid-auto-rows:180px;
+  }
+
+  .gallery-photo:first-child{
+    grid-row:span 1;
+  }
+
+  .places{
+    grid-template-columns:1fr;
+  }
+
+  .place{
+    border-right:0;
+  }
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <nav>
-    <a href="#" class="logo">ZISTA INN</a>
+<nav>
+<a href="#" class="logo">ZISTA INN</a>
 
-    <div class="nav-links">
-      <a href="#rooms">Rooms</a>
-      <a href="#experiences">Experience</a>
-      <a href="#dining">Dining</a>
-      <a href="#explore">Explore</a>
-      <a href="#gallery">Gallery</a>
-    </div>
-  </nav>
+<div class="nav-links">
+<a href="#rooms">Rooms</a>
+<a href="#experience">Experience</a>
+<a href="#explore">Explore</a>
+<a href="#gallery">Gallery</a>
+<a href="#reviews">Reviews</a>
+</div>
+</nav>
 </header>
 
 <main>
 
-  <!-- HERO -->
+<!-- HERO -->
 
-  <section class="hero">
-    <div class="hero-content">
-      <div class="eyebrow">Walwati · Near Aravi Beach · Konkan Coast</div>
+<section class="hero">
+<div class="hero-content">
 
-      <h1>Escape to Serenity at Zista Inn</h1>
+<div class="eyebrow">
+Walwati · Near Aravi Beach · Konkan Coast
+</div>
 
-      <p>
-        A peaceful stay in the Konkan, surrounded by greenery,
-        coastal experiences and the simple pleasures of slowing down.
-      </p>
+<h1>
+Escape to Serenity at Zista Inn
+</h1>
 
-      <a
-        class="btn"
-        href="https://wa.me/"
-        target="_blank"
-        rel="noopener"
-      >
-        Book Your Stay
-      </a>
-    </div>
-  </section>
+<p>
+A peaceful stay in the Konkan, surrounded by greenery,
+coastal experiences and the simple pleasures of slowing down.
+</p>
 
+<a class="btn" href="tel:+919270740015">
+Call Zista Inn
+</a>
 
-  <!-- AMENITIES -->
+</div>
+</section>
 
-  <section class="amenities">
-    <div class="container">
-      <div class="amenity-grid">
 
-        <div class="amenity">
-          <div class="amenity-number">01</div>
-          <h3>Outdoor Swimming Pool</h3>
-        </div>
+<!-- AMENITIES -->
 
-        <div class="amenity">
-          <div class="amenity-number">02</div>
-          <h3>Near Aravi Beach</h3>
-        </div>
+<section class="amenities">
 
-        <div class="amenity">
-          <div class="amenity-number">03</div>
-          <h3>On-Site Indian Dining</h3>
-        </div>
+<div class="container">
 
-        <div class="amenity">
-          <div class="amenity-number">04</div>
-          <h3>Wi-Fi & Parking</h3>
-        </div>
+<div class="amenity-grid">
 
-      </div>
-    </div>
-  </section>
+<div class="amenity">
+<div class="amenity-number">01</div>
+<h3>Swimming Pool</h3>
+</div>
 
+<div class="amenity">
+<div class="amenity-number">02</div>
+<h3>Near Aravi Beach</h3>
+</div>
 
-  <!-- ABOUT -->
+<div class="amenity">
+<div class="amenity-number">03</div>
+<h3>Free Wi-Fi</h3>
+</div>
 
-  <section class="intro">
-    <div class="container intro-grid">
+<div class="amenity">
+<div class="amenity-number">04</div>
+<h3>Free Parking</h3>
+</div>
 
-      <div class="image"></div>
+</div>
 
-      <div class="intro-copy">
-        <div class="eyebrow">A softer place, by the coast</div>
+</div>
 
-        <h2>A quiet place to arrive.</h2>
+</section>
 
-        <p>
-          Zista Inn is a peaceful stay in the Konkan, designed for
-          guests who want to slow down, spend time together and
-          experience the beauty of the coast.
-        </p>
 
-        <p>
-          Stay close to Aravi Beach and explore Shrivardhan,
-          Diveagar, Harihareshwar and the surrounding Konkan coastline.
-        </p>
-      </div>
+<!-- ABOUT -->
 
-    </div>
-  </section>
+<section class="intro">
 
+<div class="container intro-grid">
 
-  <!-- ROOMS -->
+<div class="photo-placeholder">
+Zista Inn Property Photo
+</div>
 
-  <section class="rooms" id="rooms">
-    <div class="container">
+<div class="intro-copy">
 
-      <div class="section-heading">
-        <div class="eyebrow">Stay at Zista Inn</div>
-        <h2>Rooms made for slowing down.</h2>
+<div class="eyebrow">
+A softer place by the coast
+</div>
 
-        <p>
-          Comfortable spaces for couples, families and travellers
-          looking for a peaceful Konkan stay.
-        </p>
-      </div>
+<h2>
+A quiet place to arrive.
+</h2>
 
+<p>
+Zista Inn is a peaceful stay in Walwati, near Aravi Beach
+and Shrivardhan, designed for guests who want to slow down,
+spend time together and experience the beauty of the Konkan.
+</p>
 
-      <!-- STANDARD -->
+<p>
+Stay close to the coast while exploring Aravi Beach,
+Shrivardhan, Diveagar, Harihareshwar and the surrounding
+Konkan countryside.
+</p>
 
-      <article class="room-card">
+</div>
 
-        <div class="room-image"></div>
+</div>
 
-        <div class="room-content">
-          <div class="eyebrow">Stay 01</div>
+</section>
 
-          <h3>Standard Room</h3>
 
-          <p>
-            A comfortable and welcoming room for a relaxed stay in
-            the Konkan.
-          </p>
+<!-- ROOMS -->
 
-          <ul class="room-features">
-            <li>Comfortable stay</li>
-            <li>Air Conditioning</li>
-            <li>Private Bathroom</li>
-            <li>Wi-Fi</li>
-          </ul>
+<section class="rooms" id="rooms">
 
-          <a class="btn" href="https://wa.me/" target="_blank" rel="noopener">
-            Check Availability
-          </a>
-        </div>
+<div class="container">
 
-      </article>
+<div class="section-heading">
 
+<div class="eyebrow">
+Stay at Zista Inn
+</div>
 
-      <!-- DELUXE -->
+<h2>
+Rooms made for slowing down.
+</h2>
 
-      <article class="room-card">
+<p>
+Choose the room that suits your stay — from a comfortable
+Standard Room to our Deluxe Room and Family Suite.
+</p>
 
-        <div class="room-image"></div>
+</div>
 
-        <div class="room-content">
-          <div class="eyebrow">Stay 02</div>
 
-          <h3>Deluxe Room with Balcony</h3>
+<!-- STANDARD -->
 
-          <p>
-            A more spacious stay with a king bed, balcony and
-            a peaceful garden or pool setting.
-          </p>
+<article class="room-card">
 
-          <ul class="room-features">
-            <li>King Bed</li>
-            <li>Balcony</li>
-            <li>Air Conditioning</li>
-            <li>Private Bathroom</li>
-            <li>Wi-Fi</li>
-            <li>Garden / Pool Setting</li>
-          </ul>
+<div class="room-photo">
+Standard Room Photo
+</div>
 
-          <a class="btn" href="https://wa.me/" target="_blank" rel="noopener">
-            Check Availability
-          </a>
-        </div>
+<div class="room-content">
 
-      </article>
+<div class="eyebrow">
+Stay 01
+</div>
 
+<h3>
+Standard Room
+</h3>
 
-      <!-- FAMILY -->
+<p>
+A comfortable and welcoming room for a relaxed stay
+in the Konkan.
+</p>
 
-      <article class="room-card">
+<ul class="room-features">
+<li>Air Conditioning</li>
+<li>Private Bathroom</li>
+<li>Comfortable Stay</li>
+<li>Wi-Fi</li>
+</ul>
 
-        <div class="room-image"></div>
+<a class="btn" href="tel:+919270740015">
+Check Availability
+</a>
 
-        <div class="room-content">
-          <div class="eyebrow">Stay 03</div>
+</div>
 
-          <h3>Family Suite</h3>
+</article>
 
-          <p>
-            A spacious option designed for families and groups
-            looking to stay together.
-          </p>
 
-          <ul class="room-features">
-            <li>Family Friendly</li>
-            <li>Comfortable Space</li>
-            <li>Air Conditioning</li>
-            <li>Private Bathroom</li>
-            <li>Wi-Fi</li>
-          </ul>
+<!-- DELUXE -->
 
-          <a class="btn" href="https://wa.me/" target="_blank" rel="noopener">
-            Check Availability
-          </a>
-        </div>
+<article class="room-card">
 
-      </article>
+<div class="room-photo">
+Deluxe Room Photo
+</div>
 
-    </div>
-  </section>
+<div class="room-content">
 
+<div class="eyebrow">
+Stay 02
+</div>
 
-  <!-- EXPERIENCES -->
+<h3>
+Deluxe Room
+</h3>
 
-  <section class="experiences" id="experiences">
+<p>
+A more spacious stay with a balcony and a relaxing
+garden or pool setting.
+</p>
 
-    <div class="container">
+<ul class="room-features">
+<li>King Bed</li>
+<li>Balcony</li>
+<li>Air Conditioning</li>
+<li>Private Bathroom</li>
+<li>Wi-Fi</li>
+<li>Pool / Garden Setting</li>
+</ul>
 
-      <div class="section-heading">
-        <div class="eyebrow">The Zista Rhythm</div>
-        <h2>Simple moments worth staying for.</h2>
-      </div>
+<a class="btn" href="tel:+919270740015">
+Check Availability
+</a>
 
-      <div class="experience-grid">
+</div>
 
-        <article class="experience-card">
-          <div class="experience-image"></div>
-          <div class="experience-content">
-            <h3>Swim & Unwind</h3>
-            <p>Take a refreshing break by the pool and slow down.</p>
-          </div>
-        </article>
+</article>
 
-        <article class="experience-card">
-          <div class="experience-image"></div>
-          <div class="experience-content">
-            <h3>Slow Down</h3>
-            <p>Enjoy quiet mornings, greenery and time away from the rush.</p>
-          </div>
-        </article>
 
-        <article class="experience-card">
-          <div class="experience-image"></div>
-          <div class="experience-content">
-            <h3>Taste & Dine</h3>
-            <p>Enjoy comforting Indian food served on site.</p>
-          </div>
-        </article>
+<!-- FAMILY -->
 
-        <article class="experience-card">
-          <div class="experience-image"></div>
-          <div class="experience-content">
-            <h3>Explore the Coast</h3>
-            <p>Discover beaches, temples and the beauty of Konkan.</p>
-          </div>
-        </article>
+<article class="room-card">
 
-      </div>
+<div class="room-photo">
+Family Suite Photo
+</div>
 
-    </div>
+<div class="room-content">
 
-  </section>
+<div class="eyebrow">
+Stay 03
+</div>
 
+<h3>
+Family Suite
+</h3>
 
-  <!-- DINING -->
+<p>
+A spacious option designed for families and groups
+looking to stay together.
+</p>
 
-  <section class="dining" id="dining">
+<ul class="room-features">
+<li>Family Friendly</li>
+<li>Comfortable Space</li>
+<li>Air Conditioning</li>
+<li>Private Bathroom</li>
+<li>Wi-Fi</li>
+</ul>
 
-    <div class="container dining-grid">
+<a class="btn" href="tel:+919270740015">
+Check Availability
+</a>
 
-      <div class="dining-image"></div>
+</div>
 
-      <div class="dining-copy">
-        <div class="eyebrow">Dining at Zista</div>
+</article>
 
-        <h2>Comforting food, close to home.</h2>
+</div>
 
-        <p>
-          Enjoy Indian cuisine on site during your stay at Zista Inn.
-          Simple, comforting food to make your Konkan escape easier.
-        </p>
+</section>
 
-        <a
-          class="btn"
-          href="https://wa.me/"
-          target="_blank"
-          rel="noopener"
-        >
-          Ask About Dining
-        </a>
-      </div>
 
-    </div>
+<!-- EXPERIENCE -->
 
-  </section>
+<section class="experiences" id="experience">
 
+<div class="container">
 
-  <!-- EXPLORE KONKAN -->
+<div class="section-heading">
 
-  <section class="explore" id="explore">
+<div class="eyebrow">
+The Zista Experience
+</div>
 
-    <div class="container">
+<h2>
+Simple moments worth staying for.
+</h2>
 
-      <div class="section-heading">
-        <div class="eyebrow">Beyond the Inn</div>
+</div>
 
-        <h2>Explore the Konkan coast.</h2>
+<div class="experience-grid">
 
-        <p>
-          Make Zista Inn your peaceful base while discovering the
-          beaches and places around Shrivardhan.
-        </p>
-      </div>
+<article class="experience-card">
 
-      <div class="explore-image"></div>
+<div class="experience-photo">
+Pool Photo
+</div>
 
-      <div class="places">
+<div class="experience-content">
+<h3>Swim & Unwind</h3>
+<p>
+Take a refreshing break by the swimming pool
+and slow down.
+</p>
+</div>
 
-        <div class="place">
-          <strong>Aravi Beach</strong>
-        </div>
+</article>
 
-        <div class="place">
-          <strong>Shrivardhan</strong>
-        </div>
 
-        <div class="place">
-          <strong>Diveagar Beach</strong>
-        </div>
+<article class="experience-card">
 
-        <div class="place">
-          <strong>Harihareshwar</strong>
-        </div>
+<div class="experience-photo">
+Property Photo
+</div>
 
-      </div>
+<div class="experience-content">
+<h3>Slow Down</h3>
+<p>
+Enjoy peaceful mornings, greenery and time away
+from the rush.
+</p>
+</div>
 
-    </div>
+</article>
 
-  </section>
 
+<article class="experience-card">
 
-  <!-- GALLERY -->
+<div class="experience-photo">
+Garden Photo
+</div>
 
-  <section class="gallery" id="gallery">
+<div class="experience-content">
+<h3>Relax Together</h3>
+<p>
+Spend quality time with family and friends
+in a peaceful setting.
+</p>
+</div>
 
-    <div class="container">
+</article>
 
-      <div class="section-heading">
-        <div class="eyebrow">Zista Inn in Frames</div>
 
-        <h2>A glimpse of your stay.</h2>
+<article class="experience-card">
 
-        <p>
-          Explore the rooms, pool, gardens, dining and peaceful
-          surroundings of Zista Inn.
-        </p>
-      </div>
+<div class="experience-photo">
+Konkan Photo
+</div>
 
-      <div class="gallery-grid">
+<div class="experience-content">
+<h3>Explore the Coast</h3>
+<p>
+Discover beaches, temples and the beauty
+of Konkan.
+</p>
+</div>
 
-        <div class="gallery-item"></div>
-        <div class="gallery-item"></div>
-        <div class="gallery-item"></div>
-        <div class="gallery-item"></div>
-        <div class="gallery-item"></div>
-        <div class="gallery-item"></div>
+</article>
 
-      </div>
+</div>
 
-    </div>
+</div>
 
-  </section>
+</section>
 
 
-  <!-- REVIEWS -->
+<!-- EXPLORE -->
 
-  <section class="reviews">
+<section class="explore" id="explore">
 
-    <div class="container">
+<div class="container">
 
-      <div class="section-heading">
-        <div class="eyebrow">Guest Reviews</div>
-        <h2>Loved by our guests.</h2>
-      </div>
+<div class="section-heading">
 
-      <div class="review-grid">
+<div class="eyebrow">
+Beyond the Inn
+</div>
 
-        <article class="review">
-          <div class="stars">★★★★★</div>
-          <p>
-            “A peaceful place to stay and a great base for exploring
-            the Konkan coast.”
-          </p>
-          <div class="reviewer">Guest · Google Review</div>
-        </article>
+<h2>
+Explore the Konkan coast.
+</h2>
 
-        <article class="review">
-          <div class="stars">★★★★★</div>
-          <p>
-            “Comfortable rooms, a relaxing atmosphere and a lovely
-            experience.”
-          </p>
-          <div class="reviewer">Guest · Google Review</div>
-        </article>
+<p>
+Make Zista Inn your peaceful base while discovering
+the beaches and places around Shrivardhan.
+</p>
 
-        <article class="review">
-          <div class="stars">★★★★★</div>
-          <p>
-            “A wonderful place for a peaceful getaway with family.”
-          </p>
-          <div class="reviewer">Guest · Google Review</div>
-        </article>
+</div>
 
-      </div>
+<div class="explore-photo">
+Konkan Coast Photo
+</div>
 
-      <div style="margin-top:40px;">
-        <a
-          class="btn"
-          href="#"
-          target="_blank"
-          rel="noopener"
-        >
-          View Google Reviews
-        </a>
-      </div>
+<div class="places">
 
-    </div>
+<div class="place">
+<strong>Aravi Beach</strong>
+</div>
 
-  </section>
+<div class="place">
+<strong>Shrivardhan</strong>
+</div>
 
+<div class="place">
+<strong>Diveagar</strong>
+</div>
 
-  <!-- FINAL CTA -->
+<div class="place">
+<strong>Harihareshwar</strong>
+</div>
 
-  <section class="final-cta">
+</div>
 
-    <div class="container">
+</div>
 
-      <div class="eyebrow">Your Konkan Escape Awaits</div>
+</section>
 
-      <h2>Slow down. Stay awhile.</h2>
 
-      <p>
-        Relax, reconnect and experience the beauty of the Konkan coast
-        at Zista Inn.
-      </p>
+<!-- GALLERY -->
 
-      <a
-        class="btn"
-        href="https://wa.me/"
-        target="_blank"
-        rel="noopener"
-      >
-        Book Your Stay
-      </a>
+<section class="gallery" id="gallery">
 
-    </div>
+<div class="container">
 
-  </section>
+<div class="section-heading">
+
+<div class="eyebrow">
+Zista Inn in Frames
+</div>
+
+<h2>
+A glimpse of your stay.
+</h2>
+
+<p>
+Rooms, pool, gardens, property and the beautiful
+Konkan surroundings.
+</p>
+
+</div>
+
+<div class="gallery-grid">
+
+<div class="gallery-photo">Gallery Photo 01</div>
+<div class="gallery-photo">Gallery Photo 02</div>
+<div class="gallery-photo">Gallery Photo 03</div>
+<div class="gallery-photo">Gallery Photo 04</div>
+<div class="gallery-photo">Gallery Photo 05</div>
+<div class="gallery-photo">Gallery Photo 06</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- REVIEWS -->
+
+<section class="reviews" id="reviews">
+
+<div class="container">
+
+<div class="section-heading">
+
+<div class="eyebrow">
+Guest Reviews
+</div>
+
+<h2>
+What our guests say.
+</h2>
+
+<p>
+Read genuine guest experiences on Google.
+</p>
+
+</div>
+
+<div class="review-grid">
+
+<article class="review">
+<div class="stars">★★★★★</div>
+<p>
+Zista Inn guest reviews will appear here.
+</p>
+<div class="reviewer">
+Google Guest Review
+</div>
+</article>
+
+<article class="review">
+<div class="stars">★★★★★</div>
+<p>
+See what guests say about their stay at Zista Inn.
+</p>
+<div class="reviewer">
+Google Guest Review
+</div>
+</article>
+
+<article class="review">
+<div class="stars">★★★★★</div>
+<p>
+Discover recent experiences from Zista Inn guests.
+</p>
+<div class="reviewer">
+Google Guest Review
+</div>
+</article>
+
+</div>
+
+<br>
+
+<a class="btn" href="#" target="_blank">
+View Google Reviews
+</a>
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="final-cta">
+
+<div class="container">
+
+<div class="eyebrow">
+Your Konkan Escape Awaits
+</div>
+
+<h2>
+Slow down. Stay awhile.
+</h2>
+
+<p>
+Relax, reconnect and experience the beauty of the
+Konkan coast at Zista Inn.
+</p>
+
+<a class="btn" href="tel:+919270740015">
+Call Zista Inn
+</a>
+
+</div>
+
+</section>
 
 </main>
 
@@ -1071,56 +1110,71 @@
 
 <footer>
 
-  <div class="container">
+<div class="container">
 
-    <div class="footer-grid">
+<div class="footer-grid">
 
-      <div>
-        <h3>Zista Inn</h3>
+<div>
 
-        <p>
-          A peaceful stay near Aravi Beach and the Konkan coast.
-        </p>
+<h3>Zista Inn</h3>
 
-        <p>
-          Walwati, Shrivardhan,<br>
-          Maharashtra 402113, India
-        </p>
-      </div>
+<p>
+A peaceful stay near Aravi Beach and the Konkan coast.
+</p>
 
-      <div>
+<p>
+Walwati, Aravi–Diveagar Road,<br>
+Shrivardhan, Maharashtra 402113, India
+</p>
 
-        <h3>Explore</h3>
+</div>
 
-        <div class="footer-links">
-          <a href="#rooms">Rooms</a>
-          <a href="#experiences">Experience</a>
-          <a href="#dining">Dining</a>
-          <a href="#explore">Explore Konkan</a>
-          <a href="#gallery">Gallery</a>
-        </div>
 
-      </div>
+<div>
 
-      <div>
+<h3>Explore</h3>
 
-        <h3>Contact</h3>
+<div class="footer-links">
+<a href="#rooms">Rooms</a>
+<a href="#experience">Experience</a>
+<a href="#explore">Explore Konkan</a>
+<a href="#gallery">Gallery</a>
+<a href="#reviews">Reviews</a>
+</div>
 
-        <div class="footer-links">
-          <a href="tel:+91XXXXXXXXXX">Call Us</a>
-          <a href="https://wa.me/" target="_blank">WhatsApp</a>
-          <a href="#" target="_blank">Google Reviews</a>
-        </div>
+</div>
 
-      </div>
 
-    </div>
+<div>
 
-    <div class="copyright">
-      © 2026 Zista Inn. All rights reserved.
-    </div>
+<h3>Contact</h3>
 
-  </div>
+<div class="footer-links">
+
+<a href="tel:+919270740015">
++91 92707 40015
+</a>
+
+<a href="https://wa.me/919270740015">
+WhatsApp
+</a>
+
+<a href="#reviews">
+Google Reviews
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="copyright">
+© 2026 Zista Inn. All rights reserved.
+</div>
+
+</div>
 
 </footer>
 
