@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <title>Zista Inn | Resort Near Aravi Beach, Shrivardhan, Konkan</title>
 
@@ -11,22 +10,18 @@
 
 <meta name="robots" content="index, follow" />
 
-<!-- OFFICIAL ZISTA INN URL -->
 <link rel="canonical" href="https://zistaresort.in/" />
 
-<!-- OPEN GRAPH -->
 <meta property="og:site_name" content="Zista Inn" />
 <meta property="og:title" content="Zista Inn | Resort Near Aravi Beach, Shrivardhan" />
 <meta property="og:description" content="A peaceful resort in Walwati near Aravi Beach and Shrivardhan, with comfortable rooms, a swimming pool and easy access to the Konkan coast." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://zistaresort.in/" />
 
-<!-- TWITTER / SOCIAL SHARING -->
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Zista Inn | Resort Near Aravi Beach, Shrivardhan" />
 <meta name="twitter:description" content="Stay at Zista Inn near Aravi Beach and Shrivardhan on the Konkan coast." />
 
-<!-- ZISTA INN WEBSITE STRUCTURED DATA -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -37,7 +32,6 @@
 }
 </script>
 
-<!-- ZISTA INN HOTEL STRUCTURED DATA -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -78,6 +72,8 @@
   --gold:#b28b58;
   --muted:#687168;
   --line:#ddd8cc;
+  --whatsapp:#25D366;
+  --instagram:#E1306C;
 }
 
 *{
@@ -157,6 +153,48 @@ p{
 }
 
 
+/* BOOK NOW */
+
+.book-btn{
+  background:var(--whatsapp);
+  color:white;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  padding:15px 24px;
+  font-family:Arial,sans-serif;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:1.2px;
+  text-transform:uppercase;
+  box-shadow:0 7px 20px rgba(37,211,102,.22);
+  animation:bookPulse 3.5s ease-in-out infinite;
+}
+
+.book-btn:hover{
+  background:#1ebe5d;
+  transform:translateY(-2px);
+}
+
+.whatsapp-icon{
+  font-size:17px;
+  line-height:1;
+}
+
+@keyframes bookPulse{
+  0%,70%,100%{
+    box-shadow:0 7px 20px rgba(37,211,102,.22);
+  }
+  78%{
+    box-shadow:0 7px 28px rgba(37,211,102,.50);
+  }
+  86%{
+    box-shadow:0 7px 20px rgba(37,211,102,.22);
+  }
+}
+
+
 /* NAVIGATION */
 
 header{
@@ -184,9 +222,15 @@ nav{
 
 .nav-links{
   display:flex;
-  gap:28px;
+  gap:25px;
+  align-items:center;
   font-family:Arial,sans-serif;
   font-size:13px;
+}
+
+.nav-book{
+  padding:10px 16px;
+  font-size:11px;
 }
 
 
@@ -227,6 +271,13 @@ nav{
   max-width:650px;
   font-size:18px;
   margin-bottom:30px;
+}
+
+.hero-buttons{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  flex-wrap:wrap;
 }
 
 .hero .btn{
@@ -553,6 +604,59 @@ nav{
 }
 
 
+/* SOCIAL */
+
+.social-section{
+  padding:75px 0;
+  background:#fbfaf7;
+  text-align:center;
+}
+
+.social-section h2{
+  font-size:40px;
+}
+
+.social-section p{
+  max-width:600px;
+  margin:15px auto 30px;
+}
+
+.social-links{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:14px;
+  flex-wrap:wrap;
+}
+
+.social-link{
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  padding:13px 20px;
+  border:1px solid var(--line);
+  background:white;
+  font-family:Arial,sans-serif;
+  font-size:12px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  transition:.25s;
+}
+
+.social-link:hover{
+  transform:translateY(-3px);
+  border-color:var(--gold);
+}
+
+.social-icon{
+  font-size:17px;
+}
+
+.instagram-link:hover{
+  color:var(--instagram);
+}
+
+
 /* CTA */
 
 .final-cta{
@@ -568,9 +672,8 @@ nav{
   margin:20px auto 30px;
 }
 
-.final-cta .btn{
-  background:white;
-  color:var(--green);
+.final-cta .book-btn{
+  margin-bottom:14px;
 }
 
 
@@ -603,6 +706,24 @@ footer h3{
   gap:10px;
   font-family:Arial,sans-serif;
   font-size:13px;
+}
+
+.footer-social{
+  margin-top:18px;
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.footer-social a{
+  font-family:Arial,sans-serif;
+  font-size:12px;
+  color:#dfe5df;
+  transition:.25s;
+}
+
+.footer-social a:hover{
+  color:white;
 }
 
 .copyright{
@@ -677,6 +798,17 @@ footer h3{
     font-size:40px;
   }
 
+  .hero-buttons{
+    flex-direction:column;
+    align-items:stretch;
+  }
+
+  .hero-buttons .btn,
+  .hero-buttons .book-btn{
+    width:100%;
+    text-align:center;
+  }
+
   .amenity-grid,
   .experience-grid{
     grid-template-columns:1fr;
@@ -702,6 +834,16 @@ footer h3{
   .rating-number{
     font-size:52px;
   }
+
+  .social-links{
+    flex-direction:column;
+    width:100%;
+  }
+
+  .social-link{
+    width:min(320px,100%);
+    justify-content:center;
+  }
 }
 
 </style>
@@ -726,6 +868,16 @@ ZISTA INN
 <a href="#explore">Explore</a>
 <a href="#gallery">Gallery</a>
 <a href="#reviews">Reviews</a>
+
+<a
+class="book-btn nav-book"
+href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%27d%20like%20to%20check%20availability%20and%20book%20a%20stay.%0A%0AName%3A%0ACheck-in%20date%3A%0ACheck-out%20date%3A%0ANumber%20of%20guests%3A%0ARoom%20preference%3A%20Deluxe%20%2F%20Family%20Room%0A%0APlease%20let%20me%20know%20availability%20and%20the%20best%20available%20rate.%20Thank%20you!"
+target="_blank"
+rel="noopener"
+>
+<span class="whatsapp-icon">◉</span>
+Book Now
+</a>
 
 </div>
 
@@ -758,9 +910,23 @@ Shrivardhan, Diveagar and the beautiful coastal destinations
 of Maharashtra.
 </p>
 
+<div class="hero-buttons">
+
+<a
+class="book-btn"
+href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%27d%20like%20to%20check%20availability%20and%20book%20a%20stay.%0A%0AName%3A%0ACheck-in%20date%3A%0ACheck-out%20date%3A%0ANumber%20of%20guests%3A%0ARoom%20preference%3A%20Deluxe%20%2F%20Family%20Room%0A%0APlease%20let%20me%20know%20availability%20and%20the%20best%20available%20rate.%20Thank%20you!"
+target="_blank"
+rel="noopener"
+>
+<span class="whatsapp-icon">◉</span>
+Book Now on WhatsApp
+</a>
+
 <a class="btn" href="tel:+919270740015">
 Call Zista Inn
 </a>
+
+</div>
 
 </div>
 
@@ -824,7 +990,7 @@ A quiet place to arrive.
 
 <p>
 Zista Inn is a comfortable resort in Walwati, near
-Aravi Beach and Shrivardhan in Maharashtra's Konkan region.
+Aravi Beach and Shrivardhan in Maharashtra&#39;s Konkan region.
 It is a peaceful base for guests looking to enjoy the coast,
 local beaches and the relaxed pace of Konkan.
 </p>
@@ -867,8 +1033,6 @@ Shrivardhan and the Konkan coast.
 </div>
 
 
-<!-- DELUXE ROOM -->
-
 <article class="room-card">
 
 <div class="room-photo">
@@ -898,8 +1062,6 @@ Check Availability
 
 </article>
 
-
-<!-- FAMILY ROOM -->
 
 <article class="room-card">
 
@@ -963,7 +1125,7 @@ Harihareshwar and the surrounding Konkan coastline.
 </p>
 
 <p>
-If you're searching for a resort near Aravi Beach, a hotel
+If you&#39;re searching for a resort near Aravi Beach, a hotel
 near Aravi Beach, or a comfortable stay around Shrivardhan,
 Zista Inn offers a relaxed place to return to after exploring
 the Konkan coast.
@@ -1283,6 +1445,64 @@ Read All Google Reviews
 </section>
 
 
+<!-- SOCIAL -->
+
+<section class="social-section">
+
+<div class="container">
+
+<div class="eyebrow">
+Stay Connected
+</div>
+
+<h2>
+Follow Zista Inn.
+</h2>
+
+<p>
+See our latest photos, resort updates and guest experiences
+on Instagram and Facebook, or read our Google reviews.
+</p>
+
+<div class="social-links">
+
+<a
+class="social-link instagram-link"
+href="https://www.instagram.com/zistainn?igsh=bmFqZGUwaGExMXZ3"
+target="_blank"
+rel="noopener"
+>
+<span class="social-icon">◎</span>
+Follow @zistainn
+</a>
+
+<a
+class="social-link"
+href="https://www.facebook.com/share/14p3QuyJTn7/"
+target="_blank"
+rel="noopener"
+>
+<span class="social-icon">f</span>
+Facebook
+</a>
+
+<a
+class="social-link"
+href="https://share.google/VzhVr40SPUPYBJoNz"
+target="_blank"
+rel="noopener"
+>
+<span class="social-icon">★</span>
+Google Reviews
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
 <!-- FINAL CTA -->
 
 <section class="final-cta">
@@ -1301,6 +1521,18 @@ Slow down. Stay awhile.
 Book your stay at Zista Inn and discover Aravi Beach,
 Shrivardhan and the beautiful Konkan coast.
 </p>
+
+<a
+class="book-btn"
+href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%27d%20like%20to%20check%20availability%20and%20book%20a%20stay.%0A%0AName%3A%0ACheck-in%20date%3A%0ACheck-out%20date%3A%0ANumber%20of%20guests%3A%0ARoom%20preference%3A%20Deluxe%20%2F%20Family%20Room%0A%0APlease%20let%20me%20know%20availability%20and%20the%20best%20available%20rate.%20Thank%20you!"
+target="_blank"
+rel="noopener"
+>
+<span class="whatsapp-icon">◉</span>
+Book Now on WhatsApp
+</a>
+
+<br><br>
 
 <a class="btn" href="tel:+919270740015">
 Call Zista Inn
@@ -1336,6 +1568,34 @@ on the Konkan coast.
 Walwati, Aravi–Diveagar Road,<br />
 Shrivardhan, Maharashtra 402113, India
 </p>
+
+<div class="footer-social">
+
+<a
+href="https://www.instagram.com/zistainn?igsh=bmFqZGUwaGExMXZ3"
+target="_blank"
+rel="noopener"
+>
+Instagram
+</a>
+
+<a
+href="https://www.facebook.com/share/14p3QuyJTn7/"
+target="_blank"
+rel="noopener"
+>
+Facebook
+</a>
+
+<a
+href="https://share.google/VzhVr40SPUPYBJoNz"
+target="_blank"
+rel="noopener"
+>
+Google
+</a>
+
+</div>
 
 </div>
 
@@ -1389,11 +1649,19 @@ Contact
 +91 92707 40015
 </a>
 
-<a href="https://wa.me/919270740015">
+<a
+href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%27d%20like%20to%20check%20availability%20and%20book%20a%20stay."
+target="_blank"
+rel="noopener"
+>
 WhatsApp
 </a>
 
-<a href="https://share.google/VzhVr40SPUPYBJoNz" target="_blank" rel="noopener">
+<a
+href="https://share.google/VzhVr40SPUPYBJoNz"
+target="_blank"
+rel="noopener"
+>
 Google Reviews
 </a>
 
