@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://zistainn.github.io/zistainn-website/sitemap.xml
+Sitemap: https://zistaresort.in/sitemap.xml
