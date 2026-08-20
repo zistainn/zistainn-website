@@ -72,6 +72,8 @@
   --gold:#b28b58;
   --muted:#687168;
   --line:#ddd8cc;
+  --whatsapp:#25D366;
+  --whatsapp-dark:#128C7E;
 }
 
 *{
@@ -82,6 +84,7 @@
 
 html{
   scroll-behavior:smooth;
+  scroll-padding-top:90px;
 }
 
 body{
@@ -134,15 +137,20 @@ p{
 }
 
 .btn{
-  display:inline-block;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
   background:var(--green);
   color:white;
   padding:15px 25px;
   font-family:Arial,sans-serif;
   font-size:12px;
+  font-weight:700;
   letter-spacing:1.5px;
   text-transform:uppercase;
   transition:.25s;
+  cursor:pointer;
 }
 
 .btn:hover{
@@ -151,21 +159,63 @@ p{
 }
 
 
+/* WHATSAPP BOOKING BUTTON */
+
+.whatsapp-btn{
+  background:var(--whatsapp);
+  color:#fff;
+  box-shadow:0 8px 22px rgba(37,211,102,.18);
+}
+
+.whatsapp-btn:hover{
+  background:var(--whatsapp-dark);
+  color:#fff;
+}
+
+.whatsapp-icon{
+  width:18px;
+  height:18px;
+  display:inline-block;
+  flex:none;
+}
+
+@keyframes gentlePulse{
+  0%,100%{
+    box-shadow:0 8px 22px rgba(37,211,102,.18);
+  }
+  50%{
+    box-shadow:0 8px 28px rgba(37,211,102,.34);
+  }
+}
+
+.hero .whatsapp-btn,
+.final-cta .whatsapp-btn{
+  animation:gentlePulse 2.8s ease-in-out infinite;
+}
+
+
 /* NAVIGATION */
 
 header{
-  position:absolute;
+  position:fixed;
   top:0;
   left:0;
   width:100%;
-  z-index:10;
+  z-index:1000;
   color:white;
+  background:linear-gradient(
+    to bottom,
+    rgba(15,25,19,.82),
+    rgba(15,25,19,.35)
+  );
+  backdrop-filter:blur(4px);
+  -webkit-backdrop-filter:blur(4px);
 }
 
 nav{
   width:min(1200px,92%);
   margin:auto;
-  padding:25px 0;
+  padding:18px 0;
   display:flex;
   justify-content:space-between;
   align-items:center;
@@ -174,13 +224,41 @@ nav{
 .logo{
   font-size:28px;
   letter-spacing:2px;
+  font-weight:600;
 }
 
 .nav-links{
   display:flex;
   gap:28px;
+  align-items:center;
   font-family:Arial,sans-serif;
-  font-size:13px;
+  font-size:14px;
+  font-weight:700;
+}
+
+.nav-links a{
+  position:relative;
+  padding:5px 0;
+  transition:.25s;
+}
+
+.nav-links a:hover{
+  color:#e0c69b;
+}
+
+.nav-links a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:0;
+  height:1px;
+  background:#e0c69b;
+  transition:.25s;
+}
+
+.nav-links a:hover::after{
+  width:100%;
 }
 
 
@@ -239,42 +317,6 @@ nav{
   max-width:650px;
   font-size:18px;
   margin-bottom:30px;
-}
-
-.hero .btn{
-  background:white;
-  color:var(--green);
-}
-
-
-/* AMENITIES */
-
-.amenities{
-  background:var(--green);
-  color:white;
-  padding:38px 0;
-}
-
-.amenity-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:25px;
-}
-
-.amenity{
-  text-align:center;
-}
-
-.amenity-number{
-  color:#d4b47e;
-  font-family:Arial,sans-serif;
-  font-size:11px;
-  letter-spacing:2px;
-}
-
-.amenity h3{
-  font-size:18px;
-  margin-top:6px;
 }
 
 
@@ -404,6 +446,51 @@ nav{
 .experiences{
   padding:110px 0;
 }
+
+.experience-heading{
+  max-width:760px;
+  margin-bottom:35px;
+}
+
+.experience-heading p{
+  margin-top:18px;
+}
+
+
+/* EXPERIENCE HIGHLIGHTS */
+
+.experience-highlights{
+  background:var(--green);
+  color:white;
+  padding:35px 0;
+  margin-bottom:45px;
+}
+
+.experience-highlight-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:25px;
+}
+
+.experience-highlight{
+  text-align:center;
+}
+
+.experience-highlight-number{
+  color:#d4b47e;
+  font-family:Arial,sans-serif;
+  font-size:11px;
+  letter-spacing:2px;
+}
+
+.experience-highlight h3{
+  font-size:18px;
+  margin-top:6px;
+  color:white;
+}
+
+
+/* EXPERIENCE CARDS */
 
 .experience-grid{
   display:grid;
@@ -580,9 +667,41 @@ nav{
   margin:20px auto 30px;
 }
 
-.final-cta .btn{
-  background:white;
-  color:var(--green);
+
+/* SOCIAL */
+
+.social-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:22px;
+}
+
+.social-link{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:9px 13px;
+  border:1px solid #465148;
+  font-family:Arial,sans-serif;
+  font-size:12px;
+  transition:.25s;
+}
+
+.social-link:hover{
+  border-color:#d4b47e;
+  color:#e0c69b;
+  transform:translateY(-2px);
+}
+
+.social-icon{
+  width:17px;
+  height:17px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  font-family:Arial,sans-serif;
+  font-weight:700;
 }
 
 
@@ -612,9 +731,19 @@ footer h3{
 .footer-links{
   display:flex;
   flex-direction:column;
-  gap:10px;
+  gap:12px;
   font-family:Arial,sans-serif;
-  font-size:13px;
+  font-size:15px;
+  font-weight:700;
+}
+
+.footer-links a{
+  transition:.25s;
+}
+
+.footer-links a:hover{
+  color:#e0c69b;
+  transform:translateX(2px);
 }
 
 .copyright{
@@ -631,8 +760,16 @@ footer h3{
 
 @media(max-width:850px){
 
+  nav{
+    padding:15px 0;
+  }
+
   .nav-links{
     display:none;
+  }
+
+  .logo{
+    font-size:24px;
   }
 
   .hero{
@@ -643,7 +780,7 @@ footer h3{
     padding:140px 0 60px;
   }
 
-  .amenity-grid,
+  .experience-highlight-grid,
   .experience-grid{
     grid-template-columns:1fr 1fr;
   }
@@ -696,7 +833,7 @@ footer h3{
     font-size:40px;
   }
 
-  .amenity-grid,
+  .experience-highlight-grid,
   .experience-grid{
     grid-template-columns:1fr;
   }
@@ -720,6 +857,12 @@ footer h3{
 
   .rating-number{
     font-size:52px;
+  }
+
+  .hero .whatsapp-btn,
+  .final-cta .whatsapp-btn{
+    width:100%;
+    max-width:320px;
   }
 
 }
@@ -791,44 +934,10 @@ Shrivardhan, Diveagar and the beautiful coastal destinations
 of Maharashtra.
 </p>
 
-<a class="btn" href="tel:+919270740015">
-Call Zista Inn
+<a class="btn whatsapp-btn" href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%E2%80%99d%20like%20to%20check%20availability%20and%20book%20a%20stay.%0AName%3A%0ACheck-in%20date%3A%0ACheck-out%20date%3A%0ANumber%20of%20guests%3A%0ARoom%20preference%3A%20Deluxe%20%2F%20Family%20Room%0APlease%20let%20me%20know%20availability%20and%20the%20best%20available%20rate.%20Thank%20you!" target="_blank" rel="noopener">
+<span class="whatsapp-icon">◉</span>
+BOOK NOW ON WHATSAPP
 </a>
-
-</div>
-
-</section>
-
-
-<!-- AMENITIES -->
-
-<section class="amenities">
-
-<div class="container">
-
-<div class="amenity-grid">
-
-<div class="amenity">
-<div class="amenity-number">01</div>
-<h3>Swimming Pool</h3>
-</div>
-
-<div class="amenity">
-<div class="amenity-number">02</div>
-<h3>Near Aravi Beach</h3>
-</div>
-
-<div class="amenity">
-<div class="amenity-number">03</div>
-<h3>Deluxe Rooms</h3>
-</div>
-
-<div class="amenity">
-<div class="amenity-number">04</div>
-<h3>Family Stay</h3>
-</div>
-
-</div>
 
 </div>
 
@@ -923,7 +1032,8 @@ A comfortable room option for guests looking for a
 relaxed stay near Aravi Beach and Shrivardhan.
 </p>
 
-<a class="btn" href="tel:+919270740015">
+<a class="btn whatsapp-btn" href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%E2%80%99d%20like%20to%20check%20availability%20and%20book%20a%20stay.%0AName%3A%0ACheck-in%20date%3A%0ACheck-out%20date%3A%0ANumber%20of%20guests%3A%0ARoom%20preference%3A%20Deluxe%20Room%0APlease%20let%20me%20know%20availability%20and%20the%20best%20available%20rate.%20Thank%20you!" target="_blank" rel="noopener">
+<span class="whatsapp-icon">◉</span>
 Check Availability
 </a>
 
@@ -955,7 +1065,8 @@ A family-friendly room designed for guests travelling
 together and looking for a comfortable Konkan getaway.
 </p>
 
-<a class="btn" href="tel:+919270740015">
+<a class="btn whatsapp-btn" href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%E2%80%99d%20like%20to%20check%20availability%20and%20book%20a%20stay.%0AName%3A%0ACheck-in%20date%3A%0ACheck-out%20date%3A%0ANumber%20of%20guests%3A%0ARoom%20preference%3A%20Family%20Room%20with%20Balcony%0APlease%20let%20me%20know%20availability%20and%20the%20best%20available%20rate.%20Thank%20you!" target="_blank" rel="noopener">
+<span class="whatsapp-icon">◉</span>
 Check Availability
 </a>
 
@@ -1039,7 +1150,7 @@ the Konkan coast.
 
 <div class="container">
 
-<div class="section-heading">
+<div class="experience-heading">
 
 <div class="eyebrow">
 The Zista Experience
@@ -1050,6 +1161,42 @@ Simple moments worth staying for.
 </h2>
 
 </div>
+
+
+<!-- EXPERIENCE HIGHLIGHTS -->
+
+<div class="experience-highlights">
+
+<div class="container">
+
+<div class="experience-highlight-grid">
+
+<div class="experience-highlight">
+<div class="experience-highlight-number">01</div>
+<h3>Swimming Pool</h3>
+</div>
+
+<div class="experience-highlight">
+<div class="experience-highlight-number">02</div>
+<h3>Near Aravi Beach</h3>
+</div>
+
+<div class="experience-highlight">
+<div class="experience-highlight-number">03</div>
+<h3>Deluxe Rooms</h3>
+</div>
+
+<div class="experience-highlight">
+<div class="experience-highlight-number">04</div>
+<h3>Family Stay</h3>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 
 <div class="experience-grid">
 
@@ -1335,8 +1482,9 @@ Book your stay at Zista Inn and discover Aravi Beach,
 Shrivardhan and the beautiful Konkan coast.
 </p>
 
-<a class="btn" href="tel:+919270740015">
-Call Zista Inn
+<a class="btn whatsapp-btn" href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%E2%80%99d%20like%20to%20check%20availability%20and%20book%20a%20stay.%0AName%3A%0ACheck-in%20date%3A%0ACheck-out%20date%3A%0ANumber%20of%20guests%3A%0ARoom%20preference%3A%20Deluxe%20%2F%20Family%20Room%0APlease%20let%20me%20know%20availability%20and%20the%20best%20available%20rate.%20Thank%20you!" target="_blank" rel="noopener">
+<span class="whatsapp-icon">◉</span>
+BOOK NOW ON WHATSAPP
 </a>
 
 </div>
@@ -1370,6 +1518,25 @@ Walwati, Aravi–Diveagar Road,<br />
 Shrivardhan, Maharashtra 402113, India
 </p>
 
+<div class="social-links">
+
+<a class="social-link" href="https://www.instagram.com/zistainn?igsh=bmFqZGUwaGExMXZ3" target="_blank" rel="noopener">
+<span class="social-icon">◎</span>
+Instagram
+</a>
+
+<a class="social-link" href="https://www.facebook.com/share/1BhYToV7wS/" target="_blank" rel="noopener">
+<span class="social-icon">f</span>
+Facebook
+</a>
+
+<a class="social-link" href="https://share.google/GW1mOkqj3hnOy2YTU" target="_blank" rel="noopener">
+<span class="social-icon">★</span>
+Google
+</a>
+
+</div>
+
 </div>
 
 
@@ -1401,16 +1568,16 @@ Contact
 
 <div class="footer-links">
 
+<a href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%E2%80%99d%20like%20to%20check%20availability%20and%20book%20a%20stay.%0AName%3A%0ACheck-in%20date%3A%0ACheck-out%20date%3A%0ANumber%20of%20guests%3A%0ARoom%20preference%3A%20Deluxe%20%2F%20Family%20Room%0APlease%20let%20me%20know%20availability%20and%20the%20best%20available%20rate.%20Thank%20you!" target="_blank" rel="noopener">
+BOOK NOW ON WHATSAPP
+</a>
+
 <a href="tel:+919270740015">
 +91 92707 40015
 </a>
 
-<a href="https://wa.me/919270740015">
-WhatsApp
-</a>
-
-<a href="https://share.google/VzhVr40SPUPYBJoNz" target="_blank" rel="noopener">
-Google Reviews
+<a href="https://share.google/GW1mOkqj3hnOy2YTU" target="_blank" rel="noopener">
+Google Business
 </a>
 
 </div>
