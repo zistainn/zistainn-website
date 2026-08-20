@@ -72,9 +72,6 @@
   --gold:#b28b58;
   --muted:#687168;
   --line:#ddd8cc;
-  --whatsapp:#25D366;
-  --facebook:#1877F2;
-  --instagram:#E4405F;
 }
 
 *{
@@ -111,7 +108,7 @@ a{
   letter-spacing:3px;
   text-transform:uppercase;
   color:var(--gold);
-  margin-bottom:14px;
+  margin-bottom:12px;
 }
 
 h1,h2,h3{
@@ -144,7 +141,7 @@ p{
   padding:15px 25px;
   font-family:Arial,sans-serif;
   font-size:12px;
-  font-weight:600;
+  font-weight:700;
   letter-spacing:1.5px;
   text-transform:uppercase;
   transition:.25s;
@@ -171,7 +168,7 @@ header{
 nav{
   width:min(1200px,92%);
   margin:auto;
-  padding:20px 0;
+  padding:22px 0;
   display:flex;
   justify-content:space-between;
   align-items:center;
@@ -184,7 +181,7 @@ nav{
 
 .logo img{
   width:auto;
-  height:58px;
+  height:54px;
   max-width:190px;
   object-fit:contain;
   display:block;
@@ -195,10 +192,11 @@ nav{
   gap:28px;
   font-family:Arial,sans-serif;
   font-size:13px;
+  font-weight:600;
 }
 
 .nav-links a{
-  transition:.2s;
+  transition:.25s;
 }
 
 .nav-links a:hover{
@@ -242,7 +240,7 @@ nav{
 .hero-content{
   width:min(1160px,92%);
   margin:auto;
-  padding:160px 0 90px;
+  padding:160px 0 85px;
   position:relative;
   z-index:2;
 }
@@ -253,67 +251,32 @@ nav{
 
 .hero h1{
   max-width:850px;
-  margin-bottom:22px;
+  margin-bottom:20px;
 }
 
 .hero p{
   color:#f1f1ed;
   max-width:650px;
   font-size:18px;
-  margin-bottom:30px;
+  margin-bottom:28px;
 }
 
 .hero .btn{
-  background:var(--whatsapp);
-  color:white;
-}
-
-.hero .btn:hover{
-  background:#1faa53;
-}
-
-
-/* HIGHLIGHT STRIP */
-
-.amenities{
-  background:var(--green);
-  color:white;
-  padding:38px 0;
-}
-
-.amenity-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:25px;
-}
-
-.amenity{
-  text-align:center;
-}
-
-.amenity-number{
-  color:#d4b47e;
-  font-family:Arial,sans-serif;
-  font-size:11px;
-  letter-spacing:2px;
-}
-
-.amenity h3{
-  font-size:18px;
-  margin-top:6px;
+  background:white;
+  color:var(--green);
 }
 
 
 /* INTRO */
 
 .intro{
-  padding:120px 0;
+  padding:85px 0 75px;
 }
 
 .intro-grid{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:70px;
+  gap:65px;
   align-items:center;
 }
 
@@ -331,7 +294,7 @@ nav{
 }
 
 .intro-copy p{
-  margin:25px 0;
+  margin:20px 0;
   max-width:560px;
 }
 
@@ -339,24 +302,28 @@ nav{
 /* ROOMS */
 
 .rooms{
-  padding:100px 0;
+  padding:80px 0;
   background:var(--cream);
 }
 
 .section-heading{
   max-width:760px;
-  margin-bottom:55px;
+  margin-bottom:42px;
 }
 
 .section-heading p{
-  margin-top:18px;
+  margin-top:14px;
 }
 
 .room-card{
   display:grid;
   grid-template-columns:1.1fr .9fr;
   background:white;
-  margin-bottom:40px;
+  margin-bottom:30px;
+}
+
+.room-card:last-child{
+  margin-bottom:0;
 }
 
 .room-photo{
@@ -373,36 +340,32 @@ nav{
 }
 
 .room-content{
-  padding:55px;
+  padding:48px;
   display:flex;
   flex-direction:column;
   justify-content:center;
 }
 
 .room-content p{
-  margin:20px 0;
-}
-
-.room-content .btn{
-  align-self:flex-start;
+  margin:18px 0 24px;
 }
 
 
 /* LOCATION */
 
 .about-location{
-  padding:115px 0;
+  padding:90px 0;
 }
 
 .location-grid{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:70px;
+  gap:65px;
   align-items:start;
 }
 
 .location-copy p{
-  margin:20px 0;
+  margin:17px 0;
 }
 
 .location-list{
@@ -410,7 +373,7 @@ nav{
 }
 
 .location-item{
-  padding:22px 0;
+  padding:19px 0;
   border-bottom:1px solid var(--line);
 }
 
@@ -429,10 +392,53 @@ nav{
 }
 
 
+/* POPULAR AMENITIES */
+
+.amenities{
+  padding:70px 0;
+  background:var(--green);
+  color:white;
+}
+
+.amenities-heading{
+  text-align:center;
+  margin-bottom:25px;
+}
+
+.amenities-heading .eyebrow{
+  color:#d4b47e;
+}
+
+.amenities-heading h2{
+  color:white;
+  font-size:clamp(32px,4vw,48px);
+}
+
+.amenities-list{
+  max-width:1000px;
+  margin:auto;
+  text-align:center;
+  font-family:Arial,sans-serif;
+  font-size:14px;
+  line-height:2.2;
+  color:#e5ebe5;
+}
+
+.amenities-list span{
+  display:inline;
+}
+
+.amenities-list span:not(:last-child)::after{
+  content:"  ·  ";
+  color:#d4b47e;
+  margin:0 5px;
+}
+
+
 /* EXPERIENCES */
 
 .experiences{
-  padding:110px 0;
+  padding:90px 0;
 }
 
 .experience-grid{
@@ -460,7 +466,7 @@ nav{
 }
 
 .experience-content{
-  padding:25px;
+  padding:23px;
 }
 
 .experience-content h3{
@@ -469,72 +475,18 @@ nav{
 }
 
 
-/* POPULAR AMENITIES */
-
-.popular-amenities{
-  padding:110px 0;
-  background:var(--cream);
-}
-
-.amenities-heading{
-  max-width:760px;
-  margin-bottom:45px;
-}
-
-.popular-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:16px;
-}
-
-.popular-item{
-  background:white;
-  border:1px solid var(--line);
-  padding:24px 22px;
-  display:flex;
-  align-items:center;
-  gap:15px;
-  min-height:72px;
-  transition:.2s;
-}
-
-.popular-item:hover{
-  transform:translateY(-2px);
-  box-shadow:0 8px 20px rgba(0,0,0,.05);
-}
-
-.popular-icon{
-  width:38px;
-  height:38px;
-  border-radius:50%;
-  background:var(--green);
-  color:white;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-family:Arial,sans-serif;
-  font-size:16px;
-  flex-shrink:0;
-}
-
-.popular-item strong{
-  font-family:Arial,sans-serif;
-  font-size:14px;
-  font-weight:600;
-}
-
-
 /* EXPLORE */
 
 .explore{
-  padding:110px 0;
+  padding:90px 0;
+  background:var(--cream);
 }
 
 .explore-photo{
   min-height:500px;
   background:#b6bcb1;
   overflow:hidden;
-  margin-bottom:40px;
+  margin-bottom:35px;
 }
 
 .explore-photo img{
@@ -544,32 +496,11 @@ nav{
   object-fit:cover;
 }
 
-.places{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  border-top:1px solid var(--line);
-}
-
-.place{
-  padding:25px 10px;
-  border-right:1px solid var(--line);
-  text-align:center;
-}
-
-.place:last-child{
-  border-right:0;
-}
-
-.place strong{
-  font-size:16px;
-  font-weight:400;
-}
-
 
 /* GALLERY */
 
 .gallery{
-  padding:110px 0;
+  padding:90px 0;
 }
 
 .gallery-grid{
@@ -599,7 +530,7 @@ nav{
 /* REVIEWS */
 
 .reviews{
-  padding:110px 0;
+  padding:90px 0;
   background:var(--cream);
 }
 
@@ -608,12 +539,12 @@ nav{
   grid-template-columns:1fr 1fr;
   gap:30px;
   align-items:center;
-  margin-top:30px;
+  margin-top:25px;
 }
 
 .rating-box{
   background:white;
-  padding:45px;
+  padding:40px;
   text-align:center;
   border:1px solid var(--line);
 }
@@ -638,21 +569,21 @@ nav{
 }
 
 .review-message{
-  padding:35px;
+  padding:30px;
 }
 
 .review-message p{
   font-family:Georgia,serif;
   font-size:20px;
   color:var(--dark);
-  margin-bottom:25px;
+  margin-bottom:22px;
 }
 
 
 /* CTA */
 
 .final-cta{
-  padding:130px 20px;
+  padding:110px 20px;
   text-align:center;
   background:var(--green);
   color:white;
@@ -661,78 +592,12 @@ nav{
 .final-cta p{
   color:#dfe5df;
   max-width:600px;
-  margin:20px auto 30px;
+  margin:18px auto 28px;
 }
 
 .final-cta .btn{
-  background:var(--whatsapp);
-  color:white;
-}
-
-.final-cta .btn:hover{
-  background:#1faa53;
-}
-
-
-/* SOCIAL MEDIA */
-
-.social-section{
-  padding:85px 0;
-  background:#fbfaf7;
-  text-align:center;
-}
-
-.social-section h2{
-  font-size:42px;
-  margin-bottom:12px;
-}
-
-.social-section > .container > p{
-  max-width:600px;
-  margin:0 auto 35px;
-}
-
-.social-links{
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:14px;
-}
-
-.social-btn{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:10px;
-  min-width:180px;
-  padding:14px 20px;
   background:white;
-  border:1px solid var(--line);
-  font-family:Arial,sans-serif;
-  font-size:13px;
-  font-weight:600;
-  transition:.25s;
-}
-
-.social-btn:hover{
-  transform:translateY(-3px);
-  box-shadow:0 8px 20px rgba(0,0,0,.08);
-}
-
-.social-icon{
-  font-size:18px;
-}
-
-.social-instagram:hover{
-  color:var(--instagram);
-}
-
-.social-facebook:hover{
-  color:var(--facebook);
-}
-
-.social-google:hover{
-  color:#4285F4;
+  color:var(--green);
 }
 
 
@@ -741,7 +606,7 @@ nav{
 footer{
   background:#1d2921;
   color:white;
-  padding:60px 0 30px;
+  padding:55px 0 28px;
 }
 
 .footer-grid{
@@ -752,7 +617,7 @@ footer{
 
 footer p{
   color:#b9c0ba;
-  margin-top:10px;
+  margin-top:9px;
 }
 
 footer h3{
@@ -762,57 +627,48 @@ footer h3{
 .footer-links{
   display:flex;
   flex-direction:column;
-  gap:12px;
+  gap:10px;
   font-family:Arial,sans-serif;
   font-size:15px;
-}
-
-.footer-links a{
-  transition:.2s;
-}
-
-.footer-links a:hover{
-  color:#e0c69b;
-}
-
-.footer-nav{
-  font-size:16px;
   font-weight:700;
 }
 
-.footer-social{
-  margin-top:22px;
+.footer-links a{
+  transition:.25s;
+}
+
+.footer-links a:hover{
+  color:#d4b47e;
+}
+
+.social-title{
+  margin-bottom:4px;
+}
+
+.social-links{
   display:flex;
+  flex-direction:column;
   gap:10px;
-  flex-wrap:wrap;
-}
-
-.footer-social a{
   font-family:Arial,sans-serif;
-  font-size:12px;
-  border:1px solid #566158;
-  padding:9px 12px;
-  transition:.2s;
+  font-size:15px;
+  font-weight:700;
 }
 
-.footer-social a:hover{
-  background:#33483b;
+.social-links a{
+  transition:.25s;
+}
+
+.social-links a:hover{
+  color:#d4b47e;
 }
 
 .copyright{
   border-top:1px solid #3b463f;
-  margin-top:45px;
-  padding-top:20px;
+  margin-top:40px;
+  padding-top:18px;
   font-family:Arial,sans-serif;
   font-size:11px;
   color:#9ea69f;
-}
-
-
-/* MOBILE STICKY BOOKING BAR */
-
-.mobile-booking{
-  display:none;
 }
 
 
@@ -820,36 +676,68 @@ footer h3{
 
 @media(max-width:850px){
 
-  header{
-    background:rgba(20,30,24,.28);
-  }
-
-  nav{
-    padding:14px 0;
-  }
-
-  .logo img{
-    height:48px;
-    max-width:155px;
-  }
-
   .nav-links{
     display:none;
   }
 
+  nav{
+    padding:17px 0;
+  }
+
+  .logo img{
+    height:47px;
+    max-width:165px;
+  }
+
   .hero{
-    min-height:82vh;
+    min-height:80vh;
   }
 
   .hero-content{
-    padding:140px 0 90px;
+    padding:135px 0 55px;
   }
 
-  .hero p{
-    font-size:16px;
+  .intro{
+    padding:65px 0 55px;
   }
 
-  .amenity-grid,
+  .rooms{
+    padding:60px 0;
+  }
+
+  .about-location{
+    padding:65px 0;
+  }
+
+  .amenities{
+    padding:55px 0;
+  }
+
+  .experiences{
+    padding:65px 0;
+  }
+
+  .explore{
+    padding:65px 0;
+  }
+
+  .gallery{
+    padding:65px 0;
+  }
+
+  .reviews{
+    padding:65px 0;
+  }
+
+  .final-cta{
+    padding:85px 20px;
+  }
+
+  .amenities-list{
+    font-size:13px;
+    line-height:2.15;
+  }
+
   .experience-grid{
     grid-template-columns:1fr 1fr;
   }
@@ -864,6 +752,7 @@ footer h3{
 
   .photo-placeholder{
     min-height:360px;
+    margin-bottom:35px;
   }
 
   .photo-placeholder img{
@@ -879,71 +768,12 @@ footer h3{
   }
 
   .room-content{
-    padding:40px 25px;
-  }
-
-  .room-content .btn{
-    width:100%;
-    text-align:center;
-  }
-
-  .places{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .popular-grid{
-    grid-template-columns:1fr 1fr;
+    padding:38px 25px;
   }
 
   .footer-grid{
     grid-template-columns:1fr;
     gap:35px;
-  }
-
-  .social-section{
-    padding:70px 0;
-  }
-
-  .social-links{
-    display:grid;
-    grid-template-columns:1fr;
-  }
-
-  .social-btn{
-    width:100%;
-  }
-
-  .mobile-booking{
-    display:block;
-    position:fixed;
-    left:0;
-    right:0;
-    bottom:0;
-    z-index:100;
-    padding:10px 12px;
-    background:rgba(29,41,33,.96);
-    box-shadow:0 -5px 20px rgba(0,0,0,.15);
-  }
-
-  .mobile-booking a{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:9px;
-    width:100%;
-    padding:13px 15px;
-    background:var(--whatsapp);
-    color:white;
-    font-family:Arial,sans-serif;
-    font-size:13px;
-    font-weight:700;
-    letter-spacing:1px;
-    text-transform:uppercase;
-    border-radius:3px;
-  }
-
-  body{
-    padding-bottom:62px;
   }
 }
 
@@ -958,30 +788,50 @@ footer h3{
     font-size:40px;
   }
 
-  .hero-content{
-    padding-bottom:100px;
+  .hero p{
+    font-size:16px;
   }
 
-  .amenity-grid,
-  .experience-grid{
-    grid-template-columns:1fr 1fr;
-    gap:10px;
+  .intro{
+    padding:55px 0 45px;
+  }
+
+  .rooms{
+    padding:55px 0;
+  }
+
+  .section-heading{
+    margin-bottom:32px;
+  }
+
+  .about-location{
+    padding:55px 0;
   }
 
   .amenities{
-    padding:28px 0;
+    padding:48px 0;
   }
 
-  .amenity{
-    padding:10px 4px;
+  .amenities-list{
+    font-size:12.5px;
+    line-height:2.2;
   }
 
-  .amenity h3{
-    font-size:15px;
+  .experience-grid{
+    grid-template-columns:1fr;
   }
 
-  .amenity-number{
-    font-size:10px;
+  .experience-photo,
+  .experience-photo img{
+    height:250px;
+  }
+
+  .explore-photo{
+    min-height:360px;
+  }
+
+  .explore-photo img{
+    height:360px;
   }
 
   .gallery-grid{
@@ -993,33 +843,21 @@ footer h3{
     grid-row:span 1;
   }
 
-  .places{
-    grid-template-columns:1fr;
-  }
-
-  .place{
-    border-right:0;
-  }
-
-  .popular-grid{
-    grid-template-columns:1fr;
-  }
-
-  .popular-item{
-    min-height:66px;
-    padding:18px;
-  }
-
   .rating-number{
     font-size:52px;
   }
 
-  .social-section h2{
-    font-size:38px;
+  .rating-box{
+    padding:35px 20px;
   }
 
-  footer{
-    padding-bottom:30px;
+  .review-message{
+    padding:25px 5px;
+  }
+
+  .logo img{
+    height:43px;
+    max-width:150px;
   }
 
 }
@@ -1034,8 +872,8 @@ footer h3{
 
 <nav>
 
-<a href="#top" class="logo" aria-label="Zista Inn Home">
-<img src="Zista Inn logo.jpg" alt="Zista Inn">
+<a href="#top" class="logo">
+<img src="Zista Inn logo.png" alt="Zista Inn">
 </a>
 
 <div class="nav-links">
@@ -1091,44 +929,13 @@ Shrivardhan, Diveagar and the beautiful coastal destinations
 of Maharashtra.
 </p>
 
-<a class="btn" href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%E2%80%99d%20like%20to%20check%20availability%20and%20book%20a%20stay.%0AName%3A%0ACheck-in%20date%3A%0ACheck-out%20date%3A%0ANumber%20of%20guests%3A%0ARoom%20preference%3A%20Deluxe%20%2F%20Family%20Room%0APlease%20let%20me%20know%20availability%20and%20the%20best%20available%20rate.%20Thank%20you!" target="_blank" rel="noopener">
-Book on WhatsApp
+<a
+  class="btn"
+  href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%27d%20like%20to%20check%20availability%20and%20book%20a%20stay.%0AName%3A%0ACheck-in%20date%3A%0ACheck-out%20date%3A%0ANumber%20of%20guests%3A%0ARoom%20preference%3A%20Deluxe%20%2F%20Family%20Room%0APlease%20let%20me%20know%20availability%20and%20the%20best%20available%20rate.%20Thank%20you%21"
+  target="_blank"
+  rel="noopener">
+  Book Now
 </a>
-
-</div>
-
-</section>
-
-
-<!-- HIGHLIGHTS -->
-
-<section class="amenities">
-
-<div class="container">
-
-<div class="amenity-grid">
-
-<div class="amenity">
-<div class="amenity-number">01</div>
-<h3>Swimming Pool</h3>
-</div>
-
-<div class="amenity">
-<div class="amenity-number">02</div>
-<h3>BBQ on Demand</h3>
-</div>
-
-<div class="amenity">
-<div class="amenity-number">03</div>
-<h3>Badminton</h3>
-</div>
-
-<div class="amenity">
-<div class="amenity-number">04</div>
-<h3>Big Lawn</h3>
-</div>
-
-</div>
 
 </div>
 
@@ -1223,8 +1030,12 @@ A comfortable room option for guests looking for a
 relaxed stay near Aravi Beach and Shrivardhan.
 </p>
 
-<a class="btn" href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%E2%80%99d%20like%20to%20check%20availability%20for%20a%20Deluxe%20Room.%0AName%3A%0ACheck-in%20date%3A%0ACheck-out%20date%3A%0ANumber%20of%20guests%3A%0APlease%20let%20me%20know%20availability%20and%20the%20best%20available%20rate.%20Thank%20you!" target="_blank" rel="noopener">
-Check Availability
+<a
+  class="btn"
+  href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%27d%20like%20to%20check%20availability%20and%20book%20a%20stay.%0AName%3A%0ACheck-in%20date%3A%0ACheck-out%20date%3A%0ANumber%20of%20guests%3A%0ARoom%20preference%3A%20Deluxe%20Room%0APlease%20let%20me%20know%20availability%20and%20the%20best%20available%20rate.%20Thank%20you%21"
+  target="_blank"
+  rel="noopener">
+  Book Now
 </a>
 
 </div>
@@ -1255,8 +1066,12 @@ A family-friendly room designed for guests travelling
 together and looking for a comfortable Konkan getaway.
 </p>
 
-<a class="btn" href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%E2%80%99d%20like%20to%20check%20availability%20for%20the%20Family%20Room%20with%20Balcony.%0AName%3A%0ACheck-in%20date%3A%0ACheck-out%20date%3A%0ANumber%20of%20guests%3A%0APlease%20let%20me%20know%20availability%20and%20the%20best%20available%20rate.%20Thank%20you!" target="_blank" rel="noopener">
-Check Availability
+<a
+  class="btn"
+  href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%27d%20like%20to%20check%20availability%20and%20book%20a%20stay.%0AName%3A%0ACheck-in%20date%3A%0ACheck-out%20date%3A%0ANumber%20of%20guests%3A%0ARoom%20preference%3A%20Family%20Room%0APlease%20let%20me%20know%20availability%20and%20the%20best%20available%20rate.%20Thank%20you%21"
+  target="_blank"
+  rel="noopener">
+  Book Now
 </a>
 
 </div>
@@ -1333,6 +1148,49 @@ the Konkan coast.
 </section>
 
 
+<!-- POPULAR AMENITIES -->
+
+<section class="amenities">
+
+<div class="container">
+
+<div class="amenities-heading">
+
+<div class="eyebrow">
+Zista Inn
+</div>
+
+<h2>
+Popular Amenities
+</h2>
+
+</div>
+
+<div class="amenities-list">
+
+<span>Wi-Fi</span>
+<span>Safe Parking Inside the Resort – Free</span>
+<span>Airport Shuttle – Chargeable</span>
+<span>Air Conditioning in All Rooms</span>
+<span>Complimentary Tea &amp; Coffee Sachets</span>
+<span>Hot Water Kettle</span>
+<span>Toiletries – Soap, Shampoo &amp; Dental Kit</span>
+<span>BBQ on Demand</span>
+<span>Badminton</span>
+<span>Bonfire</span>
+<span>Water Fountain</span>
+<span>Big Lawn</span>
+<span>Kids Play Area</span>
+<span>Projector / Movie Under Open Sky</span>
+<span>Convenience Store Nearby</span>
+
+</div>
+
+</div>
+
+</section>
+
+
 <!-- EXPERIENCE -->
 
 <section class="experiences" id="experience">
@@ -1348,11 +1206,6 @@ The Zista Experience
 <h2>
 Simple moments worth staying for.
 </h2>
-
-<p>
-Enjoy the spaces and experiences that make a stay at
-Zista Inn relaxed, comfortable and memorable.
-</p>
 
 </div>
 
@@ -1393,8 +1246,8 @@ Slow Down
 </h3>
 
 <p>
-Enjoy the big lawn, kids play area and the slower
-rhythm of a Konkan stay.
+Enjoy peaceful mornings and the slower rhythm
+of a Konkan stay.
 </p>
 
 </div>
@@ -1452,113 +1305,6 @@ beauty of the Konkan.
 </section>
 
 
-<!-- POPULAR AMENITIES -->
-
-<section class="popular-amenities">
-
-<div class="container">
-
-<div class="amenities-heading">
-
-<div class="eyebrow">
-Amenities at Zista Inn
-</div>
-
-<h2>
-Popular amenities
-</h2>
-
-<p>
-Everything you need for a comfortable and enjoyable
-stay at Zista Inn.
-</p>
-
-</div>
-
-<div class="popular-grid">
-
-<div class="popular-item">
-<div class="popular-icon">✓</div>
-<strong>Wi-Fi</strong>
-</div>
-
-<div class="popular-item">
-<div class="popular-icon">P</div>
-<strong>Safe Parking inside the resort — Free</strong>
-</div>
-
-<div class="popular-item">
-<div class="popular-icon">✈</div>
-<strong>Airport Shuttle — Chargable</strong>
-</div>
-
-<div class="popular-item">
-<div class="popular-icon">❄</div>
-<strong>Air Conditioning in all rooms</strong>
-</div>
-
-<div class="popular-item">
-<div class="popular-icon">☕</div>
-<strong>Complimentary Tea &amp; Coffee Sachets in Room</strong>
-</div>
-
-<div class="popular-item">
-<div class="popular-icon">♨</div>
-<strong>Hot Water Kettle</strong>
-</div>
-
-<div class="popular-item">
-<div class="popular-icon">✓</div>
-<strong>Toiletries — Soap, Shampoo &amp; Dental Kit</strong>
-</div>
-
-<div class="popular-item">
-<div class="popular-icon">🔥</div>
-<strong>Bonfire</strong>
-</div>
-
-<div class="popular-item">
-<div class="popular-icon">🍖</div>
-<strong>BBQ on Demand</strong>
-</div>
-
-<div class="popular-item">
-<div class="popular-icon">🏸</div>
-<strong>Badminton</strong>
-</div>
-
-<div class="popular-item">
-<div class="popular-icon">🎬</div>
-<strong>Projector &amp; Movie Under Open Sky</strong>
-</div>
-
-<div class="popular-item">
-<div class="popular-icon">🌿</div>
-<strong>Big Lawn</strong>
-</div>
-
-<div class="popular-item">
-<div class="popular-icon">💧</div>
-<strong>Water Fountain</strong>
-</div>
-
-<div class="popular-item">
-<div class="popular-icon">🧒</div>
-<strong>Kids Play Area</strong>
-</div>
-
-<div class="popular-item">
-<div class="popular-icon">🛒</div>
-<strong>Convenience Store Beside the Resort</strong>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
 <!-- EXPLORE -->
 
 <section class="explore" id="explore">
@@ -1584,26 +1330,6 @@ coastal destinations around Shrivardhan.
 
 <div class="explore-photo">
 <img src="Kokan Coastal.jpeg" alt="Konkan coast near Zista Inn">
-</div>
-
-<div class="places">
-
-<div class="place">
-<strong>Aravi Beach</strong>
-</div>
-
-<div class="place">
-<strong>Shrivardhan</strong>
-</div>
-
-<div class="place">
-<strong>Diveagar</strong>
-</div>
-
-<div class="place">
-<strong>Harihareshwar</strong>
-</div>
-
 </div>
 
 </div>
@@ -1715,8 +1441,12 @@ See genuine guest experiences and read all reviews
 directly on Google.
 </p>
 
-<a class="btn" href="https://share.google/GW1mOkqj3hnOy2YTU" target="_blank" rel="noopener">
-Google Reviews
+<a
+  class="btn"
+  href="https://share.google/GW1mOkqj3hnOy2YTU"
+  target="_blank"
+  rel="noopener">
+  Google Reviews
 </a>
 
 </div>
@@ -1747,66 +1477,17 @@ Book your stay at Zista Inn and discover Aravi Beach,
 Shrivardhan and the beautiful Konkan coast.
 </p>
 
-<a class="btn" href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%E2%80%99d%20like%20to%20check%20availability%20and%20book%20a%20stay.%0AName%3A%0ACheck-in%20date%3A%0ACheck-out%20date%3A%0ANumber%20of%20guests%3A%0ARoom%20preference%3A%20Deluxe%20%2F%20Family%20Room%0APlease%20let%20me%20know%20availability%20and%20the%20best%20available%20rate.%20Thank%20you!" target="_blank" rel="noopener">
-Book on WhatsApp
+<a
+  class="btn"
+  href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%27d%20like%20to%20check%20availability%20and%20book%20a%20stay.%0AName%3A%0ACheck-in%20date%3A%0ACheck-out%20date%3A%0ANumber%20of%20guests%3A%0ARoom%20preference%3A%20Deluxe%20%2F%20Family%20Room%0APlease%20let%20me%20know%20availability%20and%20the%20best%20available%20rate.%20Thank%20you%21"
+  target="_blank"
+  rel="noopener">
+  Book Now
 </a>
 
 </div>
 
 </section>
-
-
-<!-- SOCIAL MEDIA -->
-
-<section class="social-section">
-
-<div class="container">
-
-<div class="eyebrow">
-Stay Connected
-</div>
-
-<h2>
-Follow Zista Inn
-</h2>
-
-<p>
-See our latest property updates, Konkan moments and
-guest experiences on social media.
-</p>
-
-<div class="social-links">
-
-<a class="social-btn social-instagram"
-   href="https://www.instagram.com/zistainn?igsh=bmFqZGUwaGExMXZ3"
-   target="_blank"
-   rel="noopener">
-<span class="social-icon">◎</span>
-<span>Follow on Instagram</span>
-</a>
-
-<a class="social-btn social-facebook"
-   href="https://www.facebook.com/share/1BhYToV7wS/"
-   target="_blank"
-   rel="noopener">
-<span class="social-icon">f</span>
-<span>Follow on Facebook</span>
-</a>
-
-<a class="social-btn social-google"
-   href="https://share.google/GW1mOkqj3hnOy2YTU"
-   target="_blank"
-   rel="noopener">
-<span class="social-icon">★</span>
-<span>Google Reviews</span>
-</a>
-
-</div>
-
-</div>
-
-</section>
-
 
 </main>
 
@@ -1835,28 +1516,6 @@ Walwati, Aravi–Diveagar Road,<br />
 Shrivardhan, Maharashtra 402113, India
 </p>
 
-<div class="footer-social">
-
-<a href="https://www.instagram.com/zistainn?igsh=bmFqZGUwaGExMXZ3"
-   target="_blank"
-   rel="noopener">
-Instagram
-</a>
-
-<a href="https://www.facebook.com/share/1BhYToV7wS/"
-   target="_blank"
-   rel="noopener">
-Facebook
-</a>
-
-<a href="https://share.google/GW1mOkqj3hnOy2YTU"
-   target="_blank"
-   rel="noopener">
-Google
-</a>
-
-</div>
-
 </div>
 
 
@@ -1866,7 +1525,7 @@ Google
 Explore
 </h3>
 
-<div class="footer-links footer-nav">
+<div class="footer-links">
 
 <a href="#rooms">Rooms</a>
 <a href="#location">Location</a>
@@ -1882,26 +1541,31 @@ Explore
 
 <div>
 
-<h3>
-Contact
+<h3 class="social-title">
+Follow Us
 </h3>
 
-<div class="footer-links">
+<div class="social-links">
 
-<a href="tel:+919270740015">
-+91 92707 40015
+<a
+  href="https://www.instagram.com/zistainn?igsh=bmFqZGUwaGExMXZ3"
+  target="_blank"
+  rel="noopener">
+  Instagram
 </a>
 
-<a href="https://wa.me/919270740015"
-   target="_blank"
-   rel="noopener">
-WhatsApp
+<a
+  href="https://www.facebook.com/share/1BhYToV7wS/"
+  target="_blank"
+  rel="noopener">
+  Facebook
 </a>
 
-<a href="https://share.google/GW1mOkqj3hnOy2YTU"
-   target="_blank"
-   rel="noopener">
-Google Reviews
+<a
+  href="https://share.google/GW1mOkqj3hnOy2YTU"
+  target="_blank"
+  rel="noopener">
+  Google Reviews
 </a>
 
 </div>
@@ -1918,20 +1582,6 @@ Google Reviews
 </div>
 
 </footer>
-
-
-<!-- MOBILE BOOKING -->
-
-<div class="mobile-booking">
-
-<a href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%E2%80%99d%20like%20to%20check%20availability%20and%20book%20a%20stay.%0AName%3A%0ACheck-in%20date%3A%0ACheck-out%20date%3A%0ANumber%20of%20guests%3A%0ARoom%20preference%3A%20Deluxe%20%2F%20Family%20Room%0APlease%20let%20me%20know%20availability%20and%20the%20best%20available%20rate.%20Thank%20you!" target="_blank" rel="noopener">
-
-<span>💬</span>
-Book on WhatsApp
-
-</a>
-
-</div>
 
 
 </body>
