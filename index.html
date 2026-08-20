@@ -72,8 +72,6 @@
   --gold:#b28b58;
   --muted:#687168;
   --line:#ddd8cc;
-  --whatsapp:#25D366;
-  --instagram:#E1306C;
 }
 
 *{
@@ -153,48 +151,6 @@ p{
 }
 
 
-/* BOOK NOW */
-
-.book-btn{
-  background:var(--whatsapp);
-  color:white;
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:9px;
-  padding:15px 24px;
-  font-family:Arial,sans-serif;
-  font-size:12px;
-  font-weight:700;
-  letter-spacing:1.2px;
-  text-transform:uppercase;
-  box-shadow:0 7px 20px rgba(37,211,102,.22);
-  animation:bookPulse 3.5s ease-in-out infinite;
-}
-
-.book-btn:hover{
-  background:#1ebe5d;
-  transform:translateY(-2px);
-}
-
-.whatsapp-icon{
-  font-size:17px;
-  line-height:1;
-}
-
-@keyframes bookPulse{
-  0%,70%,100%{
-    box-shadow:0 7px 20px rgba(37,211,102,.22);
-  }
-  78%{
-    box-shadow:0 7px 28px rgba(37,211,102,.50);
-  }
-  86%{
-    box-shadow:0 7px 20px rgba(37,211,102,.22);
-  }
-}
-
-
 /* NAVIGATION */
 
 header{
@@ -222,15 +178,9 @@ nav{
 
 .nav-links{
   display:flex;
-  gap:25px;
-  align-items:center;
+  gap:28px;
   font-family:Arial,sans-serif;
   font-size:13px;
-}
-
-.nav-book{
-  padding:10px 16px;
-  font-size:11px;
 }
 
 
@@ -271,13 +221,6 @@ nav{
   max-width:650px;
   font-size:18px;
   margin-bottom:30px;
-}
-
-.hero-buttons{
-  display:flex;
-  align-items:center;
-  gap:14px;
-  flex-wrap:wrap;
 }
 
 .hero .btn{
@@ -333,14 +276,14 @@ nav{
 .photo-placeholder{
   min-height:540px;
   background:#d8d5cc;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:#8a8b84;
-  font-family:Arial,sans-serif;
-  font-size:12px;
-  letter-spacing:2px;
-  text-transform:uppercase;
+  overflow:hidden;
+}
+
+.photo-placeholder img{
+  width:100%;
+  height:540px;
+  display:block;
+  object-fit:cover;
 }
 
 .intro-copy p{
@@ -375,14 +318,14 @@ nav{
 .room-photo{
   min-height:480px;
   background:#d8d5cc;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:#8a8b84;
-  font-family:Arial,sans-serif;
-  font-size:12px;
-  letter-spacing:2px;
-  text-transform:uppercase;
+  overflow:hidden;
+}
+
+.room-photo img{
+  width:100%;
+  height:480px;
+  display:block;
+  object-fit:cover;
 }
 
 .room-content{
@@ -458,14 +401,14 @@ nav{
 .experience-photo{
   height:280px;
   background:#d5d1c7;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:#8a8b84;
-  font-family:Arial,sans-serif;
-  font-size:11px;
-  letter-spacing:2px;
-  text-transform:uppercase;
+  overflow:hidden;
+}
+
+.experience-photo img{
+  width:100%;
+  height:280px;
+  display:block;
+  object-fit:cover;
 }
 
 .experience-content{
@@ -488,15 +431,15 @@ nav{
 .explore-photo{
   min-height:500px;
   background:#b6bcb1;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:#70776f;
-  font-family:Arial,sans-serif;
-  font-size:12px;
-  letter-spacing:2px;
-  text-transform:uppercase;
+  overflow:hidden;
   margin-bottom:40px;
+}
+
+.explore-photo img{
+  width:100%;
+  height:500px;
+  display:block;
+  object-fit:cover;
 }
 
 .places{
@@ -536,14 +479,14 @@ nav{
 
 .gallery-photo{
   background:#d4d0c5;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:#8a8b84;
-  font-family:Arial,sans-serif;
-  font-size:11px;
-  letter-spacing:2px;
-  text-transform:uppercase;
+  overflow:hidden;
+}
+
+.gallery-photo img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
 }
 
 .gallery-photo:first-child{
@@ -604,59 +547,6 @@ nav{
 }
 
 
-/* SOCIAL */
-
-.social-section{
-  padding:75px 0;
-  background:#fbfaf7;
-  text-align:center;
-}
-
-.social-section h2{
-  font-size:40px;
-}
-
-.social-section p{
-  max-width:600px;
-  margin:15px auto 30px;
-}
-
-.social-links{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:14px;
-  flex-wrap:wrap;
-}
-
-.social-link{
-  display:inline-flex;
-  align-items:center;
-  gap:9px;
-  padding:13px 20px;
-  border:1px solid var(--line);
-  background:white;
-  font-family:Arial,sans-serif;
-  font-size:12px;
-  letter-spacing:1px;
-  text-transform:uppercase;
-  transition:.25s;
-}
-
-.social-link:hover{
-  transform:translateY(-3px);
-  border-color:var(--gold);
-}
-
-.social-icon{
-  font-size:17px;
-}
-
-.instagram-link:hover{
-  color:var(--instagram);
-}
-
-
 /* CTA */
 
 .final-cta{
@@ -672,8 +562,9 @@ nav{
   margin:20px auto 30px;
 }
 
-.final-cta .book-btn{
-  margin-bottom:14px;
+.final-cta .btn{
+  background:white;
+  color:var(--green);
 }
 
 
@@ -706,24 +597,6 @@ footer h3{
   gap:10px;
   font-family:Arial,sans-serif;
   font-size:13px;
-}
-
-.footer-social{
-  margin-top:18px;
-  display:flex;
-  gap:10px;
-  flex-wrap:wrap;
-}
-
-.footer-social a{
-  font-family:Arial,sans-serif;
-  font-size:12px;
-  color:#dfe5df;
-  transition:.25s;
-}
-
-.footer-social a:hover{
-  color:white;
 }
 
 .copyright{
@@ -765,9 +638,20 @@ footer h3{
     gap:0;
   }
 
-  .photo-placeholder,
+  .photo-placeholder{
+    min-height:360px;
+  }
+
+  .photo-placeholder img{
+    height:360px;
+  }
+
   .room-photo{
     min-height:360px;
+  }
+
+  .room-photo img{
+    height:360px;
   }
 
   .room-content{
@@ -776,10 +660,6 @@ footer h3{
 
   .places{
     grid-template-columns:1fr 1fr;
-  }
-
-  .place{
-    border-bottom:1px solid var(--line);
   }
 
   .footer-grid{
@@ -796,17 +676,6 @@ footer h3{
 
   h2{
     font-size:40px;
-  }
-
-  .hero-buttons{
-    flex-direction:column;
-    align-items:stretch;
-  }
-
-  .hero-buttons .btn,
-  .hero-buttons .book-btn{
-    width:100%;
-    text-align:center;
   }
 
   .amenity-grid,
@@ -834,16 +703,6 @@ footer h3{
   .rating-number{
     font-size:52px;
   }
-
-  .social-links{
-    flex-direction:column;
-    width:100%;
-  }
-
-  .social-link{
-    width:min(320px,100%);
-    justify-content:center;
-  }
 }
 
 </style>
@@ -868,16 +727,6 @@ ZISTA INN
 <a href="#explore">Explore</a>
 <a href="#gallery">Gallery</a>
 <a href="#reviews">Reviews</a>
-
-<a
-class="book-btn nav-book"
-href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%27d%20like%20to%20check%20availability%20and%20book%20a%20stay.%0A%0AName%3A%0ACheck-in%20date%3A%0ACheck-out%20date%3A%0ANumber%20of%20guests%3A%0ARoom%20preference%3A%20Deluxe%20%2F%20Family%20Room%0A%0APlease%20let%20me%20know%20availability%20and%20the%20best%20available%20rate.%20Thank%20you!"
-target="_blank"
-rel="noopener"
->
-<span class="whatsapp-icon">◉</span>
-Book Now
-</a>
 
 </div>
 
@@ -910,23 +759,9 @@ Shrivardhan, Diveagar and the beautiful coastal destinations
 of Maharashtra.
 </p>
 
-<div class="hero-buttons">
-
-<a
-class="book-btn"
-href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%27d%20like%20to%20check%20availability%20and%20book%20a%20stay.%0A%0AName%3A%0ACheck-in%20date%3A%0ACheck-out%20date%3A%0ANumber%20of%20guests%3A%0ARoom%20preference%3A%20Deluxe%20%2F%20Family%20Room%0A%0APlease%20let%20me%20know%20availability%20and%20the%20best%20available%20rate.%20Thank%20you!"
-target="_blank"
-rel="noopener"
->
-<span class="whatsapp-icon">◉</span>
-Book Now on WhatsApp
-</a>
-
 <a class="btn" href="tel:+919270740015">
 Call Zista Inn
 </a>
-
-</div>
 
 </div>
 
@@ -975,7 +810,7 @@ Call Zista Inn
 <div class="container intro-grid">
 
 <div class="photo-placeholder">
-Zista Inn Property Photo
+<img src="property.png" alt="Zista Inn property near Aravi Beach">
 </div>
 
 <div class="intro-copy">
@@ -990,7 +825,7 @@ A quiet place to arrive.
 
 <p>
 Zista Inn is a comfortable resort in Walwati, near
-Aravi Beach and Shrivardhan in Maharashtra&#39;s Konkan region.
+Aravi Beach and Shrivardhan in Maharashtra's Konkan region.
 It is a peaceful base for guests looking to enjoy the coast,
 local beaches and the relaxed pace of Konkan.
 </p>
@@ -1033,10 +868,12 @@ Shrivardhan and the Konkan coast.
 </div>
 
 
+<!-- DELUXE ROOM -->
+
 <article class="room-card">
 
 <div class="room-photo">
-Deluxe Room Photo
+<img src="deluxe-room.jpeg" alt="Deluxe Room at Zista Inn">
 </div>
 
 <div class="room-content">
@@ -1063,10 +900,12 @@ Check Availability
 </article>
 
 
+<!-- FAMILY ROOM -->
+
 <article class="room-card">
 
 <div class="room-photo">
-Family Room with Balcony Photo
+<img src="deluxe-room-with-balcony.jpeg" alt="Deluxe Room with Balcony at Zista Inn">
 </div>
 
 <div class="room-content">
@@ -1125,7 +964,7 @@ Harihareshwar and the surrounding Konkan coastline.
 </p>
 
 <p>
-If you&#39;re searching for a resort near Aravi Beach, a hotel
+If you're searching for a resort near Aravi Beach, a hotel
 near Aravi Beach, or a comfortable stay around Shrivardhan,
 Zista Inn offers a relaxed place to return to after exploring
 the Konkan coast.
@@ -1185,7 +1024,7 @@ Simple moments worth staying for.
 <article class="experience-card">
 
 <div class="experience-photo">
-Pool Photo
+<img src="property.png" alt="Zista Inn property">
 </div>
 
 <div class="experience-content">
@@ -1207,7 +1046,7 @@ around the swimming pool.
 <article class="experience-card">
 
 <div class="experience-photo">
-Property Photo
+<img src="lawn-kids-play-area.jpeg" alt="Lawn and kids play area at Zista Inn">
 </div>
 
 <div class="experience-content">
@@ -1229,7 +1068,7 @@ of a Konkan stay.
 <article class="experience-card">
 
 <div class="experience-photo">
-Family Photo
+<img src="deluxe-room-2.jpeg" alt="Zista Inn Deluxe Room">
 </div>
 
 <div class="experience-content">
@@ -1251,7 +1090,7 @@ away from the usual rush.
 <article class="experience-card">
 
 <div class="experience-photo">
-Konkan Photo
+<img src="Kokan Coastal.jpeg" alt="Konkan coastal scenery near Zista Inn">
 </div>
 
 <div class="experience-content">
@@ -1300,7 +1139,7 @@ coastal destinations around Shrivardhan.
 </div>
 
 <div class="explore-photo">
-Konkan Coast Photo
+<img src="Kokan Coastal.jpeg" alt="Konkan coast near Zista Inn">
 </div>
 
 <div class="places">
@@ -1345,8 +1184,8 @@ See the place before you arrive.
 </h2>
 
 <p>
-Real photos of the rooms, property, pool and surrounding
-Konkan coast will be added here.
+Take a look at the rooms, property, lawn and beautiful
+Konkan surroundings at Zista Inn.
 </p>
 
 </div>
@@ -1354,27 +1193,27 @@ Konkan coast will be added here.
 <div class="gallery-grid">
 
 <div class="gallery-photo">
-Property Photo 01
+<img src="property.png" alt="Zista Inn property">
 </div>
 
 <div class="gallery-photo">
-Property Photo 02
+<img src="deluxe-room.jpeg" alt="Zista Inn Deluxe Room">
 </div>
 
 <div class="gallery-photo">
-Deluxe Room Photo
+<img src="deluxe-room-2.jpeg" alt="Zista Inn Deluxe Room interior">
 </div>
 
 <div class="gallery-photo">
-Pool Photo
+<img src="deluxe-room-with-balcony.jpeg" alt="Zista Inn room with balcony">
 </div>
 
 <div class="gallery-photo">
-Family Room Photo
+<img src="lawn-kids-play-area.jpeg" alt="Zista Inn lawn and kids play area">
 </div>
 
 <div class="gallery-photo">
-Konkan Photo
+<img src="Kokan Coastal.jpeg" alt="Konkan coast near Zista Inn">
 </div>
 
 </div>
@@ -1445,64 +1284,6 @@ Read All Google Reviews
 </section>
 
 
-<!-- SOCIAL -->
-
-<section class="social-section">
-
-<div class="container">
-
-<div class="eyebrow">
-Stay Connected
-</div>
-
-<h2>
-Follow Zista Inn.
-</h2>
-
-<p>
-See our latest photos, resort updates and guest experiences
-on Instagram and Facebook, or read our Google reviews.
-</p>
-
-<div class="social-links">
-
-<a
-class="social-link instagram-link"
-href="https://www.instagram.com/zistainn?igsh=bmFqZGUwaGExMXZ3"
-target="_blank"
-rel="noopener"
->
-<span class="social-icon">◎</span>
-Follow @zistainn
-</a>
-
-<a
-class="social-link"
-href="https://www.facebook.com/share/14p3QuyJTn7/"
-target="_blank"
-rel="noopener"
->
-<span class="social-icon">f</span>
-Facebook
-</a>
-
-<a
-class="social-link"
-href="https://share.google/VzhVr40SPUPYBJoNz"
-target="_blank"
-rel="noopener"
->
-<span class="social-icon">★</span>
-Google Reviews
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-
 <!-- FINAL CTA -->
 
 <section class="final-cta">
@@ -1521,18 +1302,6 @@ Slow down. Stay awhile.
 Book your stay at Zista Inn and discover Aravi Beach,
 Shrivardhan and the beautiful Konkan coast.
 </p>
-
-<a
-class="book-btn"
-href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%27d%20like%20to%20check%20availability%20and%20book%20a%20stay.%0A%0AName%3A%0ACheck-in%20date%3A%0ACheck-out%20date%3A%0ANumber%20of%20guests%3A%0ARoom%20preference%3A%20Deluxe%20%2F%20Family%20Room%0A%0APlease%20let%20me%20know%20availability%20and%20the%20best%20available%20rate.%20Thank%20you!"
-target="_blank"
-rel="noopener"
->
-<span class="whatsapp-icon">◉</span>
-Book Now on WhatsApp
-</a>
-
-<br><br>
 
 <a class="btn" href="tel:+919270740015">
 Call Zista Inn
@@ -1568,34 +1337,6 @@ on the Konkan coast.
 Walwati, Aravi–Diveagar Road,<br />
 Shrivardhan, Maharashtra 402113, India
 </p>
-
-<div class="footer-social">
-
-<a
-href="https://www.instagram.com/zistainn?igsh=bmFqZGUwaGExMXZ3"
-target="_blank"
-rel="noopener"
->
-Instagram
-</a>
-
-<a
-href="https://www.facebook.com/share/14p3QuyJTn7/"
-target="_blank"
-rel="noopener"
->
-Facebook
-</a>
-
-<a
-href="https://share.google/VzhVr40SPUPYBJoNz"
-target="_blank"
-rel="noopener"
->
-Google
-</a>
-
-</div>
 
 </div>
 
@@ -1649,19 +1390,11 @@ Contact
 +91 92707 40015
 </a>
 
-<a
-href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%27d%20like%20to%20check%20availability%20and%20book%20a%20stay."
-target="_blank"
-rel="noopener"
->
+<a href="https://wa.me/919270740015">
 WhatsApp
 </a>
 
-<a
-href="https://share.google/VzhVr40SPUPYBJoNz"
-target="_blank"
-rel="noopener"
->
+<a href="https://share.google/VzhVr40SPUPYBJoNz" target="_blank" rel="noopener">
 Google Reviews
 </a>
 
