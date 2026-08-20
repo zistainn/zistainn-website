@@ -184,27 +184,45 @@ nav{
 }
 
 
-/* HERO */
+/* HERO VIDEO */
 
 .hero{
   min-height:90vh;
+  position:relative;
   display:flex;
   align-items:flex-end;
   color:white;
+  overflow:hidden;
+  background:#344238;
+}
 
+.hero-video{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  z-index:0;
+}
+
+.hero-overlay{
+  position:absolute;
+  inset:0;
   background:
     linear-gradient(
       to top,
-      rgba(15,25,19,.75),
-      rgba(15,25,19,.08)
-    ),
-    #6f806f;
+      rgba(15,25,19,.82),
+      rgba(15,25,19,.20)
+    );
+  z-index:1;
 }
 
 .hero-content{
   width:min(1160px,92%);
   margin:auto;
   padding:160px 0 90px;
+  position:relative;
+  z-index:2;
 }
 
 .hero .eyebrow{
@@ -703,6 +721,7 @@ footer h3{
   .rating-number{
     font-size:52px;
   }
+
 }
 
 </style>
@@ -741,6 +760,19 @@ ZISTA INN
 <!-- HERO -->
 
 <section class="hero">
+
+<video
+  class="hero-video"
+  autoplay
+  muted
+  loop
+  playsinline
+  preload="metadata"
+  poster="property.png">
+  <source src="Kokan Darshan with Zista inn.mp4" type="video/mp4">
+</video>
+
+<div class="hero-overlay"></div>
 
 <div class="hero-content">
 
@@ -1024,7 +1056,7 @@ Simple moments worth staying for.
 <article class="experience-card">
 
 <div class="experience-photo">
-<img src="property.png" alt="Zista Inn property">
+<img src="Swimming pool.jpg" alt="Swimming pool at Zista Inn">
 </div>
 
 <div class="experience-content">
@@ -1349,29 +1381,12 @@ Explore
 
 <div class="footer-links">
 
-<a href="#rooms">
-Rooms
-</a>
-
-<a href="#location">
-Location
-</a>
-
-<a href="#experience">
-Experience
-</a>
-
-<a href="#explore">
-Explore Konkan
-</a>
-
-<a href="#gallery">
-Gallery
-</a>
-
-<a href="#reviews">
-Reviews
-</a>
+<a href="#rooms">Rooms</a>
+<a href="#location">Location</a>
+<a href="#experience">Experience</a>
+<a href="#explore">Explore Konkan</a>
+<a href="#gallery">Gallery</a>
+<a href="#reviews">Reviews</a>
 
 </div>
 
