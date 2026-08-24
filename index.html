@@ -6,14 +6,14 @@
 
 <title>Zista Inn | Boutique Resort Near Aravi Beach & Diveagar</title>
 
-<meta name="description" content="Stay at Zista Inn in Walwati near Aravi Beach, Shrivardhan & Diveagar. 6 Deluxe AC rooms, 1 Family room with balcony, swimming pool, badminton court, and lush lawns." />
+<meta name="description" content="Stay at Zista Inn in Walwati near Aravi Beach, Shrivardhan & Diveagar. 6 Deluxe AC rooms with private balconies, 1 Family room with balcony, swimming pool, badminton court, and lush lawns." />
 <meta name="robots" content="index, follow" />
 <link rel="canonical" href="https://zistaresort.in/" />
 
 <!-- Open Graph Meta -->
 <meta property="og:site_name" content="Zista Inn" />
 <meta property="og:title" content="Zista Inn | Beachside Resort Near Aravi Beach & Shrivardhan" />
-<meta property="og:description" content="Boutique stay in Walwati with private pool, badminton court, lush lawns, and AC rooms near Aravi Beach." />
+<meta property="og:description" content="Boutique stay in Walwati with private pool, balcony rooms, badminton court, lush lawns, and AC rooms near Aravi Beach." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://zistaresort.in/" />
 <meta property="og:image" content="https://zistaresort.in/property.png" />
@@ -360,7 +360,7 @@ nav {
   color: #e0c69b;
 }
 
-.hero h1 {
+h1 {
   max-width: 780px;
   margin-bottom: 8px;
   text-shadow: 0 2px 6px rgba(0,0,0,0.4);
@@ -522,11 +522,12 @@ nav {
   color: var(--dark);
 }
 
-/* SIGHTSEEING - 4 SIGHTS MATCHED */
+/* SIGHTSEEING - UNIFORM 4 CARDS */
 .sightseeing-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 12px;
+  align-items: stretch;
 }
 
 .sightseeing-card {
@@ -537,37 +538,47 @@ nav {
   box-shadow: var(--shadow);
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .sightseeing-photo {
   aspect-ratio: 16/10;
+  width: 100%;
   background: #eae5dc;
+  overflow: hidden;
+  flex-shrink: 0;
 }
 
 .sightseeing-body {
-  padding: 10px;
-  flex: 1;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .sightseeing-tag {
   display: inline-block;
+  align-self: flex-start;
   background: var(--gold-light);
   color: #8c5d22;
-  font-size: 10px;
+  font-size: 10.5px;
   font-weight: 700;
-  padding: 2px 5px;
+  padding: 2px 6px;
   border-radius: 3px;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
 }
 
 .sightseeing-body h4 {
-  font-size: 13.5px;
-  margin-bottom: 2px;
+  font-size: 14.5px;
+  margin-bottom: 3px;
+  color: var(--dark);
 }
 
 .sightseeing-body p {
-  font-size: 11px;
-  line-height: 1.35;
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--muted);
+  margin-top: auto;
 }
 
 /* DINING */
@@ -945,6 +956,18 @@ footer h3 {
     gap: 8px;
   }
 
+  .sightseeing-body {
+    padding: 8px;
+  }
+
+  .sightseeing-body h4 {
+    font-size: 13px;
+  }
+
+  .sightseeing-body p {
+    font-size: 11px;
+  }
+
   .dining-features {
     grid-template-columns: 1fr 1fr;
     gap: 6px;
@@ -978,8 +1001,8 @@ footer h3 {
 <!-- TOP DISCOUNT BAR -->
 <div class="top-promo-bar">
   <div class="container promo-container">
-    <span>✨ <strong>Direct Booking Offer:</strong> Flat <strong>10% OFF</strong> on Weekday Stays (Mon–Thu) &amp; 2+ Nights!</span>
-    <a href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%20would%20like%20to%20check%20room%20availability%20and%20rates%3A%0A%0A%E2%80%A2%20Name%3A%0A%E2%80%A2%20Check-in%20Date%3A%0A%E2%80%A2%20Number%20of%20Nights%3A%0A%E2%80%A2%20Number%20of%20Guests%3A%0A%E2%80%A2%20Room%20Preference%3A%20Deluxe%20AC%20%2F%20Family%20Room%0A%E2%80%A2%20Inquiring%20for%20Direct%20Offer%3A%20Yes" target="_blank" rel="noopener" class="promo-tag">Inquire Now ↗</a>
+    <span>✨ <strong>Direct Booking Offer:</strong> Flat <strong>10% OFF</strong> on Weekday Stays (Mon–Thu)</span>
+    <a href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%20would%20like%20to%20check%20room%20availability%20and%20rates%3A%0A%0A%E2%80%A2%20Name%3A%0A%E2%80%A2%20Check-in%20Date%3A%0A%E2%80%A2%20Number%20of%20Nights%3A%0A%E2%80%A2%20Number%20of%20Guests%3A%0A%E2%80%A2%20Room%20Preference%3A%20Deluxe%20AC%20%2F%20Family%20Room%0A%E2%80%A2%20Inquiring%20for%20Weekday%20Offer%3A%20Yes" target="_blank" rel="noopener" class="promo-tag">Inquire Now ↗</a>
   </div>
 </div>
 
@@ -1054,12 +1077,13 @@ footer h3 {
     <div class="eyebrow">Walwati · Near Aravi Beach · Shrivardhan</div>
     <h1>Your Relaxing Beachside Getaway at Zista Inn</h1>
     <p>
-      A peaceful boutique resort in Walwati featuring 6 Deluxe Rooms &amp; 1 Family Room. Outdoor pool, badminton court, lush lawn, and authentic Konkani dining nearby.
+      A peaceful boutique resort in Walwati featuring 6 Deluxe Rooms &amp; 1 Family Room with private balconies. Outdoor pool, badminton court, lush lawn, and authentic Konkani dining nearby.
     </p>
 
     <div class="hero-badges">
       <span class="hero-badge">⭐ 4.8 / 5 Reviews</span>
       <span class="hero-badge">🏊 Swimming Pool</span>
+      <span class="hero-badge">🌿 Private Balconies</span>
       <span class="hero-badge">🏸 Badminton Court</span>
       <span class="hero-badge">🌊 5 Mins to Aravi Beach</span>
     </div>
@@ -1118,26 +1142,28 @@ footer h3 {
     <!-- DELUXE ROOM -->
     <article class="room-card">
       <div class="room-photo">
-        <img src="deluxe-room.jpeg" alt="Deluxe AC Room at Zista Inn">
+        <img src="deluxe-room.jpeg" alt="Deluxe AC Room with Balcony at Zista Inn">
       </div>
       <div class="room-content">
         <div class="room-badge-row">
           <span class="room-inventory-tag">6 Rooms Available</span>
-          <span class="room-discount-badge">🏷️ 10% OFF on Weekday Stays</span>
+          <span class="room-discount-badge">🏷️ 10% OFF Weekdays (Mon–Thu)</span>
         </div>
-        <h3>Deluxe AC Room</h3>
-        <p>Restful accommodation tailored for couples or solo travelers.</p>
+        <h3>Deluxe AC Room with Balcony</h3>
+        <p>Restful accommodation tailored for couples or solo travelers featuring a private sit-out balcony.</p>
 
         <div class="room-specs">
           <div class="room-spec-item">👥 2 Adults + 1 Child</div>
+          <div class="room-spec-item">🌿 Private Balcony View</div>
           <div class="room-spec-item">❄️ Split Air Conditioning</div>
           <div class="room-spec-item">☕ Kettle &amp; Tea Sachets</div>
+          <div class="room-spec-item">🚿 Toiletries &amp; Dental Kit</div>
           <div class="room-spec-item">🏊 Free Pool Access</div>
         </div>
 
         <a
           class="btn"
-          href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%20would%20like%20to%20inquire%20for%20the%20Deluxe%20AC%20Room%3A%0A%0A%E2%80%A2%20Name%3A%0A%E2%80%A2%20Check-in%20Date%3A%0A%E2%80%A2%20Number%20of%20Nights%3A%0A%E2%80%A2%20Number%20of%20Guests%3A"
+          href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%20would%20like%20to%20inquire%20for%20the%20Deluxe%20AC%20Room%20with%20Balcony%3A%0A%0A%E2%80%A2%20Name%3A%0A%E2%80%A2%20Check-in%20Date%3A%0A%E2%80%A2%20Number%20of%20Nights%3A%0A%E2%80%A2%20Number%20of%20Guests%3A"
           target="_blank"
           rel="noopener">
           Inquire for Deluxe Room
@@ -1153,7 +1179,7 @@ footer h3 {
       <div class="room-content">
         <div class="room-badge-row">
           <span class="room-inventory-tag">1 Exclusive Family Room</span>
-          <span class="room-discount-badge">🏷️ 10% OFF on Weekday Stays</span>
+          <span class="room-discount-badge">🏷️ 10% OFF Weekdays (Mon–Thu)</span>
         </div>
         <h3>Family Room with Balcony</h3>
         <p>Our largest room with a private balcony overlooking lush greenery.</p>
@@ -1162,6 +1188,8 @@ footer h3 {
           <div class="room-spec-item">👥 Fits 4 to 5 Guests</div>
           <div class="room-spec-item">🌿 Private Balcony View</div>
           <div class="room-spec-item">❄️ Split Air Conditioning</div>
+          <div class="room-spec-item">☕ Kettle &amp; Toiletries Kit</div>
+          <div class="room-spec-item">📶 Complimentary Wi-Fi</div>
           <div class="room-spec-item">🏊 Free Pool Access</div>
         </div>
 
@@ -1177,7 +1205,7 @@ footer h3 {
   </div>
 </section>
 
-<!-- SIGHTSEEING - 4 SIGHTS MATCHED -->
+<!-- SIGHTSEEING - UNIFORM 4 CARDS -->
 <section class="section" id="sightseeing">
   <div class="container">
     <div class="section-heading">
@@ -1271,12 +1299,12 @@ footer h3 {
 
     <div class="amenities-grid">
       <div class="amenity-card">🏊 Outdoor Pool</div>
+      <div class="amenity-card">🌿 Private Balconies</div>
       <div class="amenity-card">🏸 Badminton Court</div>
       <div class="amenity-card">🏪 In-Resort Store</div>
       <div class="amenity-card">❄️ AC in All Rooms</div>
       <div class="amenity-card">🅿️ Safe Free Parking</div>
       <div class="amenity-card">📶 Free Wi-Fi</div>
-      <div class="amenity-card">🌿 Open Garden Lawn</div>
       <div class="amenity-card">☕ In-Room Kettle Kit</div>
       <div class="amenity-card">🔥 Bonfire Evenings</div>
     </div>
@@ -1428,7 +1456,7 @@ footer h3 {
     </div>
     <div class="modal-content">
       <h4>How does the 10% Direct Booking Discount work?</h4>
-      <p>The 10% discount applies to direct weekday stays (Monday to Thursday) and multi-night bookings (2+ nights) when booked via WhatsApp with a 50% advance confirmation. (Excludes long holiday weekends).</p>
+      <p>The flat 10% discount applies to direct weekday stays (Monday to Thursday) when booked via WhatsApp with a 50% advance confirmation. (Excludes long holiday weekends).</p>
 
       <h4>What are the check-in and check-out timings?</h4>
       <p>Check-in: <strong>12:00 PM (Noon)</strong> | Check-out: <strong>10:00 AM</strong>. Early/late requests depend on room availability.</p>
@@ -1437,7 +1465,7 @@ footer h3 {
       <p>Aravi Beach is a 5-minute drive, and Shrivardhan Beach is 10 minutes away.</p>
 
       <h4>Is swimming pool access free?</h4>
-      <p>Yes, pool access is complimentary for all staying guests. Synthetic/nylon swimwear is required.</p>
+      <p>Yes, pool access is complimentary for all registered staying guests. Synthetic/nylon swimwear is required.</p>
 
       <h4>Is there dining at the resort?</h4>
       <p>Complimentary in-room tea/coffee and paid breakfast is available. For lunch and dinner, authentic Konkani seafood and veg messes are just a 1 to 5-minute walk away.</p>
