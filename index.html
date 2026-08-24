@@ -2,27 +2,21 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
 
-<title>Zista Inn | Resort Near Aravi Beach & Diveagar with Swimming Pool</title>
+<title>Zista Inn | Boutique Resort Near Aravi Beach & Diveagar</title>
 
-<meta name="description" content="Zista Inn is a boutique resort in Walwati near Aravi Beach, Shrivardhan & Diveagar. Features 6 Deluxe AC rooms, 1 Family room with balcony, swimming pool, badminton court, lawn, and bonfire. Claim 10% off direct bookings." />
-<meta name="keywords" content="Zista Inn, resort in Walwati, resort near Aravi beach, resort with swimming pool Shrivardhan, Diveagar beach resort, Konkan family stay, Aravi beach discount stay" />
+<meta name="description" content="Zista Inn is a boutique resort in Walwati near Aravi Beach, Shrivardhan & Diveagar. 6 Deluxe AC rooms, 1 Family room with balcony, outdoor pool, badminton court, and lush lawn. Flat 10% direct booking discount." />
 <meta name="robots" content="index, follow" />
 <link rel="canonical" href="https://zistaresort.in/" />
 
-<!-- Social Meta -->
+<!-- Open Graph Meta -->
 <meta property="og:site_name" content="Zista Inn" />
 <meta property="og:title" content="Zista Inn | Beachside Resort Near Aravi Beach & Shrivardhan" />
 <meta property="og:description" content="Stay at Zista Inn in Walwati with private outdoor swimming pool, badminton court, lush lawn, and 6 Deluxe + 1 Family Room near Aravi Beach." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://zistaresort.in/" />
 <meta property="og:image" content="https://zistaresort.in/property.png" />
-
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Zista Inn | Beachside Resort Near Aravi Beach" />
-<meta name="twitter:description" content="Peaceful boutique stay in Walwati with swimming pool and lush lawns near Aravi Beach." />
-<meta name="twitter:image" content="https://zistaresort.in/property.png" />
 
 <!-- Structured JSON-LD Schema -->
 <script type="application/ld+json">
@@ -55,31 +49,25 @@
   },
   "numberOfRooms": 7,
   "checkinTime": "12:00",
-  "checkoutTime": "10:00",
-  "amenityFeature": [
-    { "@type": "LocationFeatureSpecification", "name": "Swimming Pool", "value": true },
-    { "@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": true },
-    { "@type": "LocationFeatureSpecification", "name": "Free Safe Parking", "value": true },
-    { "@type": "LocationFeatureSpecification", "name": "Badminton Court", "value": true },
-    { "@type": "LocationFeatureSpecification", "name": "In-Resort Convenience Store", "value": true }
-  ]
+  "checkoutTime": "10:00"
 }
 </script>
 
 <style>
 :root {
-  --green: #2d4034;
-  --green-dark: #1b2820;
-  --dark: #1e2621;
-  --cream: #f4f0e7;
-  --cream-light: #faf8f5;
+  --green: #24352a;
+  --green-dark: #16221b;
+  --dark: #1b221d;
+  --cream: #f4efe6;
+  --cream-light: #faf7f2;
   --white: #ffffff;
   --gold: #b38b58;
+  --gold-dark: #8c6838;
   --gold-light: #fef8ee;
-  --muted: #647065;
-  --line: #ded9cd;
-  --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
-  --shadow-md: 0 8px 20px rgba(0,0,0,0.08);
+  --muted: #5e6b60;
+  --line: #ded8cb;
+  --radius: 8px;
+  --shadow: 0 4px 14px rgba(0,0,0,0.06);
 }
 
 * {
@@ -90,14 +78,14 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 95px;
+  scroll-padding-top: 90px;
 }
 
 body {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   color: var(--dark);
-  background: #fbfaf7;
-  line-height: 1.55;
+  background: #fbf9f5;
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -113,50 +101,48 @@ img {
 }
 
 .container {
-  width: min(1180px, 92%);
+  width: min(1140px, 92%);
   margin: auto;
 }
 
 .eyebrow {
-  font-family: Arial, sans-serif;
   font-size: 11px;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
   color: var(--gold);
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   font-weight: 700;
   display: inline-block;
 }
 
 h1, h2, h3, h4 {
+  font-family: Georgia, "Times New Roman", serif;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.25;
 }
 
-h1 { font-size: clamp(28px, 4.8vw, 56px); }
-h2 { font-size: clamp(22px, 3.4vw, 36px); }
-h3 { font-size: 20px; }
-h4 { font-size: 16px; }
+h1 { font-size: clamp(28px, 4.5vw, 50px); }
+h2 { font-size: clamp(22px, 3.2vw, 34px); }
+h3 { font-size: 19px; }
+h4 { font-size: 15px; }
 
 p {
-  font-family: Arial, sans-serif;
   color: var(--muted);
-  font-size: 14.5px;
-  line-height: 1.55;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 6px;
   background: var(--green);
   color: var(--white);
-  padding: 10px 20px;
-  font-family: Arial, sans-serif;
+  padding: 10px 18px;
   font-size: 12px;
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: 0.8px;
   text-transform: uppercase;
   transition: all 0.2s ease;
   border-radius: 4px;
@@ -165,10 +151,9 @@ p {
 }
 
 .btn:hover {
-  transform: translateY(-2px);
   background: var(--green-dark);
   color: var(--white);
-  box-shadow: var(--shadow-sm);
+  transform: translateY(-1px);
 }
 
 .btn-gold {
@@ -177,7 +162,7 @@ p {
 }
 
 .btn-gold:hover {
-  background: #967040;
+  background: var(--gold-dark);
 }
 
 .btn-outline {
@@ -191,63 +176,53 @@ p {
   color: var(--white);
 }
 
-/* TOP DISCOUNT ANNOUNCEMENT BAR */
+/* TOP DISCOUNT BAR */
 .top-promo-bar {
   background: linear-gradient(90deg, #886234 0%, #b38b58 50%, #886234 100%);
   color: #ffffff;
   padding: 6px 12px;
-  font-family: Arial, sans-serif;
-  font-size: 12px;
+  font-size: 11.5px;
   text-align: center;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 10000;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
 }
 
 .promo-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
 .promo-btn {
   background: #ffffff;
   color: #1b2820;
-  padding: 3px 10px;
+  padding: 2px 8px;
   border-radius: 20px;
   font-weight: 700;
-  font-size: 11px;
+  font-size: 10.5px;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-  transition: all 0.2s ease;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 }
 
-.promo-btn:hover {
-  background: #f4f0e7;
-  transform: scale(1.05);
-}
-
-/* HEADER & NAVIGATION */
+/* HEADER & NAVBAR */
 header {
   position: fixed !important;
-  top: 31px;
+  top: 30px;
   left: 0;
   right: 0;
   width: 100%;
   z-index: 9999;
-  background-color: #1d2921;
+  background-color: #1a251e;
   border-bottom: 1px solid rgba(255,255,255,0.12);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 nav {
-  width: min(1200px, 92%);
+  width: min(1140px, 92%);
   margin: auto;
   padding: 8px 0;
   display: flex;
@@ -255,13 +230,8 @@ nav {
   align-items: center;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-}
-
 .logo img {
-  height: 38px;
+  height: 36px;
   width: auto;
   object-fit: contain;
 }
@@ -269,20 +239,15 @@ nav {
 .nav-right {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
 }
 
 .nav-links {
   display: flex;
   gap: 14px;
-  font-family: Arial, sans-serif;
   font-size: 12.5px;
   font-weight: 600;
-  color: rgba(255,255,255,0.85);
-}
-
-.nav-links a {
-  transition: color 0.2s;
+  color: rgba(255,255,255,0.88);
 }
 
 .nav-links a:hover {
@@ -292,30 +257,19 @@ nav {
 .nav-social-icons {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   padding-left: 8px;
   border-left: 1px solid rgba(255,255,255,0.2);
 }
 
 .nav-social-icons a {
   color: #e0c69b;
-  display: flex;
-  align-items: center;
-  transition: transform 0.2s;
-}
-
-.nav-social-icons a:hover {
-  transform: scale(1.12);
 }
 
 .header-cta {
-  padding: 7px 14px;
+  padding: 7px 12px;
   font-size: 11px;
   background: var(--gold);
-}
-
-.header-cta:hover {
-  background: #967040;
 }
 
 .hamburger-btn {
@@ -332,13 +286,13 @@ nav {
 .mobile-menu-drawer {
   display: none;
   position: fixed;
-  top: 86px;
+  top: 80px;
   left: 0;
   right: 0;
-  background: #1d2921;
+  background: #17221b;
   border-bottom: 2px solid var(--gold);
-  padding: 16px 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+  padding: 14px 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
   z-index: 9998;
 }
 
@@ -348,10 +302,9 @@ nav {
 
 .mobile-menu-drawer a {
   display: block;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
+  font-size: 13.5px;
   font-weight: 600;
-  color: rgba(255,255,255,0.9);
+  color: #f1f4f2;
   padding: 10px 0;
   border-bottom: 1px solid rgba(255,255,255,0.08);
 }
@@ -362,13 +315,13 @@ nav {
 
 /* HERO SECTION */
 .hero {
-  min-height: 75vh;
+  min-height: 70vh;
   position: relative;
   display: flex;
   align-items: flex-end;
   color: var(--white);
   overflow: hidden;
-  background: #25332a;
+  background: #1d2b22;
   padding-top: 85px;
 }
 
@@ -384,14 +337,14 @@ nav {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(15,25,19,0.92) 15%, rgba(15,25,19,0.4) 100%);
+  background: linear-gradient(to top, rgba(15,25,19,0.92) 15%, rgba(15,25,19,0.38) 100%);
   z-index: 1;
 }
 
 .hero-content {
-  width: min(1180px, 92%);
+  width: min(1140px, 92%);
   margin: auto;
-  padding: 60px 0 40px;
+  padding: 50px 0 35px;
   position: relative;
   z-index: 2;
 }
@@ -401,35 +354,34 @@ nav {
 }
 
 .hero h1 {
-  max-width: 800px;
-  margin-bottom: 10px;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  max-width: 780px;
+  margin-bottom: 8px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.4);
 }
 
 .hero p {
-  color: #f1f1ed;
-  max-width: 580px;
-  font-size: 15px;
-  margin-bottom: 16px;
-  text-shadow: 0 1px 4px rgba(0,0,0,0.3);
+  color: #eef2ef;
+  max-width: 560px;
+  font-size: 14.5px;
+  margin-bottom: 14px;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.4);
 }
 
 .hero-badges {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .hero-badge {
-  background: rgba(255,255,255,0.15);
-  backdrop-filter: blur(6px);
-  border: 1px solid rgba(255,255,255,0.25);
+  background: rgba(255,255,255,0.14);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255,255,255,0.22);
   color: #fff;
-  font-family: Arial, sans-serif;
   font-size: 11px;
-  padding: 4px 9px;
-  border-radius: 20px;
+  padding: 3px 8px;
+  border-radius: 16px;
 }
 
 .hero-actions {
@@ -438,84 +390,76 @@ nav {
   gap: 10px;
 }
 
-/* SECTION PADDINGS & TIGHT GAPS */
-.intro {
-  padding: 42px 0 36px;
+/* SECTION PADDINGS & LAYOUTS */
+.section {
+  padding: 34px 0;
 }
 
+.section-alt {
+  background: var(--cream);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.section-heading {
+  margin-bottom: 18px;
+}
+
+.section-heading p {
+  margin-top: 4px;
+}
+
+/* INTRO */
 .intro-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 35px;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 28px;
   align-items: center;
 }
 
-.photo-card {
-  border-radius: 6px;
+.intro-photo {
+  border-radius: var(--radius);
   overflow: hidden;
-  box-shadow: var(--shadow-sm);
-  background: #d8d5cc;
+  box-shadow: var(--shadow);
+  height: 320px;
 }
 
-.photo-card img {
+.intro-photo img {
   width: 100%;
-  height: 380px;
+  height: 100%;
   object-fit: cover;
-}
-
-.intro-copy h2 {
-  margin-bottom: 10px;
-}
-
-.intro-copy p {
-  margin: 8px 0;
 }
 
 .intro-highlights {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  margin-top: 14px;
-  padding-top: 14px;
+  margin-top: 12px;
+  padding-top: 12px;
   border-top: 1px solid var(--line);
 }
 
-.highlight-item strong {
+.intro-highlights strong {
   display: block;
-  font-size: 19px;
+  font-size: 18px;
   color: var(--green);
   font-family: Georgia, serif;
 }
 
-.highlight-item span {
-  font-family: Arial, sans-serif;
-  font-size: 12px;
+.intro-highlights span {
+  font-size: 11.5px;
   color: var(--muted);
 }
 
-/* ROOMS SECTION */
-.rooms {
-  padding: 42px 0;
-  background: var(--cream);
-}
-
-.section-heading {
-  max-width: 760px;
-  margin-bottom: 22px;
-}
-
-.section-heading p {
-  margin-top: 6px;
-}
-
+/* ROOMS */
 .room-card {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: 1fr 1fr;
   background: var(--white);
-  border-radius: 8px;
+  border-radius: var(--radius);
   overflow: hidden;
-  margin-bottom: 20px;
-  box-shadow: var(--shadow-sm);
+  margin-bottom: 16px;
+  box-shadow: var(--shadow);
   border: 1px solid var(--line);
 }
 
@@ -524,436 +468,275 @@ nav {
 }
 
 .room-photo {
-  min-height: 300px;
-  background: #d8d5cc;
-  position: relative;
+  height: 100%;
+  min-height: 260px;
 }
 
 .room-photo img {
   width: 100%;
   height: 100%;
-  min-height: 300px;
   object-fit: cover;
 }
 
 .room-content {
-  padding: 24px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+.room-badge-row {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+
 .room-inventory-tag {
-  display: inline-block;
   background: #e2ede5;
   color: var(--green);
-  font-family: Arial, sans-serif;
-  font-size: 11px;
+  font-size: 10.5px;
   font-weight: 700;
-  padding: 2px 7px;
+  padding: 2px 6px;
   border-radius: 4px;
-  margin-bottom: 6px;
-  align-self: flex-start;
 }
 
 .room-discount-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
   background: #fef3c7;
   color: #92400e;
   border: 1px dashed #f59e0b;
-  font-family: Arial, sans-serif;
-  font-size: 11px;
+  font-size: 10.5px;
   font-weight: 700;
-  padding: 4px 8px;
+  padding: 2px 6px;
   border-radius: 4px;
-  margin: 6px 0;
-  align-self: flex-start;
 }
 
 .room-specs {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 6px 10px;
-  margin: 10px 0 16px;
-  padding: 10px;
+  gap: 6px 8px;
+  margin: 10px 0 14px;
+  padding: 8px 10px;
   background: var(--cream-light);
-  border-radius: 6px;
+  border-radius: 4px;
   border: 1px solid var(--line);
 }
 
 .room-spec-item {
-  font-family: Arial, sans-serif;
-  font-size: 12px;
+  font-size: 11.5px;
   color: var(--dark);
 }
 
-/* TIMINGS BAR */
-.timing-bar {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background: var(--white);
-  border: 1px solid var(--line);
-  padding: 14px 20px;
-  border-radius: 8px;
-  margin-top: 20px;
+/* SIGHTSEEING / 2-COLUMN COMPACT CARDS */
+.sightseeing-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 12px;
-  text-align: center;
 }
 
-.timing-item strong {
-  display: block;
-  font-size: 15px;
-  color: var(--green);
-  font-family: Georgia, serif;
-}
-
-.timing-item span {
-  font-family: Arial, sans-serif;
-  font-size: 11.5px;
-  color: var(--muted);
-}
-
-/* DISTANCES & LOCATION */
-.about-location {
-  padding: 42px 0;
-}
-
-.location-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.1fr;
-  gap: 30px;
-  align-items: start;
-}
-
-.location-copy p {
-  margin: 10px 0 14px;
-}
-
-.distance-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
-.distance-card {
+.sightseeing-card {
   background: var(--white);
   border: 1px solid var(--line);
-  padding: 14px;
-  border-radius: 8px;
-  box-shadow: var(--shadow-sm);
-  transition: transform 0.2s ease;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
 }
 
-.distance-card:hover {
-  transform: translateY(-2px);
-  border-color: var(--gold);
+.sightseeing-photo {
+  height: 130px;
+  background: #eae5dc;
 }
 
-.distance-badge {
+.sightseeing-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sightseeing-body {
+  padding: 10px 12px;
+}
+
+.sightseeing-tag {
   display: inline-block;
   background: var(--gold-light);
-  color: #925f1f;
-  font-family: Arial, sans-serif;
-  font-size: 11px;
+  color: #8c5d22;
+  font-size: 10px;
   font-weight: 700;
-  padding: 2px 7px;
-  border-radius: 4px;
+  padding: 2px 5px;
+  border-radius: 3px;
   margin-bottom: 4px;
-  border: 1px solid #f2ddbe;
 }
 
-.distance-card h4 {
-  font-size: 15px;
-  margin-bottom: 3px;
-  color: var(--dark);
+.sightseeing-body h4 {
+  font-size: 14px;
+  margin-bottom: 2px;
 }
 
-.distance-card p {
-  font-size: 12px;
+.sightseeing-body p {
+  font-size: 11.5px;
   line-height: 1.35;
 }
 
-/* DINING GUIDE */
-.dining-section {
-  padding: 42px 0;
-  background: var(--cream);
-  border-top: 1px solid var(--line);
-}
-
+/* DINING SECTION */
 .dining-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 24px;
   align-items: center;
+}
+
+.dining-photo {
+  border-radius: var(--radius);
+  overflow: hidden;
+  height: 250px;
+}
+
+.dining-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .dining-features {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 8px;
-  margin-top: 14px;
+  margin-top: 12px;
 }
 
-.dining-pill {
+.dining-card {
   background: var(--white);
-  padding: 8px 12px;
+  padding: 8px 10px;
   border-radius: 6px;
   border: 1px solid var(--line);
-  font-family: Arial, sans-serif;
-  font-size: 12px;
+  font-size: 11.5px;
   font-weight: 600;
   color: var(--green);
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
-/* PROPERTY AMENITIES */
-.amenities {
-  padding: 38px 0;
+/* AMENITIES */
+.amenities-section {
   background: var(--green);
   color: var(--white);
 }
 
-.amenities-heading {
-  text-align: center;
-  margin-bottom: 20px;
+.amenities-section .eyebrow {
+  color: #e0c69b;
 }
 
-.amenities-heading .eyebrow {
-  color: #d4b47e;
-}
-
-.amenities-heading h2 {
+.amenities-section h2 {
   color: var(--white);
 }
 
 .amenities-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 8px;
-  max-width: 1080px;
-  margin: auto;
 }
 
-.amenity-chip {
+.amenity-card {
   background: rgba(255,255,255,0.08);
   border: 1px solid rgba(255,255,255,0.15);
-  padding: 9px 12px;
+  padding: 8px 10px;
   border-radius: 6px;
-  font-family: Arial, sans-serif;
-  font-size: 12px;
-  color: #eef3ee;
+  font-size: 11.5px;
+  color: #f1f4f1;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
 }
 
-.amenity-chip svg {
-  flex-shrink: 0;
-  stroke: #d4b47e;
-}
-
-/* EXPERIENCES */
-.experiences {
-  padding: 42px 0;
-}
-
-.experience-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
-}
-
-.experience-card {
-  background: var(--white);
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: var(--shadow-sm);
-  transition: transform 0.2s ease;
-}
-
-.experience-card:hover {
-  transform: translateY(-2px);
-}
-
-.experience-photo {
-  height: 160px;
-  background: #d5d1c7;
-  overflow: hidden;
-}
-
-.experience-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.experience-card:hover .experience-photo img {
-  transform: scale(1.03);
-}
-
-.experience-content {
-  padding: 14px;
-}
-
-.experience-content h3 {
-  font-size: 16px;
-  margin-bottom: 3px;
-}
-
-.experience-content p {
-  font-size: 12.5px;
-}
-
-/* PHOTO GALLERY */
-.gallery {
-  padding: 42px 0;
-  background: var(--cream);
-}
-
+/* PHOTO GALLERY (8 CLEAN GRID ASSETS) */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 170px;
-  gap: 10px;
+  gap: 8px;
 }
 
-.gallery-photo {
-  background: #d4d0c5;
+.gallery-item {
+  height: 140px;
   border-radius: 6px;
   overflow: hidden;
-  position: relative;
+  background: #ded8cb;
 }
 
-.gallery-photo img {
+.gallery-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  transition: transform 0.2s;
 }
 
-.gallery-photo:hover img {
-  transform: scale(1.04);
+.gallery-item:hover img {
+  transform: scale(1.03);
 }
 
-.gallery-photo.featured {
-  grid-column: span 2;
-  grid-row: span 2;
-}
-
-/* FAQ SECTION */
-.faq-section {
-  padding: 42px 0;
-  background: #f8faf8;
-  border-top: 1px solid var(--line);
-}
-
-.faq-container {
-  max-width: 820px;
-  margin: 0 auto;
-}
-
-.faq-accordion {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin-top: 18px;
-}
-
-.faq-item {
-  background: var(--white);
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  overflow: hidden;
-  transition: border-color 0.2s;
-}
-
-.faq-item:hover {
-  border-color: #cbd5cb;
-}
-
-.faq-question {
-  width: 100%;
-  padding: 14px 18px;
-  background: none;
-  border: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 14.5px;
-  font-weight: 600;
-  color: var(--dark);
-  font-family: Arial, sans-serif;
-  cursor: pointer;
-  text-align: left;
+/* INTERACTIVE POPUP ACTION CARDS (FAQ & POLICIES) */
+.action-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 12px;
+  margin-top: 16px;
 }
 
-.faq-question:hover {
-  color: var(--green);
+.action-card-btn {
+  background: var(--white);
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transition: all 0.2s ease;
+  text-align: left;
 }
 
-.faq-icon {
-  font-size: 18px;
+.action-card-btn:hover {
+  border-color: var(--gold);
+  transform: translateY(-2px);
+}
+
+.action-card-btn strong {
+  display: block;
+  font-size: 13.5px;
+  color: var(--dark);
+}
+
+.action-card-btn span {
+  font-size: 11.5px;
   color: var(--muted);
-  transition: transform 0.25s ease;
-  line-height: 1;
 }
 
-.faq-item.active .faq-icon {
-  transform: rotate(45deg);
+.action-card-btn .action-icon {
+  font-size: 18px;
   color: var(--gold);
 }
 
-.faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out;
-  padding: 0 18px;
-  color: var(--muted);
-  font-size: 13.5px;
-  font-family: Arial, sans-serif;
-  line-height: 1.55;
-}
-
-.faq-item.active .faq-answer {
-  max-height: 350px;
-  padding-bottom: 14px;
-}
-
-.faq-answer ul {
-  margin: 6px 0 0 16px;
-}
-
-.faq-answer li {
-  margin-bottom: 3px;
-}
-
 /* REVIEWS & MAP */
-.reviews-map-section {
-  padding: 42px 0;
-}
-
 .reviews-map-grid {
   display: grid;
-  grid-template-columns: 1fr 1.15fr;
-  gap: 28px;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 20px;
+  align-items: center;
 }
 
 .rating-box {
   background: var(--white);
-  padding: 24px;
+  padding: 20px;
   text-align: center;
   border: 1px solid var(--line);
-  border-radius: 8px;
-  box-shadow: var(--shadow-sm);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
 }
 
 .rating-number {
-  font-size: 48px;
+  font-size: 42px;
   line-height: 1;
   color: var(--green);
   font-family: Georgia, serif;
@@ -962,51 +745,28 @@ nav {
 
 .rating-stars {
   color: var(--gold);
-  font-size: 20px;
-  letter-spacing: 2px;
-  margin: 6px 0 3px;
+  font-size: 18px;
+  margin: 4px 0 2px;
 }
 
-.rating-count {
-  font-family: Arial, sans-serif;
-  color: var(--muted);
-  font-size: 13px;
-  margin-bottom: 14px;
-}
-
-.map-wrapper {
+.map-box {
   background: var(--white);
-  border-radius: 8px;
+  border-radius: var(--radius);
   overflow: hidden;
   border: 1px solid var(--line);
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow);
 }
 
-.map-wrapper iframe {
-  display: block;
+.map-box iframe {
   width: 100%;
-  height: 250px;
+  height: 220px;
   border: none;
-}
-
-.map-bar {
-  padding: 10px 14px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: var(--white);
-  border-top: 1px solid var(--line);
-}
-
-.map-bar span {
-  font-family: Arial, sans-serif;
-  font-size: 12px;
-  color: var(--muted);
+  display: block;
 }
 
 /* FINAL CTA */
 .final-cta {
-  padding: 48px 20px;
+  padding: 36px 16px;
   text-align: center;
   background: var(--green);
   color: var(--white);
@@ -1017,90 +777,80 @@ nav {
 }
 
 .final-cta p {
-  color: #dfe5df;
-  max-width: 580px;
-  margin: 8px auto 18px;
-  font-size: 14.5px;
+  color: #e2e8e3;
+  max-width: 520px;
+  margin: 6px auto 14px;
+  font-size: 13.5px;
 }
 
-.final-cta .btn {
-  background: var(--gold);
-  color: var(--white);
-}
-
-.final-cta .btn:hover {
-  background: #967040;
-}
-
-/* FOOTER */
+/* CLEAN, CLEAR FOOTER */
 footer {
   background: var(--green-dark);
   color: var(--white);
-  padding: 38px 0 75px;
+  padding: 30px 0 70px;
+  font-size: 12.5px;
 }
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1.2fr;
-  gap: 30px;
-}
-
-footer p {
-  color: #b9c0ba;
-  margin-top: 6px;
-  font-size: 13px;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 24px;
 }
 
 footer h3 {
-  font-size: 16px;
+  font-size: 15px;
   margin-bottom: 8px;
   color: var(--white);
+}
+
+.footer-address {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #cfd8d1;
+  line-height: 1.4;
+}
+
+.footer-address a {
+  color: #e0c69b;
 }
 
 .footer-links, .social-links {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  font-family: Arial, sans-serif;
-  font-size: 13px;
-  font-weight: 600;
-}
-
-.footer-links a, .social-links a {
-  color: #cad1cb;
-  transition: color 0.2s;
-  display: inline-flex;
-  align-items: center;
   gap: 6px;
 }
 
+.footer-links a, .social-links a {
+  color: #b7c4b9;
+}
+
 .footer-links a:hover, .social-links a:hover {
-  color: #d4b47e;
+  color: #e0c69b;
 }
 
 .copyright {
-  border-top: 1px solid #2f3e34;
-  margin-top: 24px;
-  padding-top: 14px;
-  font-family: Arial, sans-serif;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  margin-top: 20px;
+  padding-top: 12px;
   font-size: 11px;
-  color: #939e94;
+  color: #8fa092;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 6px;
 }
 
-/* HOUSE RULES MODAL */
+/* MODAL POPUPS (FAQ & HOUSE RULES) */
 .modal-overlay {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.65);
+  background: rgba(0,0,0,0.7);
   z-index: 100000;
   align-items: center;
   justify-content: center;
-  padding: 16px;
+  padding: 14px;
 }
 
 .modal-overlay.active {
@@ -1108,23 +858,23 @@ footer h3 {
 }
 
 .modal-box {
-  background: #fff;
-  width: min(650px, 100%);
-  max-height: 85vh;
-  border-radius: 8px;
+  background: #ffffff;
+  width: min(600px, 100%);
+  max-height: 82vh;
+  border-radius: var(--radius);
   overflow-y: auto;
-  box-shadow: var(--shadow-md);
-  padding: 24px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  padding: 20px;
   position: relative;
 }
 
 .modal-header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   border-bottom: 1px solid var(--line);
-  padding-bottom: 12px;
-  margin-bottom: 14px;
+  padding-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .modal-close {
@@ -1133,25 +883,29 @@ footer h3 {
   font-size: 24px;
   cursor: pointer;
   color: var(--muted);
-  line-height: 1;
 }
 
-.modal-body h4 {
+.modal-content h4 {
   color: var(--green);
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  margin-top: 12px;
-  margin-bottom: 3px;
+  font-size: 13.5px;
+  margin-top: 10px;
+  margin-bottom: 2px;
   font-weight: 700;
 }
 
-.modal-body p {
-  font-size: 13px;
-  color: #4a554c;
-  margin-bottom: 8px;
+.modal-content p {
+  font-size: 12.5px;
+  color: #3b463d;
+  margin-bottom: 6px;
 }
 
-/* MOBILE STICKY BOTTOM BAR */
+.modal-content ul {
+  margin: 4px 0 8px 16px;
+  font-size: 12.5px;
+  color: #3b463d;
+}
+
+/* MOBILE FLOATING BAR */
 .mobile-bottom-bar {
   display: none;
   position: fixed;
@@ -1160,8 +914,8 @@ footer h3 {
   right: 0;
   width: 100%;
   background: var(--white);
-  padding: 8px 12px;
-  box-shadow: 0 -3px 14px rgba(0, 0, 0, 0.15);
+  padding: 8px 10px;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.15);
   z-index: 9999;
   gap: 8px;
 }
@@ -1172,19 +926,16 @@ footer h3 {
   align-items: center;
   justify-content: center;
   gap: 6px;
-  padding: 10px 6px;
-  border-radius: 6px;
-  font-family: Arial, sans-serif;
+  padding: 9px 4px;
+  border-radius: 4px;
   font-weight: 700;
-  font-size: 13px;
-  text-decoration: none;
-  text-align: center;
+  font-size: 12.5px;
 }
 
 .btn-mobile-call {
-  background: #edf2ee;
+  background: #eaf1eb;
   color: var(--green-dark);
-  border: 1px solid #cbd7ce;
+  border: 1px solid #c2d4c5;
 }
 
 .btn-mobile-wa {
@@ -1192,68 +943,94 @@ footer h3 {
   color: #ffffff;
 }
 
-/* RESPONSIVE MEDIA QUERIES */
-@media (max-width: 980px) {
+/* MOBILE-FIRST RESPONSIVE FIXES */
+@media (max-width: 900px) {
   .nav-links, .nav-social-icons { display: none; }
   .hamburger-btn { display: block; }
-  .experience-grid { grid-template-columns: 1fr 1fr; }
-  .footer-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
-  .reviews-map-grid { grid-template-columns: 1fr; }
-  .gallery-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: 150px; }
-  .gallery-photo.featured { grid-column: span 2; grid-row: span 1; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 768px) {
-  .top-promo-bar { font-size: 11px; padding: 5px 8px; }
-  header { top: 28px; }
-  .mobile-menu-drawer { top: 82px; }
+  .top-promo-bar { font-size: 10.5px; padding: 4px 6px; }
+  header { top: 26px; }
+  .mobile-menu-drawer { top: 76px; }
   .mobile-bottom-bar { display: flex; }
 
   .hero {
-    min-height: 68vh;
-    padding-top: 75px;
+    min-height: 60vh;
+    padding-top: 70px;
   }
   .hero-content {
-    padding: 45px 0 25px;
+    padding: 35px 0 20px;
   }
 
-  .intro, .rooms, .about-location, .dining-section, .experiences, .gallery, .reviews-map-section, .faq-section {
-    padding: 28px 0;
+  .section {
+    padding: 24px 0;
   }
 
+  /* Compact 2-Column Grids on Mobile (No endless 1-column scroll) */
   .intro-grid,
-  .location-grid,
   .dining-grid,
-  .room-card {
+  .room-card,
+  .reviews-map-grid,
+  .action-cards-grid {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 14px;
   }
 
-  .distance-cards { grid-template-columns: 1fr; }
-  .dining-features { grid-template-columns: 1fr; }
-
-  .photo-card img,
-  .room-photo img {
-    height: 240px;
-    min-height: 240px;
+  .sightseeing-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
   }
 
-  .room-content {
-    padding: 18px 14px;
+  .sightseeing-photo {
+    height: 95px;
   }
 
-  .room-specs {
-    grid-template-columns: 1fr;
+  .dining-features {
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+  }
+
+  .amenities-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
   }
 
   .gallery-grid {
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 120px;
+    gap: 6px;
+  }
+
+  .gallery-item {
+    height: 110px;
+  }
+
+  .intro-photo {
+    height: 200px;
+  }
+
+  .dining-photo {
+    height: 180px;
+  }
+
+  .room-photo {
+    min-height: 200px;
+    height: 200px;
+  }
+
+  .room-content {
+    padding: 14px;
+  }
+
+  .room-specs {
+    grid-template-columns: 1fr;
+    gap: 4px;
   }
 
   .footer-grid {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 16px;
   }
 }
 </style>
@@ -1264,12 +1041,12 @@ footer h3 {
 <!-- TOP 10% DISCOUNT ANNOUNCEMENT BAR -->
 <div class="top-promo-bar">
   <div class="container promo-container">
-    <span>✨ <strong>Direct Booking Offer:</strong> Flat <strong>10% OFF</strong> on all website WhatsApp inquiries &amp; confirmed bookings!</span>
-    <a href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%27d%20like%20to%20check%20room%20availability%20and%20claim%20the%2010%25%20Website%20Direct%20Booking%20Discount%21%0A%0A%E2%80%A2%20Name%3A%0A%E2%80%A2%20Check-in%20Date%3A%0A%E2%80%A2%20Number%20of%20Nights%3A%0A%E2%80%A2%20Number%20of%20Guests%3A%0A%E2%80%A2%20Room%20Preference%3A%20Deluxe%20AC%20%2F%20Family%20Room" target="_blank" rel="noopener" class="promo-btn">Claim 10% OFF ↗</a>
+    <span>✨ <strong>Direct Booking Offer:</strong> Flat <strong>10% OFF</strong> on all website inquiries!</span>
+    <a href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%27d%20like%20to%20check%20room%20availability%20and%20claim%20the%2010%25%20Website%20Direct%20Booking%20Discount%21" target="_blank" rel="noopener" class="promo-btn">Claim 10% OFF ↗</a>
   </div>
 </div>
 
-<!-- PERMANENTLY FIXED HEADER -->
+<!-- FIXED HEADER -->
 <header>
   <nav>
     <a href="#top" class="logo">
@@ -1280,48 +1057,46 @@ footer h3 {
       <!-- Desktop Navigation Links -->
       <div class="nav-links">
         <a href="#rooms">Rooms</a>
-        <a href="#location">Sightseeing</a>
+        <a href="#sightseeing">Sightseeing</a>
         <a href="#dining">Dining</a>
         <a href="#amenities">Amenities</a>
-        <a href="#experience">Experiences</a>
         <a href="#gallery">Gallery</a>
-        <a href="#faq">Q&amp;A</a>
         <a href="#reviews">Reviews</a>
       </div>
 
       <!-- Social Links -->
       <div class="nav-social-icons">
         <a href="https://www.instagram.com/zistainn?igsh=bmFqZGUwaGExMXZ3" target="_blank" rel="noopener" title="Instagram">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
         </a>
         <a href="https://www.facebook.com/share/1BhYToV7wS/" target="_blank" rel="noopener" title="Facebook">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
         </a>
       </div>
 
       <a
         class="btn header-cta"
-        href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%27d%20like%20to%20check%20room%20availability%20and%20claim%20the%2010%25%20Website%20Direct%20Booking%20Discount%21%0A%0A%E2%80%A2%20Name%3A%0A%E2%80%A2%20Check-in%20Date%3A%0A%E2%80%A2%20Number%20of%20Nights%3A%0A%E2%80%A2%20Number%20of%20Guests%3A%0A%E2%80%A2%20Room%20Preference%3A%20Deluxe%20AC%20%2F%20Family%20Room"
+        href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%27d%20like%20to%20check%20room%20availability%20and%20claim%20the%2010%25%20Website%20Direct%20Booking%20Discount%21"
         target="_blank"
         rel="noopener">
         Book on WhatsApp
       </a>
 
       <!-- Mobile Hamburger Button -->
-      <button class="hamburger-btn" id="menuToggle" aria-label="Toggle Navigation">☰</button>
+      <button class="hamburger-btn" id="menuToggle" aria-label="Open Navigation">☰</button>
     </div>
   </nav>
 
   <!-- Mobile Drawer Menu -->
   <div class="mobile-menu-drawer" id="mobileDrawer">
-    <a href="#rooms" class="drawer-link">Rooms (Deluxe &amp; Family)</a>
-    <a href="#location" class="drawer-link">Nearby Sightseeing</a>
-    <a href="#dining" class="drawer-link">Dining Guide</a>
-    <a href="#amenities" class="drawer-link">Amenities</a>
-    <a href="#experience" class="drawer-link">Experiences</a>
-    <a href="#gallery" class="drawer-link">Photo Gallery</a>
-    <a href="#faq" class="drawer-link">Q&amp;A (FAQ)</a>
-    <a href="#reviews" class="drawer-link">Guest Reviews</a>
+    <a href="#rooms" class="drawer-link">🛏️ Rooms (Deluxe &amp; Family)</a>
+    <a href="#sightseeing" class="drawer-link">🚗 Nearby Sightseeing &amp; Beaches</a>
+    <a href="#dining" class="drawer-link">🐟 Local Konkani Dining</a>
+    <a href="#amenities" class="drawer-link">🏊 Resort Amenities</a>
+    <a href="#gallery" class="drawer-link">📷 Photo Gallery</a>
+    <a href="#reviews" class="drawer-link">⭐ Google Reviews</a>
+    <a href="#" class="drawer-link open-faq-trigger" style="color:#e0c69b;">❓ Frequently Asked Questions (Q&amp;A)</a>
+    <a href="#" class="drawer-link open-rules-trigger" style="color:#e0c69b;">📜 View House Rules &amp; Policies</a>
   </div>
 </header>
 
@@ -1344,28 +1119,25 @@ footer h3 {
 
   <div class="hero-content">
     <div class="eyebrow">Walwati · Near Aravi Beach · Shrivardhan</div>
-    
     <h1>Your Relaxing Beachside Getaway at Zista Inn</h1>
-    
     <p>
-      A peaceful boutique resort in Walwati featuring 6 Deluxe Rooms &amp; 1 Family Room. Enjoy our outdoor swimming pool, badminton court, lush lawn, on-site convenience store, and nearby authentic Konkani dining.
+      A peaceful boutique resort in Walwati featuring 6 Deluxe Rooms &amp; 1 Family Room. Outdoor pool, badminton court, lush lawn, and authentic Konkani dining nearby.
     </p>
 
     <div class="hero-badges">
-      <span class="hero-badge">⭐ 4.8 / 5 Google Reviews</span>
+      <span class="hero-badge">⭐ 4.8 / 5 Reviews</span>
       <span class="hero-badge">🏊 Swimming Pool</span>
       <span class="hero-badge">🏸 Badminton Court</span>
-      <span class="hero-badge">🏪 In-Resort Convenience Store</span>
       <span class="hero-badge">🌊 5 Mins to Aravi Beach</span>
     </div>
 
     <div class="hero-actions">
       <a
         class="btn btn-gold"
-        href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%27d%20like%20to%20check%20room%20availability%20and%20claim%20the%2010%25%20Website%20Direct%20Booking%20Discount%21%0A%0A%E2%80%A2%20Name%3A%0A%E2%80%A2%20Check-in%20Date%3A%0A%E2%80%A2%20Number%20of%20Nights%3A%0A%E2%80%A2%20Number%20of%20Guests%3A%0A%E2%80%A2%20Room%20Preference%3A%20Deluxe%20AC%20%2F%20Family%20Room"
+        href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%27d%20like%20to%20check%20room%20availability%20and%20claim%20the%2010%25%20Discount%21"
         target="_blank"
         rel="noopener">
-        Check Availability &amp; Book (10% OFF)
+        Book on WhatsApp (10% OFF)
       </a>
       <a class="btn btn-outline" href="#rooms" style="color:#fff; border-color:rgba(255,255,255,0.7);">
         Explore Rooms
@@ -1375,29 +1147,26 @@ footer h3 {
 </section>
 
 <!-- INTRO -->
-<section class="intro">
+<section class="section">
   <div class="container intro-grid">
-    <div class="photo-card">
+    <div class="intro-photo">
       <img src="property.png" alt="Zista Inn Resort Property Walwati">
     </div>
 
-    <div class="intro-copy">
+    <div>
       <div class="eyebrow">Welcome to Zista Inn</div>
-      <h2>A quiet sanctuary on the Konkan coast.</h2>
+      <h2>A quiet coastal sanctuary.</h2>
       <p>
-        Located along the scenic Aravi–Diveagar Road in Walwati, Zista Inn provides a refreshing coastal retreat for travelers wanting comfort without the noise of commercial hotel zones.
-      </p>
-      <p>
-        Featuring <strong>6 Deluxe AC Rooms</strong> and <strong>1 Spacious Family Room with Balcony</strong>, our property offers an intimate setting for couples, families, and private group gatherings.
+        Located along the scenic Aravi–Diveagar Road in Walwati, Zista Inn provides a refreshing retreat for couples and families wanting comfort without commercial crowd noise.
       </p>
 
       <div class="intro-highlights">
-        <div class="highlight-item">
+        <div>
           <strong>4.8 ★</strong>
-          <span>36 Verified Google Reviews</span>
+          <span>36 Google Reviews</span>
         </div>
-        <div class="highlight-item">
-          <strong>7 Total Rooms</strong>
+        <div>
+          <strong>7 Rooms Total</strong>
           <span>6 Deluxe + 1 Family Room</span>
         </div>
       </div>
@@ -1405,469 +1174,246 @@ footer h3 {
   </div>
 </section>
 
-<!-- ROOMS SECTION -->
-<section class="rooms" id="rooms">
+<!-- ROOMS -->
+<section class="section section-alt" id="rooms">
   <div class="container">
     <div class="section-heading">
       <div class="eyebrow">Accommodations</div>
       <h2>Choose Your Stay</h2>
-      <p>
-        Spacious, air-conditioned rooms equipped with clean linen, hot water kettles, complimentary tea/coffee, and instant pool access.
-      </p>
     </div>
 
-    <!-- 6 DELUXE ROOMS -->
+    <!-- DELUXE ROOM -->
     <article class="room-card">
       <div class="room-photo">
         <img src="deluxe-room.jpeg" alt="Deluxe AC Room at Zista Inn">
       </div>
-
       <div class="room-content">
-        <span class="room-inventory-tag">6 Rooms Available</span>
-        <div class="room-discount-badge">🏷️ Flat 10% OFF on Direct WhatsApp Booking</div>
-        <div class="eyebrow">Option 01</div>
+        <div class="room-badge-row">
+          <span class="room-inventory-tag">6 Rooms Available</span>
+          <span class="room-discount-badge">🏷️ Flat 10% OFF</span>
+        </div>
         <h3>Deluxe AC Room</h3>
-        <p>
-          Comfortable and restful accommodation tailored for couples or solo travelers seeking a peaceful coastal escape.
-        </p>
+        <p>Restful accommodation tailored for couples or solo travelers.</p>
 
         <div class="room-specs">
           <div class="room-spec-item">👥 2 Adults + 1 Child</div>
-          <div class="room-spec-item">🛏️ King / Queen Bed</div>
           <div class="room-spec-item">❄️ Split Air Conditioning</div>
           <div class="room-spec-item">☕ Kettle &amp; Tea Sachets</div>
-          <div class="room-spec-item">🚿 Toiletries &amp; Dental Kit</div>
-          <div class="room-spec-item">🏊 Free Swimming Pool Access</div>
+          <div class="room-spec-item">🏊 Free Pool Access</div>
         </div>
 
         <a
           class="btn"
-          href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%27d%20like%20to%20check%20room%20availability%20and%20claim%20the%2010%25%20Discount%20for%20the%20Deluxe%20AC%20Room.%0A%E2%80%A2%20Name%3A%0A%E2%80%A2%20Check-in%20Date%3A%0A%E2%80%A2%20Number%20of%20Nights%3A%0A%E2%80%A2%20Number%20of%20Guests%3A"
+          href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%27d%20like%20to%20inquire%20for%20the%20Deluxe%20AC%20Room%20with%2010%25%20Discount."
           target="_blank"
           rel="noopener">
-          Inquire for Deluxe Room (10% OFF)
+          Inquire Deluxe (10% OFF)
         </a>
       </div>
     </article>
 
-    <!-- 1 FAMILY ROOM -->
+    <!-- FAMILY ROOM -->
     <article class="room-card">
       <div class="room-photo">
         <img src="deluxe-room-with-balcony.jpeg" alt="Family Room with Balcony at Zista Inn">
       </div>
-
       <div class="room-content">
-        <span class="room-inventory-tag">1 Exclusive Family Room</span>
-        <div class="room-discount-badge">🏷️ Flat 10% OFF on Direct WhatsApp Booking</div>
-        <div class="eyebrow">Option 02</div>
+        <div class="room-badge-row">
+          <span class="room-inventory-tag">1 Exclusive Family Room</span>
+          <span class="room-discount-badge">🏷️ Flat 10% OFF</span>
+        </div>
         <h3>Family Room with Balcony</h3>
-        <p>
-          Our largest room, featuring a private balcony overlooking lush Konkan greenery. Ideal for families and small groups.
-        </p>
+        <p>Our largest room with a private balcony overlooking lush greenery.</p>
 
         <div class="room-specs">
           <div class="room-spec-item">👥 Fits 4 to 5 Guests</div>
           <div class="room-spec-item">🌿 Private Balcony View</div>
           <div class="room-spec-item">❄️ Split Air Conditioning</div>
-          <div class="room-spec-item">☕ Kettle &amp; Toiletries Kit</div>
-          <div class="room-spec-item">📶 Complimentary Wi-Fi</div>
-          <div class="room-spec-item">🏊 Free Swimming Pool Access</div>
+          <div class="room-spec-item">🏊 Free Pool Access</div>
         </div>
 
         <a
           class="btn"
-          href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%27d%20like%20to%20check%20room%20availability%20and%20claim%20the%2010%25%20Discount%20for%20the%20Family%20Room%20with%20Balcony.%0A%E2%80%A2%20Name%3A%0A%E2%80%A2%20Check-in%20Date%3A%0A%E2%80%A2%20Number%20of%20Nights%3A%0A%E2%80%A2%20Number%20of%20Guests%3A"
+          href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%27d%20like%20to%20inquire%20for%20the%20Family%20Room%20with%2010%25%20Discount."
           target="_blank"
           rel="noopener">
-          Inquire for Family Room (10% OFF)
+          Inquire Family Room (10% OFF)
         </a>
       </div>
     </article>
-
-    <!-- RESORT TIMINGS BAR -->
-    <div class="timing-bar">
-      <div class="timing-item">
-        <strong>12:00 PM</strong>
-        <span>Check-in Time</span>
-      </div>
-      <div class="timing-item">
-        <strong>10:00 AM</strong>
-        <span>Check-out Time</span>
-      </div>
-      <div class="timing-item">
-        <strong>Free Parking</strong>
-        <span>Safe Gated Facility</span>
-      </div>
-      <div class="timing-item">
-        <strong>Breakfast</strong>
-        <span>Available On Request (Paid)</span>
-      </div>
-    </div>
   </div>
 </section>
 
-<!-- DISTANCES & SIGHTSEEING -->
-<section class="about-location" id="location">
-  <div class="container location-grid">
-    <div class="location-copy">
-      <div class="eyebrow">Location &amp; Sightseeing</div>
-      <h2>Your Gateway to the Konkan Coast</h2>
-      <p>
-        Situated along the Aravi–Diveagar Road, Zista Inn places you right in the center of pristine beaches, heritage temples, and quiet coastal drives.
-      </p>
-      <a
-        class="btn btn-outline"
-        href="https://share.google/IMhy4Z5r3lDRHEon7"
-        target="_blank"
-        rel="noopener">
-        Open in Google Maps ↗
-      </a>
+<!-- SIGHTSEEING (2-COLUMN COMPACT CARDS ON MOBILE) -->
+<section class="section" id="sightseeing">
+  <div class="container">
+    <div class="section-heading">
+      <div class="eyebrow">Coastal Destinations</div>
+      <h2>Nearby Places &amp; Distances</h2>
     </div>
 
-    <div class="distance-cards">
-      <div class="distance-card">
-        <span class="distance-badge">🚗 5 Mins Drive</span>
-        <h4>Aravi Beach</h4>
-        <p>Clean white sands, sunset views, and scenic coastal road drives.</p>
+    <div class="sightseeing-grid">
+      <div class="sightseeing-card">
+        <div class="sightseeing-photo">
+          <img src="Kokan Coastal.jpeg" alt="Aravi Beach Scenic Coastal Drive">
+        </div>
+        <div class="sightseeing-body">
+          <span class="sightseeing-tag">🚗 5 Mins</span>
+          <h4>Aravi Beach</h4>
+          <p>Clean white sands, sunset views &amp; coastal road drives.</p>
+        </div>
       </div>
 
-      <div class="distance-card">
-        <span class="distance-badge">🚗 10 Mins Drive</span>
-        <h4>Shrivardhan Beach</h4>
-        <p>Historic town with promenade walks, water sports, and fish markets.</p>
+      <div class="sightseeing-card">
+        <div class="sightseeing-photo">
+          <img src="Shriwardhan Beach.jpg" alt="Shrivardhan Beach">
+        </div>
+        <div class="sightseeing-body">
+          <span class="sightseeing-tag">🚗 10 Mins</span>
+          <h4>Shrivardhan Beach</h4>
+          <p>Historic town with promenade walks &amp; water sports.</p>
+        </div>
       </div>
 
-      <div class="distance-card">
-        <span class="distance-badge">🚗 25 Mins Drive</span>
-        <h4>Harihareshwar Temple</h4>
-        <p>Lord Shiva seaside temple and dramatic rocky pradakshina path.</p>
+      <div class="sightseeing-card">
+        <div class="sightseeing-photo">
+          <img src="deluxe-room-2.jpeg" alt="Harihareshwar Temple Coastal Path">
+        </div>
+        <div class="sightseeing-body">
+          <span class="sightseeing-tag">🚗 25 Mins</span>
+          <h4>Harihareshwar Temple</h4>
+          <p>Seaside Shiva temple with rocky pradakshina path.</p>
+        </div>
       </div>
 
-      <div class="distance-card">
-        <span class="distance-badge">🚗 25 Mins Drive</span>
-        <h4>Diveagar Beach</h4>
-        <p>Long beach with water sports, parasailing, and betel nut groves.</p>
+      <div class="sightseeing-card">
+        <div class="sightseeing-photo">
+          <img src="lawn-kids-play-area.jpeg" alt="Diveagar Beach">
+        </div>
+        <div class="sightseeing-body">
+          <span class="sightseeing-tag">🚗 25 Mins</span>
+          <h4>Diveagar Beach</h4>
+          <p>Long beach with parasailing and betel nut groves.</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- DINING GUIDE -->
-<section class="dining-section" id="dining">
+<section class="section section-alt" id="dining">
   <div class="container dining-grid">
-    <div class="photo-card">
-      <img src="deluxe-room-2.jpeg" alt="Konkani Dining and local restaurants near Zista Inn">
+    <div class="dining-photo">
+      <img src="Entrance.jpeg" alt="Zista Inn Entrance and local eateries nearby">
     </div>
 
     <div>
       <div class="eyebrow">Food &amp; Dining Guide</div>
-      <h2>Authentic Konkani Food Right at Your Doorstep</h2>
+      <h2>Authentic Local Dining Steps Away</h2>
       <p>
-        While we do not operate a commercial in-house restaurant, top-rated local dining is literally steps away:
-      </p>
-      <p>
-        • <strong>1-Minute Walk:</strong> Family restaurants right beside our gate serving quick snacks and meals.<br>
-        • <strong>5-Minute Walk:</strong> Authentic Konkani thali restaurants serving fresh local fish thalis, Ukdiche Modak, Solkadhi, and homestyle veg cuisine.<br>
-        • <strong>Breakfast:</strong> Available on-site upon prior request (paid).
+        While we don't run an internal commercial kitchen, top local dining spots surround our gate:
       </p>
 
       <div class="dining-features">
-        <div class="dining-pill">🐟 Fresh Konkani Fish Thalis (1–5 min walk)</div>
-        <div class="dining-pill">🥗 Homestyle Veg Meals (Beside Resort)</div>
-        <div class="dining-pill">🍳 Breakfast on Request (Chargeable)</div>
-        <div class="dining-pill">🔥 Bonfire &amp; BBQ on Demand</div>
+        <div class="dining-card">🐟 Fresh Fish Thalis (1–5 min)</div>
+        <div class="dining-card">🥗 Homestyle Veg Meals</div>
+        <div class="dining-card">🍳 Breakfast on Request (Paid)</div>
+        <div class="dining-card">🔥 Bonfire &amp; BBQ on Demand</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- AMENITIES -->
-<section class="amenities" id="amenities">
+<!-- AMENITIES (COMPACT 2-COLUMN GRID) -->
+<section class="section amenities-section" id="amenities">
   <div class="container">
-    <div class="amenities-heading">
-      <div class="eyebrow">Property Facilities</div>
-      <h2>Everything You Need for a Relaxed Stay</h2>
+    <div class="section-heading" style="text-align: center;">
+      <div class="eyebrow">Facilities</div>
+      <h2>Property Amenities</h2>
     </div>
 
     <div class="amenities-grid">
-      <div class="amenity-chip">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/></svg>
-        Outdoor Swimming Pool
-      </div>
-      <div class="amenity-chip">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg>
-        Badminton Court &amp; Gear
-      </div>
-      <div class="amenity-chip">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-        In-Resort Convenience Store
-      </div>
-      <div class="amenity-chip">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        Air Conditioning in All Rooms
-      </div>
-      <div class="amenity-chip">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18"/></svg>
-        Safe Parking Inside Resort (Free)
-      </div>
-      <div class="amenity-chip">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"/></svg>
-        Complimentary Wi-Fi
-      </div>
-      <div class="amenity-chip">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2"/></svg>
-        Big Lawn &amp; Kids Play Area
-      </div>
-      <div class="amenity-chip">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg>
-        Kettle, Tea Sachets &amp; Dental Kit
-      </div>
-      <div class="amenity-chip">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
-        Bonfire &amp; Open-Sky Movies
-      </div>
+      <div class="amenity-card">🏊 Outdoor Pool</div>
+      <div class="amenity-card">🏸 Badminton Court</div>
+      <div class="amenity-card">🏪 In-Resort Store</div>
+      <div class="amenity-card">❄️ AC in All Rooms</div>
+      <div class="amenity-card">🅿️ Safe Free Parking</div>
+      <div class="amenity-card">📶 Free Wi-Fi</div>
+      <div class="amenity-card">🌿 Open Garden Lawn</div>
+      <div class="amenity-card">☕ In-Room Kettle Kit</div>
+      <div class="amenity-card">🔥 Bonfire Evenings</div>
     </div>
   </div>
 </section>
 
-<!-- EXPERIENCES -->
-<section class="experiences" id="experience">
+<!-- PHOTO GALLERY (8 CLEAN GRID ASSETS) -->
+<section class="section" id="gallery">
   <div class="container">
     <div class="section-heading">
-      <div class="eyebrow">The Zista Experience</div>
-      <h2>Simple Moments Worth Staying For</h2>
-    </div>
-
-    <div class="experience-grid">
-      <article class="experience-card">
-        <div class="experience-photo">
-          <img src="Pool day time.png" alt="Swimming pool during daytime at Zista Inn">
-        </div>
-        <div class="experience-content">
-          <h3>Swim &amp; Unwind</h3>
-          <p>Cool off in our clean outdoor pool after a morning exploring Aravi Beach.</p>
-        </div>
-      </article>
-
-      <article class="experience-card">
-        <div class="experience-photo">
-          <img src="Badminton.Png" alt="Badminton court at Zista Inn">
-        </div>
-        <div class="experience-content">
-          <h3>Badminton &amp; Play</h3>
-          <p>Dedicated sports court and open lawn for family games and matches.</p>
-        </div>
-      </article>
-
-      <article class="experience-card">
-        <div class="experience-photo">
-          <img src="Bonfire.png" alt="Evening bonfire at Zista Inn">
-        </div>
-        <div class="experience-content">
-          <h3>Bonfire &amp; Stargazing</h3>
-          <p>Gather around a cozy evening bonfire under clear Konkan night skies.</p>
-        </div>
-      </article>
-
-      <article class="experience-card">
-        <div class="experience-photo">
-          <img src="Shriwardhan Beach.jpg" alt="Shrivardhan Beach coastal scenery near Zista Inn">
-        </div>
-        <div class="experience-content">
-          <h3>Coastal Drives</h3>
-          <p>Direct access to the breathtaking cliffside Aravi–Diveagar coastal road.</p>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- PHOTO GALLERY -->
-<section class="gallery" id="gallery">
-  <div class="container">
-    <div class="section-heading">
-      <div class="eyebrow">Photo Gallery</div>
+      <div class="eyebrow">Gallery</div>
       <h2>Take a Look Inside</h2>
-      <p>Clean rooms, swimming pool, open garden lawn, and surrounding coastal nature.</p>
     </div>
 
     <div class="gallery-grid">
-      <div class="gallery-photo featured">
-        <img src="property.png" alt="Zista Inn full property view">
-      </div>
-      <div class="gallery-photo">
-        <img src="Entrance.jpeg" alt="Zista Inn entrance gate">
-      </div>
-      <div class="gallery-photo">
-        <img src="Pool Time.png" alt="Swimming pool evening vibe">
-      </div>
-      <div class="gallery-photo">
-        <img src="Room.png" alt="Deluxe Room bedroom interior">
-      </div>
-      <div class="gallery-photo">
-        <img src="deluxe-room-with-balcony.jpeg" alt="Family room with private balcony">
-      </div>
-      <div class="gallery-photo">
-        <img src="Badminton.Png" alt="Badminton court facility">
-      </div>
-      <div class="gallery-photo">
-        <img src="Bonfire.png" alt="Evening bonfire on the lawn">
-      </div>
-      <div class="gallery-photo">
-        <img src="lawn-kids-play-area.jpeg" alt="Lawn and play area">
-      </div>
+      <div class="gallery-item"><img src="property.png" alt="Property Overview"></div>
+      <div class="gallery-item"><img src="Entrance.jpeg" alt="Entrance Gate"></div>
+      <div class="gallery-item"><img src="Pool day time.png" alt="Swimming Pool Day"></div>
+      <div class="gallery-item"><img src="Pool Time.png" alt="Pool Sunset Vibe"></div>
+      <div class="gallery-item"><img src="Room.png" alt="Deluxe Room Interior"></div>
+      <div class="gallery-item"><img src="deluxe-room-with-balcony.jpeg" alt="Balcony View"></div>
+      <div class="gallery-item"><img src="Bonfire.png" alt="Bonfire on Lawn"></div>
+      <div class="gallery-item"><img src="Badminton.png" alt="Badminton Court" onerror="this.onerror=null; this.src='lawn-kids-play-area.jpeg';"></div>
     </div>
   </div>
 </section>
 
-<!-- FAQ / QNA SECTION -->
-<section class="faq-section" id="faq">
-  <div class="container faq-container">
-    <div class="section-heading" style="text-align: center; margin: 0 auto 16px;">
-      <div class="eyebrow">Frequently Asked Questions</div>
-      <h2>Got Questions? We Have Answers</h2>
-      <p>Quick details to help you plan your stay smoothly at Zista Inn.</p>
+<!-- 1-CLICK FAQ & HOUSE RULES ACTION TRIGGERS (ELIMINATES PAGE SCROLL CLUTTER) -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-heading" style="text-align: center;">
+      <div class="eyebrow">Guest Support</div>
+      <h2>Help &amp; Information</h2>
     </div>
 
-    <div class="faq-accordion">
-      <div class="faq-item">
-        <button class="faq-question">
-          <span>How do I claim the 10% Direct Booking Discount?</span>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Simply click any <strong>"Book on WhatsApp"</strong> button on this website to inquire directly. Your flat 10% discount is applied automatically upon completing the 50% advance confirmation for your stay.</p>
+    <div class="action-cards-grid">
+      <button class="action-card-btn open-faq-trigger" type="button">
+        <div>
+          <strong>❓ Frequently Asked Questions (Q&amp;A)</strong>
+          <span>Check-in, pool rules, food options &amp; discount</span>
         </div>
-      </div>
+        <div class="action-icon">➔</div>
+      </button>
 
-      <div class="faq-item">
-        <button class="faq-question">
-          <span>What are the check-in and check-out timings?</span>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Check-in is at <strong>12:00 PM (Noon)</strong> and check-out is at <strong>10:00 AM</strong>[span_2](start_span)[span_2](end_span). Early check-in or late check-out is subject to room availability and prior confirmation with management[span_3](start_span)[span_3](end_span).</p>
+      <button class="action-card-btn open-rules-trigger" type="button">
+        <div>
+          <strong>📜 House Rules &amp; Guest Policies</strong>
+          <span>ID policy, alcohol prohibition, quiet hours &amp; power[span_2](start_span)[span_2](end_span)</span>
         </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">
-          <span>How far is Zista Inn from Aravi Beach and Diveagar?</span>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>We are centrally located along the scenic coastal route:</p>
-          <ul>
-            <li><strong>Aravi Beach:</strong> ~5 minutes drive</li>
-            <li><strong>Shrivardhan Town &amp; Beach:</strong> ~10 minutes drive</li>
-            <li><strong>Diveagar Beach:</strong> ~25 minutes drive</li>
-            <li><strong>Harihareshwar Temple:</strong> ~25 minutes drive</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">
-          <span>Is food available at the resort?</span>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>We provide complimentary morning tea/coffee sachets and an electric kettle in each room. Homestyle breakfast is available on-site on request (paid). For lunch and dinner, top-rated authentic Konkani seafood thali places and veg family restaurants are just a <strong>1 to 5-minute walk</strong> away.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">
-          <span>Is swimming pool access free for guests?</span>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Yes, outdoor swimming pool access is completely complimentary for all staying guests. Standard swimwear or synthetic pool clothes are required for hygiene.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">
-          <span>Is there power backup during electricity outages?</span>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Yes, we have an inverter power backup system in place to keep essential lights, ceiling fans, and Wi-Fi running smoothly during coastal power fluctuations[span_4](start_span)[span_4](end_span). (Note: Air conditioners operate when the primary grid supply is active)[span_5](start_span)[span_5](end_span).</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">
-          <span>What is the resort policy on alcohol and smoking?</span>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>To preserve a peaceful family atmosphere, <strong>alcohol is strictly prohibited</strong> across all resort premises (including rooms, balconies, and lawn areas)[span_6](start_span)[span_6](end_span). Smoking inside rooms is prohibited and only permitted in designated open outdoor areas[span_7](start_span)[span_7](end_span).</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">
-          <span>How do I confirm my booking and what is the payment process?</span>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Direct bookings are confirmed upon receipt of a 50% advance payment via UPI, Google Pay, or bank transfer, with the remaining balance payable at check-in. Tap any WhatsApp button to check real-time availability.</p>
-        </div>
-      </div>
+        <div class="action-icon">➔</div>
+      </button>
     </div>
   </div>
 </section>
 
 <!-- REVIEWS & MAP SECTION -->
-<section class="reviews-map-section" id="reviews">
-  <div class="container">
-    <div class="reviews-map-grid">
-      
-      <!-- Rating Summary Card -->
-      <div class="rating-box">
-        <div class="eyebrow">Guest Trust</div>
-        <div class="rating-number">4.8</div>
-        <div class="rating-stars">★★★★★</div>
-        <div class="rating-count">Based on 36 Verified Google Reviews</div>
-        
-        <p style="margin-bottom: 14px;">
-          "Clean rooms, great pool, peaceful atmosphere, and polite hospitality close to Aravi Beach."
-        </p>
+<section class="section" id="reviews">
+  <div class="container reviews-map-grid">
+    <div class="rating-box">
+      <div class="eyebrow">Guest Trust</div>
+      <div class="rating-number">4.8</div>
+      <div class="rating-stars">★★★★★</div>
+      <p style="font-size: 12.5px; margin-bottom: 12px;">Based on 36 Verified Google Reviews</p>
+      <a class="btn btn-outline" href="https://share.google/GW1mOkqj3hnOy2YTU" target="_blank" rel="noopener">
+        Read Google Reviews ↗
+      </a>
+    </div>
 
-        <a
-          class="btn btn-outline"
-          href="https://share.google/GW1mOkqj3hnOy2YTU"
-          target="_blank"
-          rel="noopener">
-          Read All Google Reviews ↗
-        </a>
-      </div>
-
-      <!-- Live Location Map -->
-      <div class="map-wrapper">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3792.0!2d73.015!3d18.045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be8533efef62489%3A0x6b43bf52697ef9ff!2sZista%20Inn!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
-          loading="lazy" 
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Zista Inn Location on Google Maps">
-        </iframe>
-        <div class="map-bar">
-          <div>
-            <strong style="display:block; font-size:13.5px; color:var(--dark);">Zista Inn</strong>
-            <span>Walwati, Aravi–Diveagar Road, Shrivardhan</span>
-          </div>
-          <a
-            class="btn btn-gold"
-            style="padding: 6px 12px; font-size: 11px;"
-            href="https://share.google/IMhy4Z5r3lDRHEon7"
-            target="_blank"
-            rel="noopener">
-            Directions ↗
-          </a>
-        </div>
-      </div>
-
+    <div class="map-box">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3792.0!2d73.015!3d18.045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be8533efef62489%3A0x6b43bf52697ef9ff!2sZista%20Inn!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+        loading="lazy" 
+        title="Zista Inn Location">
+      </iframe>
     </div>
   </div>
 </section>
@@ -1875,14 +1421,12 @@ footer h3 {
 <!-- FINAL CALL TO ACTION -->
 <section class="final-cta">
   <div class="container">
-    <div class="eyebrow" style="color:#d4b47e;">Plan Your Konkan Stay</div>
-    <h2>Book Your Beach Holiday at Zista Inn</h2>
-    <p>
-      Direct website bookings ensure the best available tariff, instant confirmation, and our exclusive 10% direct booking discount. Contact our team on WhatsApp today.
-    </p>
+    <div class="eyebrow" style="color:#e0c69b;">Plan Your Beach Trip</div>
+    <h2>Book Your Stay at Zista Inn</h2>
+    <p>Direct bookings get instant confirmation and flat 10% discount.</p>
     <a
-      class="btn"
-      href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%27d%20like%20to%20check%20room%20availability%20and%20claim%20the%2010%25%20Website%20Direct%20Booking%20Discount%21%0A%0A%E2%80%A2%20Name%3A%0A%E2%80%A2%20Check-in%20Date%3A%0A%E2%80%A2%20Number%20of%20Nights%3A%0A%E2%80%A2%20Number%20of%20Guests%3A%0A%E2%80%A2%20Room%20Preference%3A%20Deluxe%20AC%20%2F%20Family%20Room"
+      class="btn btn-gold"
+      href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%27d%20like%20to%20book%20a%20stay%20with%20the%2010%25%20Discount%21"
       target="_blank"
       rel="noopener">
       Book Directly on WhatsApp (10% OFF)
@@ -1898,100 +1442,125 @@ footer h3 {
     <div class="footer-grid">
       <div>
         <h3>Zista Inn</h3>
-        <p>A tranquil boutique resort (6 Deluxe Rooms + 1 Family Room) in Walwati, near Aravi Beach and Shrivardhan.</p>
-        <p style="margin-top: 8px; color: #dfe5df; font-size: 12.5px;">
-          📍 At-Walwati, Aravi–Diveagar Road, Raigad, Maharashtra 402113[span_8](start_span)[span_8](end_span)<br>
-          📞 <a href="tel:+919270740015" style="color:#d4b47e;">+91 92707 40015</a> / <a href="tel:+918237437243" style="color:#d4b47e;">+91 82374 37243</a>[span_9](start_span)[span_9](end_span)<br>
-          ✉️ <a href="mailto:booking@zistaresort.in" style="color:#d4b47e;">booking@zistaresort.in</a> / <a href="mailto:zistainn@gmail.com" style="color:#d4b47e;">zistainn@gmail.com</a>[span_10](start_span)[span_10](end_span)
-        </p>
+        <div class="footer-address">
+          <span>📍 At-Walwati, Aravi–Diveagar Road, Raigad, Maharashtra 402113[span_3](start_span)[span_3](end_span)</span>
+          <span>📞 Phone: <a href="tel:+919270740015">+91 92707 40015</a> / <a href="tel:+918237437243">+91 82374 37243</a>[span_4](start_span)[span_4](end_span)</span>
+          <span>✉️ Email: <a href="mailto:booking@zistaresort.in">booking@zistaresort.in</a> / <a href="mailto:zistainn@gmail.com">zistainn@gmail.com</a>[span_5](start_span)[span_5](end_span)</span>
+        </div>
       </div>
 
       <div>
         <h3>Quick Links</h3>
         <div class="footer-links">
           <a href="#rooms">Rooms (Deluxe &amp; Family)</a>
-          <a href="#location">Nearby Beaches &amp; Distances</a>
-          <a href="#dining">Food &amp; Dining Guide</a>
+          <a href="#sightseeing">Nearby Sightseeing</a>
+          <a href="#dining">Dining Guide</a>
           <a href="#amenities">Resort Amenities</a>
-          <a href="#gallery">Photo Gallery</a>
-          <a href="#faq">Frequently Asked Questions</a>
-          <a href="#" id="openRulesBtn" style="color:#e0c69b;">📜 View House Rules &amp; Policies</a>
+          <a href="#" class="open-faq-trigger" style="color:#e0c69b;">❓ Frequently Asked Questions</a>
+          <a href="#" class="open-rules-trigger" style="color:#e0c69b;">📜 View House Rules</a>
         </div>
       </div>
 
       <div>
-        <h3>Connect With Us</h3>
+        <h3>Follow Us</h3>
         <div class="social-links">
-          <a href="https://www.instagram.com/zistainn?igsh=bmFqZGUwaGExMXZ3" target="_blank" rel="noopener">
-            📷 Instagram (@zistainn)
-          </a>
-          <a href="https://www.facebook.com/share/1BhYToV7wS/" target="_blank" rel="noopener">
-            👥 Facebook Page
-          </a>
-          <a href="https://share.google/GW1mOkqj3hnOy2YTU" target="_blank" rel="noopener">
-            ⭐ Google Reviews (4.8 ★)
-          </a>
-          <a href="https://share.google/IMhy4Z5r3lDRHEon7" target="_blank" rel="noopener">
-            📍 Google Maps Location
-          </a>
+          <a href="https://www.instagram.com/zistainn?igsh=bmFqZGUwaGExMXZ3" target="_blank" rel="noopener">📷 Instagram (@zistainn)</a>
+          <a href="https://www.facebook.com/share/1BhYToV7wS/" target="_blank" rel="noopener">👥 Facebook Page</a>
+          <a href="https://share.google/GW1mOkqj3hnOy2YTU" target="_blank" rel="noopener">⭐ Google Reviews (4.8 ★)</a>
+          <a href="https://share.google/IMhy4Z5r3lDRHEon7" target="_blank" rel="noopener">📍 Google Maps Pin</a>
         </div>
       </div>
     </div>
 
     <div class="copyright">
       <div>© 2026 Zista Inn. All rights reserved.</div>
-      <div>Aravi Beach Road, Walwati, Shrivardhan, Konkan</div>
+      <div>Walwati, Aravi Beach Road, Shrivardhan</div>
     </div>
   </div>
 </footer>
 
-<!-- HOUSE RULES MODAL POPUP -->
-<div class="modal-overlay" id="rulesModal" role="dialog" aria-modal="true" aria-labelledby="rulesTitle">
+<!-- FAQ POPUP MODAL -->
+<div class="modal-overlay" id="faqModal" role="dialog" aria-modal="true" aria-labelledby="faqTitle">
   <div class="modal-box">
     <div class="modal-header">
       <div>
-        <div class="eyebrow">Terms &amp; Conditions</div>
-        <h3 id="rulesTitle" style="color:var(--dark);">Zista Inn House Rules</h3>
+        <div class="eyebrow">Help &amp; Answers</div>
+        <h3 id="faqTitle">Frequently Asked Questions</h3>
       </div>
-      <button class="modal-close" id="closeRulesBtn" aria-label="Close modal">&times;</button>
+      <button class="modal-close" id="closeFaqBtn" aria-label="Close modal">&times;</button>
     </div>
-    <div class="modal-body">
-      <h4>Check-In &amp; Check-Out</h4>
-      <p>Check-In Time: 12:00 PM | Check-Out Time: 10:00 AM. Early check-in or late check-out is subject to availability and may attract additional charges[span_11](start_span)[span_11](end_span).</p>
+    <div class="modal-content">
+      <h4>How do I claim the 10% Direct Booking Discount?</h4>
+      <p>Simply message us via WhatsApp or book direct. The 10% discount is applied automatically upon completing your 50% advance confirmation.</p>
 
-      <h4>Guest Identification</h4>
-      <p>All guests must present a valid government-approved photo ID upon arrival[span_12](start_span)[span_12](end_span). Management reserves the right to deny check-in without valid documentation[span_13](start_span)[span_13](end_span).</p>
+      <h4>What are the check-in and check-out timings?</h4>
+      <p>Check-in: <strong>12:00 PM (Noon)</strong> | Check-out: <strong>10:00 AM</strong>[span_6](start_span)[span_6](end_span). Early/late requests depend on availability[span_7](start_span)[span_7](end_span).</p>
 
-      <h4>Alcohol Policy</h4>
-      <p><strong>Alcohol is strictly prohibited</strong> across all premises of ZISTA INN, including rooms, balconies, lawns, and common areas[span_14](start_span)[span_14](end_span).</p>
+      <h4>How far is the beach?</h4>
+      <p>Aravi Beach is a 5-minute drive, and Shrivardhan Beach is 10 minutes away.</p>
 
-      <h4>Smoking Restrictions</h4>
-      <p>Smoking is strictly prohibited inside the rooms and is only permitted in designated open outdoor areas and balconies[span_15](start_span)[span_15](end_span). Penalties apply for violations[span_16](start_span)[span_16](end_span).</p>
+      <h4>Is swimming pool access free?</h4>
+      <p>Yes, pool access is complimentary for all registered staying guests. Synthetic/nylon swimwear is required.</p>
 
-      <h4>Noise &amp; Quiet Hours</h4>
-      <p>Guests are requested to maintain peace and decorum between <strong>10:00 PM and 7:00 AM</strong>[span_17](start_span)[span_17](end_span). Loud music and parties are not permitted[span_18](start_span)[span_18](end_span).</p>
+      <h4>Is there dining at the resort?</h4>
+      <p>Complimentary in-room tea/coffee and paid breakfast is available. For lunch and dinner, authentic Konkani seafood and veg messes are just a 1 to 5-minute walk away.</p>
 
-      <h4>Power Outage Backup</h4>
-      <p>In case of power outages, essential backup power supports lights, fans, and basic utilities[span_19](start_span)[span_19](end_span). Air conditioning remains operational only on the main electrical grid[span_20](start_span)[span_20](end_span).</p>
+      <h4>Is there power backup?</h4>
+      <p>Yes, inverter power backup runs essential lights, fans, and Wi-Fi during outages[span_8](start_span)[span_8](end_span). (AC operates on the main power supply)[span_9](start_span)[span_9](end_span).</p>
 
-      <h4>Pets &amp; Damages</h4>
-      <p>Pets are not allowed unless explicitly permitted in advance[span_21](start_span)[span_21](end_span). Guests are responsible for any damages caused to fixtures or property during their stay[span_22](start_span)[span_22](end_span).</p>
+      <h4>What is the alcohol &amp; smoking policy?</h4>
+      <p>Alcohol is strictly prohibited on resort premises[span_10](start_span)[span_10](end_span). Smoking is allowed only in designated outdoor zones[span_11](start_span)[span_11](end_span).</p>
     </div>
   </div>
 </div>
 
-<!-- MOBILE STICKY BOTTOM ACTION BAR -->
+<!-- HOUSE RULES POPUP MODAL -->
+<div class="modal-overlay" id="rulesModal" role="dialog" aria-modal="true" aria-labelledby="rulesTitle">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div>
+        <div class="eyebrow">Guest Terms</div>
+        <h3 id="rulesTitle">Zista Inn House Rules</h3>
+      </div>
+      <button class="modal-close" id="closeRulesBtn" aria-label="Close modal">&times;</button>
+    </div>
+    <div class="modal-content">
+      <h4>Check-In &amp; Check-Out</h4>
+      <p>Check-in: 12:00 PM | Check-out: 10:00 AM[span_12](start_span)[span_12](end_span). Early check-in or late check-out is subject to availability and extra charges[span_13](start_span)[span_13](end_span).</p>
+
+      <h4>Photo ID Requirement</h4>
+      <p>All guests must present a valid government-approved photo ID at check-in[span_14](start_span)[span_14](end_span).</p>
+
+      <h4>Strictly No Alcohol</h4>
+      <p><strong>Alcohol is strictly prohibited</strong> across all resort grounds including rooms, balconies, and lawns[span_15](start_span)[span_15](end_span).</p>
+
+      <h4>Smoking Restrictions</h4>
+      <p>Smoking is prohibited inside rooms and allowed only in designated open outdoor areas[span_16](start_span)[span_16](end_span).</p>
+
+      <h4>Quiet Hours (10:00 PM – 7:00 AM)</h4>
+      <p>Loud music and disruptive noise are not permitted during quiet hours[span_17](start_span)[span_17](end_span).</p>
+
+      <h4>Power Outage Backup</h4>
+      <p>Backup power operates lights and fans[span_18](start_span)[span_18](end_span). Air conditioners run exclusively on the main electrical grid[span_19](start_span)[span_19](end_span).</p>
+
+      <h4>Pets &amp; Damages</h4>
+      <p>Pets are not allowed unless approved in advance[span_20](start_span)[span_20](end_span). Guests are responsible for any damages caused to property[span_21](start_span)[span_21](end_span).</p>
+    </div>
+  </div>
+</div>
+
+<!-- MOBILE FLOATING ACTION BAR -->
 <aside class="mobile-bottom-bar" aria-label="Quick contact buttons">
   <a href="tel:+919270740015" class="btn-mobile-action btn-mobile-call">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
     Call Now
   </a>
   <a
-    href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%27d%20like%20to%20check%20room%20availability%20and%20claim%20the%2010%25%20Website%20Direct%20Booking%20Discount%21%0A%0A%E2%80%A2%20Name%3A%0A%E2%80%A2%20Check-in%20Date%3A%0A%E2%80%A2%20Number%20of%20Nights%3A%0A%E2%80%A2%20Number%20of%20Guests%3A%0A%E2%80%A2%20Room%20Preference%3A%20Deluxe%20AC%20%2F%20Family%20Room"
+    href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%27d%20like%20to%20check%20room%20availability%20and%20claim%20the%2010%25%20Discount%21"
     target="_blank"
     rel="noopener"
     class="btn-mobile-action btn-mobile-wa">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
     Book on WhatsApp
   </a>
 </aside>
@@ -1999,13 +1568,14 @@ footer h3 {
 <!-- INTERACTIVE SCRIPTS -->
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-  // Mobile Drawer Toggle
+  // Mobile Hamburger Menu
   const menuToggle = document.getElementById('menuToggle');
   const mobileDrawer = document.getElementById('mobileDrawer');
   const drawerLinks = document.querySelectorAll('.drawer-link');
 
   if (menuToggle && mobileDrawer) {
-    menuToggle.addEventListener('click', () => {
+    menuToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
       mobileDrawer.classList.toggle('active');
     });
 
@@ -2014,40 +1584,49 @@ document.addEventListener('DOMContentLoaded', () => {
         mobileDrawer.classList.remove('active');
       });
     });
+
+    document.addEventListener('click', (e) => {
+      if (!mobileDrawer.contains(e.target) && e.target !== menuToggle) {
+        mobileDrawer.classList.remove('active');
+      }
+    });
   }
 
-  // FAQ Accordion
-  const faqQuestions = document.querySelectorAll('.faq-question');
-  faqQuestions.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const item = btn.parentElement;
-      const isOpen = item.classList.contains('active');
-      document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('active'));
-      if (!isOpen) {
-        item.classList.add('active');
-      }
+  // FAQ Modal Popup Logic
+  const faqModal = document.getElementById('faqModal');
+  const faqTriggers = document.querySelectorAll('.open-faq-trigger');
+  const closeFaqBtn = document.getElementById('closeFaqBtn');
+
+  faqTriggers.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      faqModal.classList.add('active');
     });
   });
 
-  // House Rules Modal
+  if (closeFaqBtn && faqModal) {
+    closeFaqBtn.addEventListener('click', () => faqModal.classList.remove('active'));
+    faqModal.addEventListener('click', (e) => {
+      if (e.target === faqModal) faqModal.classList.remove('active');
+    });
+  }
+
+  // House Rules Modal Popup Logic
   const rulesModal = document.getElementById('rulesModal');
-  const openRulesBtn = document.getElementById('openRulesBtn');
+  const rulesTriggers = document.querySelectorAll('.open-rules-trigger');
   const closeRulesBtn = document.getElementById('closeRulesBtn');
 
-  if (openRulesBtn && rulesModal && closeRulesBtn) {
-    openRulesBtn.addEventListener('click', (e) => {
+  rulesTriggers.forEach(btn => {
+    btn.addEventListener('click', (e) => {
       e.preventDefault();
       rulesModal.classList.add('active');
     });
+  });
 
-    closeRulesBtn.addEventListener('click', () => {
-      rulesModal.classList.remove('active');
-    });
-
+  if (closeRulesBtn && rulesModal) {
+    closeRulesBtn.addEventListener('click', () => rulesModal.classList.remove('active'));
     rulesModal.addEventListener('click', (e) => {
-      if (e.target === rulesModal) {
-        rulesModal.classList.remove('active');
-      }
+      if (e.target === rulesModal) rulesModal.classList.remove('active');
     });
   }
 });
