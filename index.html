@@ -854,7 +854,7 @@ footer h3 {
 .modal-box {
   background: #ffffff;
   width: min(560px, 100%);
-  max-height: 80vh;
+  max-height: 85vh;
   border-radius: var(--radius);
   overflow-y: auto;
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
@@ -891,6 +891,115 @@ footer h3 {
   font-size: 12px;
   color: #3b463d;
   margin-bottom: 6px;
+}
+
+/* BOOKING ENGINE MODAL STYLES */
+.booking-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.booking-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.booking-form-group.full-width {
+  grid-column: span 2;
+}
+
+.booking-form-group label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--green);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.booking-form-group input,
+.booking-form-group select {
+  width: 100%;
+  padding: 9px 10px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  font-size: 13px;
+  color: var(--dark);
+  background: #fff;
+  font-family: inherit;
+  outline: none;
+}
+
+.booking-form-group input:focus,
+.booking-form-group select:focus {
+  border-color: var(--gold);
+}
+
+.booking-summary-card {
+  background: var(--cream-light);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 12px;
+  margin-top: 14px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+.summary-row.total {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--green);
+  border-top: 1px solid var(--line);
+  padding-top: 6px;
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+
+.savings-badge {
+  background: #fef3c7;
+  color: #92400e;
+  border: 1px dashed #f59e0b;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-top: 6px;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+.btn-book-confirm {
+  width: 100%;
+  background: #25d366;
+  color: #ffffff;
+  padding: 12px;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+  transition: background 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-book-confirm:hover {
+  background: #1eb956;
 }
 
 /* MOBILE FLOATING BAR */
@@ -1003,6 +1112,13 @@ footer h3 {
     grid-template-columns: 1fr;
     gap: 14px;
   }
+
+  .booking-form-grid {
+    grid-template-columns: 1fr;
+  }
+  .booking-form-group.full-width {
+    grid-column: span 1;
+  }
 }
 </style>
 </head>
@@ -1012,8 +1128,8 @@ footer h3 {
 <!-- TOP DISCOUNT BAR -->
 <div class="top-promo-bar">
   <div class="container promo-container">
-    <span>✨ <strong>Direct Booking Offer:</strong> Flat <strong>10% OFF</strong> on Weekday Stays (Mon–Thu)</span>
-    <a href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%20would%20like%20to%20check%20room%20availability%20and%20rates%3A%0A%0A%E2%80%A2%20Name%3A%0A%E2%80%A2%20Check-in%20Date%3A%0A%E2%80%A2%20Number%20of%20Nights%3A%0A%E2%80%A2%20Number%20of%20Guests%3A%0A%E2%80%A2%20Room%20Preference%3A%20Deluxe%20AC%20%2F%20Family%20Room%0A%E2%80%A2%20Inquiring%20for%20Weekday%20Offer%3A%20Yes" target="_blank" rel="noopener" class="promo-tag">Inquire Now ↗</a>
+    <span>✨ <strong>Direct Booking Offer:</strong> Special Rates on Weekday Stays (Mon–Thu)</span>
+    <a href="#" class="promo-tag open-booking-trigger">Inquire Now ↗</a>
   </div>
 </div>
 
@@ -1043,13 +1159,9 @@ footer h3 {
         </a>
       </div>
 
-      <a
-        class="btn header-cta"
-        href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%20would%20like%20to%20check%20room%20availability%20and%20rates%3A%0A%0A%E2%80%A2%20Name%3A%0A%E2%80%A2%20Check-in%20Date%3A%0A%E2%80%A2%20Number%20of%20Nights%3A%0A%E2%80%A2%20Number%20of%20Guests%3A%0A%E2%80%A2%20Room%20Preference%3A%20Deluxe%20AC%20%2F%20Family%20Room"
-        target="_blank"
-        rel="noopener">
+      <button class="btn header-cta open-booking-trigger" type="button">
         Book on WhatsApp
-      </a>
+      </button>
 
       <button class="hamburger-btn" id="menuToggle" aria-label="Open Navigation">☰</button>
     </div>
@@ -1062,6 +1174,7 @@ footer h3 {
     <a href="#amenities" class="drawer-link">🏊 Resort Amenities</a>
     <a href="#gallery" class="drawer-link">📷 Photo Gallery</a>
     <a href="#reviews" class="drawer-link">⭐ Google Reviews</a>
+    <a href="#" class="drawer-link open-booking-trigger" style="color:#e0c69b;">📅 Calculate Rates &amp; Book</a>
     <a href="#" class="drawer-link open-faq-trigger" style="color:#e0c69b;">❓ Frequently Asked Questions (Q&amp;A)</a>
     <a href="#" class="drawer-link open-rules-trigger" style="color:#e0c69b;">📜 View House Rules &amp; Policies</a>
   </div>
@@ -1100,13 +1213,9 @@ footer h3 {
     </div>
 
     <div class="hero-actions">
-      <a
-        class="btn btn-gold"
-        href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%20would%20like%20to%20check%20room%20availability%20and%20rates%3A%0A%0A%E2%80%A2%20Name%3A%0A%E2%80%A2%20Check-in%20Date%3A%0A%E2%80%A2%20Number%20of%20Nights%3A%0A%E2%80%A2%20Number%20of%20Guests%3A%0A%E2%80%A2%20Room%20Preference%3A%20Deluxe%20AC%20%2F%20Family%20Room"
-        target="_blank"
-        rel="noopener">
+      <button class="btn btn-gold open-booking-trigger" type="button">
         Check Availability &amp; Book
-      </a>
+      </button>
       <a class="btn btn-outline" href="#rooms" style="color:#fff; border-color:rgba(255,255,255,0.7);">
         Explore Rooms
       </a>
@@ -1158,13 +1267,13 @@ footer h3 {
       <div class="room-content">
         <div class="room-badge-row">
           <span class="room-inventory-tag">6 Rooms Available</span>
-          <span class="room-discount-badge">🏷️ 10% OFF Weekdays (Mon–Thu)</span>
+          <span class="room-discount-badge">🏷️ ₹2,999 Weekdays (Mon–Thu)</span>
         </div>
         <h3>Deluxe AC Room with Balcony</h3>
-        <p>Restful accommodation tailored for couples or solo travelers featuring a private sit-out balcony.</p>
+        <p>Restful accommodation tailored for couples or solo travelers featuring a private sit-out balcony with table & chairs.</p>
 
         <div class="room-specs">
-          <div class="room-spec-item">👥 2 Adults + 1 Child</div>
+          <div class="room-spec-item">👥 2 Adults + 1 Child (<12)</div>
           <div class="room-spec-item">🌿 Private Balcony View</div>
           <div class="room-spec-item">❄️ Split Air Conditioning</div>
           <div class="room-spec-item">☕ Kettle &amp; Tea Sachets</div>
@@ -1172,13 +1281,9 @@ footer h3 {
           <div class="room-spec-item">🏊 Free Pool Access</div>
         </div>
 
-        <a
-          class="btn"
-          href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%20would%20like%20to%20inquire%20for%20the%20Deluxe%20AC%20Room%20with%20Balcony%3A%0A%0A%E2%80%A2%20Name%3A%0A%E2%80%A2%20Check-in%20Date%3A%0A%E2%80%A2%20Number%20of%20Nights%3A%0A%E2%80%A2%20Number%20of%20Guests%3A"
-          target="_blank"
-          rel="noopener">
+        <button class="btn open-booking-trigger" data-room="deluxe" type="button">
           Inquire for Deluxe Room
-        </a>
+        </button>
       </div>
     </article>
 
@@ -1190,13 +1295,13 @@ footer h3 {
       <div class="room-content">
         <div class="room-badge-row">
           <span class="room-inventory-tag">1 Exclusive Family Room</span>
-          <span class="room-discount-badge">🏷️ 10% OFF Weekdays (Mon–Thu)</span>
+          <span class="room-discount-badge">🏷️ ₹4,999 Weekdays (Mon–Thu)</span>
         </div>
         <h3>Family Room with Balcony</h3>
-        <p>Our largest room with a private balcony overlooking lush greenery.</p>
+        <p>Our largest room accommodating up to 7 guests comfortably with 2 King size beds, extra mattresses included, and private balcony with table & chairs.</p>
 
         <div class="room-specs">
-          <div class="room-spec-item">👥 Fits 4 to 5 Guests</div>
+          <div class="room-spec-item">👥 Fits 5 to 7 Guests</div>
           <div class="room-spec-item">🌿 Private Balcony View</div>
           <div class="room-spec-item">❄️ Split Air Conditioning</div>
           <div class="room-spec-item">☕ Kettle &amp; Toiletries Kit</div>
@@ -1204,13 +1309,9 @@ footer h3 {
           <div class="room-spec-item">🏊 Free Pool Access</div>
         </div>
 
-        <a
-          class="btn"
-          href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%20would%20like%20to%20inquire%20for%20the%20Family%20Room%20with%20Balcony%3A%0A%0A%E2%80%A2%20Name%3A%0A%E2%80%A2%20Check-in%20Date%3A%0A%E2%80%A2%20Number%20of%20Nights%3A%0A%E2%80%A2%20Number%20of%20Guests%3A"
-          target="_blank"
-          rel="noopener">
+        <button class="btn open-booking-trigger" data-room="family" type="button">
           Inquire for Family Room
-        </a>
+        </button>
       </div>
     </article>
   </div>
@@ -1404,13 +1505,9 @@ footer h3 {
     <div class="eyebrow" style="color:#e0c69b;">Plan Your Beach Trip</div>
     <h2>Book Your Stay at Zista Inn</h2>
     <p>Direct bookings get instant confirmation and best available rates.</p>
-    <a
-      class="btn btn-gold"
-      href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%20would%20like%20to%20check%20room%20availability%20and%20rates%3A%0A%0A%E2%80%A2%20Name%3A%0A%E2%80%A2%20Check-in%20Date%3A%0A%E2%80%A2%20Number%20of%20Nights%3A%0A%E2%80%A2%20Number%20of%20Guests%3A%0A%E2%80%A2%20Room%20Preference%3A%20Deluxe%20AC%20%2F%20Family%20Room"
-      target="_blank"
-      rel="noopener">
+    <button class="btn btn-gold open-booking-trigger" type="button">
       Book Directly on WhatsApp
-    </a>
+    </button>
   </div>
 </section>
 
@@ -1459,6 +1556,87 @@ footer h3 {
   </div>
 </footer>
 
+<!-- BOOKING ENGINE MODAL -->
+<div class="modal-overlay" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div>
+        <div class="eyebrow">Instant Reservation</div>
+        <h3 id="bookingTitle">Calculate Rates &amp; Book</h3>
+      </div>
+      <button class="modal-close" id="closeBookingBtn" aria-label="Close modal">&times;</button>
+    </div>
+
+    <div class="booking-form-grid">
+      <div class="booking-form-group full-width">
+        <label for="bookRoomType">Room Type</label>
+        <select id="bookRoomType">
+          <option value="deluxe">Deluxe AC Room (₹3,500 / ₹2,999 Weekdays)</option>
+          <option value="family">Family Room with Balcony (₹6,000 / ₹4,999 Weekdays)</option>
+        </select>
+      </div>
+
+      <div class="booking-form-group">
+        <label for="bookCheckIn">Check-In</label>
+        <input type="date" id="bookCheckIn" />
+      </div>
+
+      <div class="booking-form-group">
+        <label for="bookCheckOut">Check-Out</label>
+        <input type="date" id="bookCheckOut" />
+      </div>
+
+      <div class="booking-form-group">
+        <label for="bookGuests">Total Guests</label>
+        <select id="bookGuests">
+          <option value="2">2 Guests</option>
+          <option value="3">3 Guests</option>
+          <option value="4">4 Guests</option>
+          <option value="5" selected>5 Guests</option>
+          <option value="6">6 Guests</option>
+          <option value="7">7 Guests</option>
+        </select>
+      </div>
+
+      <div class="booking-form-group">
+        <label for="bookExtraGuests">Extra Beds (₹750/nt)</label>
+        <select id="bookExtraGuests">
+          <option value="0">None</option>
+          <option value="1">1 Extra Bed (+₹750)</option>
+          <option value="2">2 Extra Beds (+₹1,500)</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="booking-summary-card">
+      <div class="summary-row">
+        <span>Stay Duration:</span>
+        <strong id="summaryNights">1 Night</strong>
+      </div>
+      <div class="summary-row">
+        <span>Room Configuration:</span>
+        <span id="summaryRoom">Deluxe AC Room</span>
+      </div>
+      <div class="summary-row" id="savingsRow" style="display:none;">
+        <span style="color:#92400e;">Special Weekday Savings:</span>
+        <strong style="color:#92400e;" id="summarySavings">-₹0</strong>
+      </div>
+      <div class="summary-row total">
+        <span>Estimated Total:</span>
+        <span id="summaryTotal">₹3,500</span>
+      </div>
+      <div class="savings-badge" id="savingsBadge" style="display:none;">
+        🎉 Weekday Discount Applied (Mon–Thu Stay)!
+      </div>
+    </div>
+
+    <button type="button" class="btn-book-confirm" id="btnConfirmWhatsApp">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+      Book on WhatsApp
+    </button>
+  </div>
+</div>
+
 <!-- FAQ POPUP MODAL -->
 <div class="modal-overlay" id="faqModal" role="dialog" aria-modal="true" aria-labelledby="faqTitle">
   <div class="modal-box">
@@ -1470,8 +1648,8 @@ footer h3 {
       <button class="modal-close" id="closeFaqBtn" aria-label="Close modal">&times;</button>
     </div>
     <div class="modal-content">
-      <h4>How does the 10% Direct Booking Discount work?</h4>
-      <p>The flat 10% discount applies to direct weekday stays (Monday to Thursday) when booked via WhatsApp with a 50% advance confirmation. (Excludes long holiday weekends).</p>
+      <h4>How does the Direct Booking Discount work?</h4>
+      <p>Special weekday rates (₹2,999 Deluxe / ₹4,999 Family) apply to direct stays (Monday to Thursday) when booked via WhatsApp with a 50% advance confirmation. (Excludes long holiday weekends).</p>
 
       <h4>What are the check-in and check-out timings?</h4>
       <p>Check-in: <strong>12:00 PM (Noon)</strong> | Check-out: <strong>10:00 AM</strong>. Early/late requests depend on room availability.</p>
@@ -1535,14 +1713,10 @@ footer h3 {
     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
     Call Now
   </a>
-  <a
-    href="https://wa.me/919270740015?text=Hello%20Zista%20Inn%20%F0%9F%91%8B%0AI%20would%20like%20to%20check%20room%20availability%20and%20rates%3A%0A%0A%E2%80%A2%20Name%3A%0A%E2%80%A2%20Check-in%20Date%3A%0A%E2%80%A2%20Number%20of%20Nights%3A%0A%E2%80%A2%20Number%20of%20Guests%3A%0A%E2%80%A2%20Room%20Preference%3A%20Deluxe%20AC%20%2F%20Family%20Room"
-    target="_blank"
-    rel="noopener"
-    class="btn-mobile-action btn-mobile-wa">
+  <button type="button" class="btn-mobile-action btn-mobile-wa open-booking-trigger">
     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
     Book on WhatsApp
-  </a>
+  </button>
 </aside>
 
 <!-- INTERACTIVE SCRIPTS -->
@@ -1609,6 +1783,156 @@ document.addEventListener('DOMContentLoaded', () => {
       if (e.target === rulesModal) rulesModal.classList.remove('active');
     });
   }
+
+  // BOOKING ENGINE MODAL LOGIC
+  const bookingModal = document.getElementById('bookingModal');
+  const bookingTriggers = document.querySelectorAll('.open-booking-trigger');
+  const closeBookingBtn = document.getElementById('closeBookingBtn');
+
+  const bookRoomType = document.getElementById('bookRoomType');
+  const bookCheckIn = document.getElementById('bookCheckIn');
+  const bookCheckOut = document.getElementById('bookCheckOut');
+  const bookGuests = document.getElementById('bookGuests');
+  const bookExtraGuests = document.getElementById('bookExtraGuests');
+
+  const summaryNights = document.getElementById('summaryNights');
+  const summaryRoom = document.getElementById('summaryRoom');
+  const summarySavings = document.getElementById('summarySavings');
+  const savingsRow = document.getElementById('savingsRow');
+  const savingsBadge = document.getElementById('savingsBadge');
+  const summaryTotal = document.getElementById('summaryTotal');
+  const btnConfirmWhatsApp = document.getElementById('btnConfirmWhatsApp');
+
+  // Initialize Default Dates (Tomorrow to Day After)
+  const today = new Date();
+  const tomorrow = new Date(today);
+  tomorrow.setDate(tomorrow.getDate() + 1);
+  const dayAfter = new Date(today);
+  dayAfter.setDate(dayAfter.getDate() + 2);
+
+  const formatDate = (d) => d.toISOString().split('T')[0];
+
+  bookCheckIn.min = formatDate(today);
+  bookCheckIn.value = formatDate(tomorrow);
+  bookCheckOut.min = formatDate(tomorrow);
+  bookCheckOut.value = formatDate(dayAfter);
+
+  function calculateBooking() {
+    const cin = new Date(bookCheckIn.value);
+    const cout = new Date(bookCheckOut.value);
+
+    if (cout <= cin) {
+      const nextDay = new Date(cin);
+      nextDay.setDate(nextDay.getDate() + 1);
+      bookCheckOut.value = formatDate(nextDay);
+    }
+
+    const start = new Date(bookCheckIn.value);
+    const end = new Date(bookCheckOut.value);
+    const diffTime = Math.abs(end - start);
+    const totalNights = Math.max(1, Math.ceil(diffTime / (1000 * 60 * 60 * 24)));
+
+    const room = bookRoomType.value;
+    const isFamily = room === 'family';
+    summaryRoom.textContent = isFamily ? 'Family Room with Balcony' : 'Deluxe AC Room';
+
+    let baseTotal = 0;
+    let actualTotal = 0;
+    let weekdayCount = 0;
+
+    // Daily pricing loop (Monday-Thursday is Weekday)
+    let cur = new Date(start);
+    for (let i = 0; i < totalNights; i++) {
+      const day = cur.getDay(); // 0 = Sun, 1 = Mon, ..., 4 = Thu, 5 = Fri, 6 = Sat
+      const isWeekday = (day >= 1 && day <= 4);
+
+      if (isFamily) {
+        baseTotal += 6000;
+        actualTotal += isWeekday ? 4999 : 6000;
+      } else {
+        baseTotal += 3500;
+        actualTotal += isWeekday ? 2999 : 3500;
+      }
+
+      if (isWeekday) weekdayCount++;
+      cur.setDate(cur.getDate() + 1);
+    }
+
+    const extraBeds = parseInt(bookExtraGuests.value, 10) || 0;
+    const extraCost = extraBeds * 750 * totalNights;
+    actualTotal += extraCost;
+    baseTotal += extraCost;
+
+    const totalSavings = baseTotal - actualTotal;
+
+    summaryNights.textContent = `${totalNights} Night${totalNights > 1 ? 's' : ''}`;
+    summaryTotal.textContent = `₹${actualTotal.toLocaleString('en-IN')}`;
+
+    if (totalSavings > 0) {
+      savingsRow.style.display = 'flex';
+      savingsBadge.style.display = 'block';
+      summarySavings.textContent = `-₹${totalSavings.toLocaleString('en-IN')}`;
+    } else {
+      savingsRow.style.display = 'none';
+      savingsBadge.style.display = 'none';
+    }
+
+    return {
+      roomName: isFamily ? 'Family Room with Balcony' : 'Deluxe AC Room',
+      cinStr: bookCheckIn.value,
+      coutStr: bookCheckOut.value,
+      nights: totalNights,
+      guests: bookGuests.value,
+      extraBeds: extraBeds,
+      total: actualTotal,
+      savings: totalSavings
+    };
+  }
+
+  // Trigger Modal
+  bookingTriggers.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const presetRoom = btn.getAttribute('data-room');
+      if (presetRoom) {
+        bookRoomType.value = presetRoom;
+      }
+      calculateBooking();
+      bookingModal.classList.add('active');
+    });
+  });
+
+  if (closeBookingBtn && bookingModal) {
+    closeBookingBtn.addEventListener('click', () => bookingModal.classList.remove('active'));
+    bookingModal.addEventListener('click', (e) => {
+      if (e.target === bookingModal) bookingModal.classList.remove('active');
+    });
+  }
+
+  // Live calculation listeners
+  [bookRoomType, bookCheckIn, bookCheckOut, bookGuests, bookExtraGuests].forEach(el => {
+    el.addEventListener('change', calculateBooking);
+  });
+
+  // Confirm on WhatsApp
+  btnConfirmWhatsApp.addEventListener('click', () => {
+    const data = calculateBooking();
+    let text = `Hello Zista Inn 👋%0AI would like to reserve a stay directly:%0A%0A` +
+      `• Room: ${encodeURIComponent(data.roomName)}%0A` +
+      `• Check-In: ${data.cinStr}%0A` +
+      `• Check-Out: ${data.coutStr} (${data.nights} Night${data.nights > 1 ? 's' : ''})%0A` +
+      `• Total Guests: ${data.guests}%0A` +
+      `• Extra Beds: ${data.extraBeds}%0A` +
+      `• Estimated Total: ₹${data.total.toLocaleString('en-IN')}%0A`;
+
+    if (data.savings > 0) {
+      text += `• Direct Weekday Savings Applied: ₹${data.savings.toLocaleString('en-IN')}%0A`;
+    }
+
+    text += `%0APlease confirm availability and share UPI details for 50% advance.`;
+
+    window.open(`https://wa.me/919270740015?text=${text}`, '_blank');
+  });
 });
 </script>
 
