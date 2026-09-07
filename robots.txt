@@ -1,4 +1,14 @@
 User-agent: *
 Allow: /
 
+# Explicitly permit AI search crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
 Sitemap: https://zistaresort.in/sitemap.xml
