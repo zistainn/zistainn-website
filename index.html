@@ -4,46 +4,48 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-
-<title>Zista Inn | Boutique Resort Near Aravi Beach with Swimming Pool</title>
-
-<meta name="description" content="Stay at Zista Inn near Aravi Beach, Shrivardhan &amp; Diveagar. 6 Deluxe AC rooms with private balconies, 1 Family room, swimming pool, badminton court, and lush lawns." />
+<title>Best Hotel & Resort in Shrivardhan near Aravi Beach | Zista Inn</title>
+<meta name="description" content="Experience Zista Inn, a top boutique hotel & resort in Shrivardhan near Aravi Beach. AC private balcony rooms, swimming pool, lawn bonfire, safe parking & direct discounts." />
 <meta name="robots" content="index, follow" />
 <link rel="canonical" href="https://zistaresort.in/" />
 
-<!-- Open Graph Meta -->
 <meta property="og:site_name" content="Zista Inn" />
-<meta property="og:title" content="Zista Inn | Boutique Resort Near Aravi Beach with Swimming Pool" />
-<meta property="og:description" content="Boutique stay near Aravi Beach with swimming pool, private balcony rooms, badminton lawn, and direct booking discount." />
+<meta property="og:title" content="Best Hotel & Resort in Shrivardhan near Aravi Beach | Zista Inn" />
+<meta property="og:description" content="Top-rated boutique hotel & resort in Shrivardhan near Aravi Beach. Swimming pool, private balconies, bonfire lawn & secure parking." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://zistaresort.in/" />
 <meta property="og:image" content="https://zistaresort.in/property.png" />
 
-<!-- Google Site Name Structured Schema -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "Zista Inn",
-  "alternateName": ["Zista Resort", "Zista Inn Resort"],
+  "alternateName": ["Zista Resort", "Zista Inn Resort", "Zista Inn Shrivardhan"],
   "url": "https://zistaresort.in/"
 }
 </script>
 
-<!-- Hotel Structured JSON-LD Schema -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Hotel",
   "@id": "https://zistaresort.in/#hotel",
   "name": "Zista Inn",
+  "alternateName": [
+    "Zista Resort", 
+    "Zista Inn Hotel Shrivardhan", 
+    "Zista Inn Boutique Resort"
+  ],
   "url": "https://zistaresort.in/",
   "telephone": "+919270740015",
   "email": "booking@zistaresort.in",
-  "priceRange": "₹₹",
+  "priceRange": "₹2,499 - ₹6,000",
+  "currenciesAccepted": "INR",
+  "paymentAccepted": "Cash, UPI, Credit Card",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "At-Walwati, Aravi–Diveagar Road",
+    "streetAddress": "Aravi–Diveagar Road, Walwati",
     "addressLocality": "Shrivardhan",
     "addressRegion": "Maharashtra",
     "postalCode": "402113",
@@ -54,6 +56,43 @@
     "latitude": "18.0450",
     "longitude": "73.0150"
   },
+  "amenityFeature": [
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Outdoor Swimming Pool",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Safe Free Parking",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Bonfire Evenings",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Private Balconies",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Air Conditioning",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Badminton Court",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Free Wi-Fi",
+      "value": true
+    }
+  ],
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.8",
@@ -373,14 +412,14 @@ nav {
 }
 
 .hero h1 {
-  max-width: 780px;
+  max-width: 820px;
   margin-bottom: 8px;
   text-shadow: 0 2px 6px rgba(0,0,0,0.4);
 }
 
 .hero p {
   color: #eef2ef;
-  max-width: 560px;
+  max-width: 580px;
   font-size: 14.5px;
   margin-bottom: 12px;
   text-shadow: 0 1px 4px rgba(0,0,0,0.4);
@@ -534,7 +573,7 @@ nav {
   color: var(--dark);
 }
 
-/* SIGHTSEEING - UNIFORM 4 CARDS */
+/* SIGHTSEEING - INTERACTIVE INTERNAL LINK CARDS */
 .sightseeing-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -551,6 +590,12 @@ nav {
   display: flex;
   flex-direction: column;
   height: 100%;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.sightseeing-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--gold);
 }
 
 .sightseeing-photo {
@@ -591,6 +636,16 @@ nav {
   line-height: 1.4;
   color: var(--muted);
   margin-top: auto;
+}
+
+.card-link-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 8px;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--green);
 }
 
 /* DINING */
@@ -788,14 +843,16 @@ footer {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr;
+  grid-template-columns: 1.3fr 1fr 1.1fr 1fr;
   gap: 20px;
 }
 
 footer h3 {
-  font-size: 14.5px;
-  margin-bottom: 6px;
+  font-size: 14px;
+  margin-bottom: 8px;
   color: var(--white);
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 .footer-address {
@@ -1042,10 +1099,13 @@ footer h3 {
 }
 
 /* RESPONSIVE MEDIA QUERIES */
+@media (max-width: 992px) {
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+
 @media (max-width: 900px) {
   .nav-links, .nav-social-icons { display: none; }
   .hamburger-btn { display: block; }
-  .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 768px) {
@@ -1126,7 +1186,6 @@ footer h3 {
 
 <body>
 
-<!-- TOP DISCOUNT BAR -->
 <div class="top-promo-bar">
   <div class="container promo-container">
     <span>✨ <strong>Direct Booking Offers:</strong> Weekdays from ₹2,999 | <strong>Konkan Wednesday Escape @ ₹2,499</strong></span>
@@ -1134,7 +1193,6 @@ footer h3 {
   </div>
 </div>
 
-<!-- FIXED HEADER -->
 <header>
   <nav>
     <a href="#top" class="logo">
@@ -1169,21 +1227,20 @@ footer h3 {
   </nav>
 
   <div class="mobile-menu-drawer" id="mobileDrawer">
-    <a href="#rooms" class="drawer-link">🛏️ Rooms (Deluxe &amp; Family)</a>
-    <a href="#sightseeing" class="drawer-link">🚗 Nearby Sightseeing &amp; Beaches</a>
+    <a href="#rooms" class="drawer-link">🛏️ Rooms (Deluxe & Family)</a>
+    <a href="#sightseeing" class="drawer-link">🚗 Nearby Sightseeing & Beaches</a>
     <a href="#dining" class="drawer-link">🐟 Local Konkani Dining</a>
     <a href="#amenities" class="drawer-link">🏊 Resort Amenities</a>
     <a href="#gallery" class="drawer-link">📷 Photo Gallery</a>
     <a href="#reviews" class="drawer-link">⭐ Google Reviews</a>
-    <a href="#" class="drawer-link open-booking-trigger" style="color:#e0c69b;">📅 Check Rates &amp; Book</a>
-    <a href="#" class="drawer-link open-faq-trigger" style="color:#e0c69b;">❓ Frequently Asked Questions (Q&amp;A)</a>
-    <a href="#" class="drawer-link open-rules-trigger" style="color:#e0c69b;">📜 View House Rules &amp; Policies</a>
+    <a href="#" class="drawer-link open-booking-trigger" style="color:#e0c69b;">📅 Check Rates & Book</a>
+    <a href="#" class="drawer-link open-faq-trigger" style="color:#e0c69b;">❓ Frequently Asked Questions (Q&A)</a>
+    <a href="#" class="drawer-link open-rules-trigger" style="color:#e0c69b;">📜 View House Rules & Policies</a>
   </div>
 </header>
 
 <main id="top">
 
-<!-- HERO SECTION -->
 <section class="hero">
   <video class="hero-video" autoplay="" muted="" loop="" playsinline="" preload="metadata" poster="property.png">
     <source src="Kokan Darshan with Zista inn.mp4" type="video/mp4" />
@@ -1192,23 +1249,23 @@ footer h3 {
   <div class="hero-overlay"></div>
 
   <div class="hero-content">
-    <div class="eyebrow">Walwati · Near Aravi Beach · Shrivardhan</div>
-    <h1>Your Relaxing Beachside Getaway at Zista Inn</h1>
+    <div class="eyebrow">Shrivardhan · Near Aravi Beach · Diveagar Road</div>
+    <h1>Boutique Hotel & Resort in Shrivardhan near Aravi Beach</h1>
     <p>
-      A peaceful boutique resort in Walwati featuring 6 Deluxe Rooms &amp; 1 Family Room with private balconies. Outdoor pool, badminton court, lush lawn, and authentic Konkani dining nearby.
+      Escape to a peaceful coastal sanctuary featuring 6 Deluxe AC Balcony Rooms & 1 spacious Family Suite. Enjoy our crystal-clear swimming pool, evening bonfires on the lawn, badminton court, and secure private parking just 5 minutes from pristine Aravi Beach.
     </p>
 
     <div class="hero-badges">
-      <span class="hero-badge">⭐ 4.8 / 5 Reviews</span>
-      <span class="hero-badge">🏊 Swimming Pool</span>
-      <span class="hero-badge">🌿 Private Balconies</span>
-      <span class="hero-badge">🏸 Badminton Court</span>
+      <span class="hero-badge">⭐ 4.8 / 5 Google Rated</span>
+      <span class="hero-badge">🏊 Outdoor Swimming Pool</span>
+      <span class="hero-badge">🅿️ Safe Free Parking</span>
+      <span class="hero-badge">🔥 Evening Lawn Bonfire</span>
       <span class="hero-badge">🌊 5 Mins to Aravi Beach</span>
     </div>
 
     <div class="hero-actions">
       <button class="btn btn-gold open-booking-trigger" type="button">
-        Check Rates &amp; Book
+        Check Rates & Book
       </button>
       <a class="btn btn-outline" href="#rooms" style="color:#fff; border-color:rgba(255,255,255,0.7);">
         Explore Rooms
@@ -1217,18 +1274,17 @@ footer h3 {
   </div>
 </section>
 
-<!-- INTRO -->
 <section class="section">
   <div class="container intro-grid">
     <div class="intro-photo">
-      <img src="property.png" alt="Zista Inn Resort Property Walwati" />
+      <img src="property.png" alt="Zista Inn Boutique Hotel and Resort Shrivardhan" />
     </div>
 
     <div>
       <div class="eyebrow">Welcome to Zista Inn</div>
-      <h2>A quiet coastal sanctuary.</h2>
+      <h2>Your peaceful coastal stay in Shrivardhan.</h2>
       <p>
-        Located along the scenic Aravi–Diveagar Road in Walwati, Zista Inn provides a refreshing retreat for couples and families wanting comfort without commercial crowd noise.
+        Set right along the scenic Aravi–Diveagar coastal corridor, Zista Inn provides an intimate, tranquil getaway for families and couples seeking hospitality, lush green open space, and clean accommodations away from crowded commercial noise.
       </p>
 
       <div class="intro-highlights">
@@ -1245,7 +1301,6 @@ footer h3 {
   </div>
 </section>
 
-<!-- ROOMS -->
 <section class="section section-alt" id="rooms">
   <div class="container">
     <div class="section-heading">
@@ -1253,25 +1308,24 @@ footer h3 {
       <h2>Choose Your Stay</h2>
     </div>
 
-    <!-- DELUXE ROOM -->
     <article class="room-card">
       <div class="room-photo">
-        <img src="deluxe-room.jpeg" alt="Deluxe AC Room with Balcony at Zista Inn" />
+        <img src="deluxe-room.jpeg" alt="Deluxe AC Room with Balcony at Zista Inn Shrivardhan" />
       </div>
       <div class="room-content">
         <div class="room-badge-row">
           <span class="room-inventory-tag">6 Rooms Available</span>
           <span class="room-discount-badge">🏷️ From ₹2,499 (Wed) / ₹2,999 Weekdays</span>
         </div>
-        <h3>Deluxe AC Room with Balcony</h3>
-        <p>Restful accommodation tailored for couples or solo travelers featuring a private sit-out balcony with table &amp; chairs.</p>
+        <h3>Deluxe AC Room with Private Balcony</h3>
+        <p>Restful accommodation tailored for couples or solo travelers featuring a private sit-out balcony with comfortable table & chairs overlooking the lawn and pool.</p>
 
         <div class="room-specs">
-          <div class="room-spec-item">👥 2 Adults + 1 Child (&lt;12)</div>
+          <div class="room-spec-item">👥 2 Adults + 1 Child (<12)</div>
           <div class="room-spec-item">🌿 Private Balcony View</div>
           <div class="room-spec-item">❄️ Split Air Conditioning</div>
-          <div class="room-spec-item">☕ Kettle &amp; Tea Sachets</div>
-          <div class="room-spec-item">🚿 Toiletries &amp; Dental Kit</div>
+          <div class="room-spec-item">☕ Kettle & Tea Sachets</div>
+          <div class="room-spec-item">🚿 Toiletries & Dental Kit</div>
           <div class="room-spec-item">🏊 Free Pool Access</div>
         </div>
 
@@ -1281,24 +1335,23 @@ footer h3 {
       </div>
     </article>
 
-    <!-- FAMILY ROOM -->
     <article class="room-card">
       <div class="room-photo">
-        <img src="deluxe-room-with-balcony.jpeg" alt="Family Room with Balcony at Zista Inn" />
+        <img src="deluxe-room-with-balcony.jpeg" alt="Family Room with Balcony at Zista Inn Shrivardhan" />
       </div>
       <div class="room-content">
         <div class="room-badge-row">
           <span class="room-inventory-tag">1 Exclusive Family Room</span>
           <span class="room-discount-badge">🏷️ From ₹4,499 (Wed) / ₹4,999 Weekdays</span>
         </div>
-        <h3>Family Room with Balcony</h3>
-        <p>Our largest room accommodating up to 7 guests comfortably with 2 King size beds, extra mattresses included, and private balcony with table &amp; chairs.</p>
+        <h3>Family Suite with Private Balcony</h3>
+        <p>Our largest room accommodating up to 7 guests comfortably with 2 King size beds, extra mattresses included, and private balcony with sit-out furniture.</p>
 
         <div class="room-specs">
           <div class="room-spec-item">👥 Fits 5 to 7 Guests</div>
           <div class="room-spec-item">🌿 Private Balcony View</div>
           <div class="room-spec-item">❄️ Split Air Conditioning</div>
-          <div class="room-spec-item">☕ Kettle &amp; Toiletries Kit</div>
+          <div class="room-spec-item">☕ Kettle & Toiletries Kit</div>
           <div class="room-spec-item">📶 Complimentary Wi-Fi</div>
           <div class="room-spec-item">🏊 Free Pool Access</div>
         </div>
@@ -1311,91 +1364,87 @@ footer h3 {
   </div>
 </section>
 
-<!-- SIGHTSEEING - UNIFORM 4 CARDS -->
 <section class="section" id="sightseeing">
   <div class="container">
     <div class="section-heading">
       <div class="eyebrow">Coastal Destinations</div>
-      <h2>Nearby Places &amp; Distances</h2>
+      <h2>Nearby Places & Regional Guides</h2>
     </div>
 
     <div class="sightseeing-grid">
-      <!-- ARAVI BEACH -->
       <div class="sightseeing-card">
         <div class="sightseeing-photo">
-          <img src="Aravi.jpeg" alt="Aravi Beach near Zista Inn" />
+          <img src="Aravi.jpeg" alt="Aravi Beach near Zista Inn Resort" />
         </div>
         <div class="sightseeing-body">
           <span class="sightseeing-tag">🚗 5 Mins</span>
           <h4>Aravi Beach</h4>
-          <p>Clean white sands, sunset views &amp; coastal road drives.</p>
+          <p>Clean white sands, stunning sunset views & scenic coastal drives right by our gate.</p>
         </div>
       </div>
 
-      <!-- SHRIVARDHAN BEACH -->
-      <div class="sightseeing-card">
+      <a href="resort-in-shrivardhan.html" class="sightseeing-card" title="Read our Shrivardhan Resort Guide">
         <div class="sightseeing-photo">
           <img src="Shriwardhan.jpeg" alt="Shrivardhan Beach near Zista Inn" />
         </div>
         <div class="sightseeing-body">
           <span class="sightseeing-tag">🚗 10 Mins</span>
-          <h4>Shrivardhan Beach</h4>
-          <p>Historic town with promenade walks &amp; water sports.</p>
+          <h4>Shrivardhan Town & Beach</h4>
+          <p>Historic town with promenade walks, water sports, and local market culture.</p>
+          <span class="card-link-hint">Explore Shrivardhan Stay ➔</span>
         </div>
-      </div>
+      </a>
 
-      <!-- HARIHARESHWAR TEMPLE -->
-      <div class="sightseeing-card">
+      <a href="hotels-near-harihareshwar.html" class="sightseeing-card" title="Read our Harihareshwar Hotel Guide">
         <div class="sightseeing-photo">
           <img src="Harihareshwar.jpeg" alt="Harihareshwar Temple near Zista Inn" />
         </div>
         <div class="sightseeing-body">
           <span class="sightseeing-tag">🚗 25 Mins</span>
-          <h4>Harihareshwar</h4>
-          <p>Seaside Shiva temple with rocky pradakshina path.</p>
+          <h4>Harihareshwar Temple</h4>
+          <p>Seaside Shiva temple with rocky pradakshina coastal path and spiritual heritage.</p>
+          <span class="card-link-hint">View Harihareshwar Stay ➔</span>
         </div>
-      </div>
+      </a>
 
-      <!-- DIVEAGAR BEACH -->
-      <div class="sightseeing-card">
+      <a href="resort-near-diveagar.html" class="sightseeing-card" title="Read our Diveagar Resort Guide">
         <div class="sightseeing-photo">
           <img src="Diveagar.jpeg" alt="Diveagar Beach near Zista Inn" />
         </div>
         <div class="sightseeing-body">
           <span class="sightseeing-tag">🚗 25 Mins</span>
           <h4>Diveagar Beach</h4>
-          <p>Long beach with parasailing and betel nut groves.</p>
+          <p>Expansive sandy shores, watersports, betel nut plantations, and coastal dining.</p>
+          <span class="card-link-hint">View Diveagar Stay ➔</span>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- DINING -->
 <section class="section section-alt" id="dining">
   <div class="container dining-grid">
     <div class="dining-photo">
-      <img src="Entrance.jpeg" alt="Zista Inn Entrance" />
+      <img src="Entrance.jpeg" alt="Zista Inn Entrance Gate and Driveway" />
     </div>
 
     <div>
-      <div class="eyebrow">Food &amp; Dining Guide</div>
+      <div class="eyebrow">Food & Dining Guide</div>
       <h2>Authentic Local Dining Steps Away</h2>
       <p>
-        While we do not run an internal commercial kitchen, top local dining spots surround our gate:
+        While we keep our rooms quiet and smoke-free without an internal commercial kitchen, famous local dining spots and seafood messes surround our gate:
       </p>
 
       <div class="dining-features">
         <div class="dining-card">🐟 Fresh Fish Thalis (1–5 min)</div>
         <div class="dining-card">🥗 Homestyle Veg Meals</div>
         <div class="dining-card">🍳 Breakfast on Request (Paid)</div>
-        <div class="dining-card">🔥 Bonfire &amp; BBQ on Demand</div>
+        <div class="dining-card">🔥 Bonfire & BBQ on Demand</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- AMENITIES -->
 <section class="section amenities-section" id="amenities">
   <div class="container">
     <div class="section-heading" style="text-align: center;">
@@ -1404,20 +1453,19 @@ footer h3 {
     </div>
 
     <div class="amenities-grid">
-      <div class="amenity-card">🏊 Outdoor Pool</div>
-      <div class="amenity-card">🌿 Private Balconies</div>
-      <div class="amenity-card">🏸 Badminton Court</div>
-      <div class="amenity-card">🏪 In-Resort Store</div>
-      <div class="amenity-card">❄️ AC in All Rooms</div>
+      <div class="amenity-card">🏊 Outdoor Swimming Pool</div>
+      <div class="amenity-card">🌿 Private Sit-out Balconies</div>
       <div class="amenity-card">🅿️ Safe Free Parking</div>
-      <div class="amenity-card">📶 Free Wi-Fi</div>
-      <div class="amenity-card">☕ In-Room Kettle Kit</div>
       <div class="amenity-card">🔥 Bonfire Evenings</div>
+      <div class="amenity-card">🏸 Badminton Lawn Court</div>
+      <div class="amenity-card">🏪 In-Resort Daily Store</div>
+      <div class="amenity-card">❄️ Split AC in All Rooms</div>
+      <div class="amenity-card">📶 High-Speed Free Wi-Fi</div>
+      <div class="amenity-card">☕ In-Room Electric Kettle</div>
     </div>
   </div>
 </section>
 
-<!-- GALLERY - COMPLETE 12 ASSETS -->
 <section class="section" id="gallery">
   <div class="container">
     <div class="section-heading">
@@ -1426,43 +1474,42 @@ footer h3 {
     </div>
 
     <div class="gallery-grid">
-      <div class="gallery-item"><img src="property.png" alt="Property Overview" /></div>
-      <div class="gallery-item"><img src="Entrance.jpeg" alt="Entrance Gate" /></div>
-      <div class="gallery-item"><img src="Pool day time.png" alt="Swimming Pool Day" /></div>
-      <div class="gallery-item"><img src="Pool Time.png" alt="Pool Sunset Vibe" /></div>
+      <div class="gallery-item"><img src="property.png" alt="Zista Inn Property Overview" /></div>
+      <div class="gallery-item"><img src="Entrance.jpeg" alt="Entrance Gate and Parking" /></div>
+      <div class="gallery-item"><img src="Pool day time.png" alt="Swimming Pool Daytime" /></div>
+      <div class="gallery-item"><img src="Pool Time.png" alt="Pool Evening Ambiance" /></div>
       <div class="gallery-item"><img src="Room.png" alt="Deluxe Room Interior" /></div>
-      <div class="gallery-item"><img src="deluxe-room.jpeg" alt="Deluxe Room Bedding" /></div>
-      <div class="gallery-item"><img src="deluxe-room-2.jpeg" alt="Deluxe Room Alternate Angle" /></div>
-      <div class="gallery-item"><img src="deluxe-room-with-balcony.jpeg" alt="Balcony View" /></div>
-      <div class="gallery-item"><img src="Badminton.png" alt="Badminton Court" onerror="this.onerror=null; this.src=&#39;lawn-kids-play-area.jpeg&#39;;" /></div>
-      <div class="gallery-item"><img src="Bonfire.png" alt="Bonfire on Lawn" /></div>
-      <div class="gallery-item"><img src="lawn-kids-play-area.jpeg" alt="Lawn and Play Area" /></div>
-      <div class="gallery-item"><img src="Kokan Coastal.jpeg" alt="Scenic Konkan Coast" /></div>
+      <div class="gallery-item"><img src="deluxe-room.jpeg" alt="Deluxe Room Bedding Setup" /></div>
+      <div class="gallery-item"><img src="deluxe-room-2.jpeg" alt="Deluxe Room Balcony View Angle" /></div>
+      <div class="gallery-item"><img src="deluxe-room-with-balcony.jpeg" alt="Private Balcony Sit-out" /></div>
+      <div class="gallery-item"><img src="Badminton.png" alt="Badminton Court on Grass" onerror="this.onerror=null; this.src='lawn-kids-play-area.jpeg';" /></div>
+      <div class="gallery-item"><img src="Bonfire.png" alt="Bonfire Setup on Lawn" /></div>
+      <div class="gallery-item"><img src="lawn-kids-play-area.jpeg" alt="Lawn and Kids Play Swings" /></div>
+      <div class="gallery-item"><img src="Kokan Coastal.jpeg" alt="Scenic Konkan Coast Near Resort" /></div>
     </div>
   </div>
 </section>
 
-<!-- HELP & POLICIES POPUP TRIGGERS -->
 <section class="section section-alt">
   <div class="container">
     <div class="section-heading" style="text-align: center;">
       <div class="eyebrow">Guest Support</div>
-      <h2>Help &amp; Information</h2>
+      <h2>Help & Information</h2>
     </div>
 
     <div class="action-cards-grid">
       <button class="action-card-btn open-faq-trigger" type="button">
         <div>
-          <strong>❓ Frequently Asked Questions (Q&amp;A)</strong>
-          <span>Check-in, pool rules, food options &amp; offers</span>
+          <strong>❓ Frequently Asked Questions (Q&A)</strong>
+          <span>Check-in, swimming pool rules, food options & offers</span>
         </div>
         <div class="action-icon">➔</div>
       </button>
 
       <button class="action-card-btn open-rules-trigger" type="button">
         <div>
-          <strong>📜 House Rules &amp; Guest Policies</strong>
-          <span>ID policy, alcohol prohibition, quiet hours &amp; power</span>
+          <strong>📜 House Rules & Guest Policies</strong>
+          <span>ID policy, alcohol prohibition, quiet hours & parking</span>
         </div>
         <div class="action-icon">➔</div>
       </button>
@@ -1470,7 +1517,6 @@ footer h3 {
   </div>
 </section>
 
-<!-- REVIEWS & MAP -->
 <section class="section" id="reviews">
   <div class="container reviews-map-grid">
     <div class="rating-box">
@@ -1484,18 +1530,17 @@ footer h3 {
     </div>
 
     <div class="map-box">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3792.0!2d73.015!3d18.045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be8533efef62489%3A0x6b43bf52697ef9ff!2sZista%20Inn!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" loading="lazy" title="Zista Inn Location">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3792.0!2d73.015!3d18.045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be8533efef62489%3A0x6b43bf52697ef9ff!2sZista%20Inn!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" loading="lazy" title="Zista Inn Location Shrivardhan">
       </iframe>
     </div>
   </div>
 </section>
 
-<!-- FINAL CTA -->
 <section class="final-cta">
   <div class="container">
     <div class="eyebrow" style="color:#e0c69b;">Plan Your Beach Trip</div>
     <h2>Book Your Stay at Zista Inn</h2>
-    <p>Direct bookings get instant confirmation and best available rates.</p>
+    <p>Direct bookings get instant confirmation, direct discount savings, and best available room rates.</p>
     <button class="btn btn-gold open-booking-trigger" type="button">
       Book Now
     </button>
@@ -1504,14 +1549,13 @@ footer h3 {
 
 </main>
 
-<!-- FOOTER -->
 <footer>
   <div class="container">
     <div class="footer-grid">
       <div>
         <h3>Zista Inn</h3>
         <div class="footer-address">
-          <span>📍 At-Walwati, Aravi–Diveagar Road, Raigad, Maharashtra 402113</span>
+          <span>📍 Aravi–Diveagar Road, Walwati, Shrivardhan, Maharashtra 402113</span>
           <span>📞 Phone: <a href="tel:+919270740015">+91 92707 40015</a> / <a href="tel:+918237437243">+91 82374 37243</a></span>
           <span>✉️ Email: <a href="mailto:booking@zistaresort.in">booking@zistaresort.in</a> / <a href="mailto:zistainn@gmail.com">zistainn@gmail.com</a></span>
         </div>
@@ -1520,12 +1564,22 @@ footer h3 {
       <div>
         <h3>Quick Links</h3>
         <div class="footer-links">
-          <a href="#rooms">Rooms (Deluxe &amp; Family)</a>
-          <a href="#sightseeing">Nearby Sightseeing</a>
-          <a href="#dining">Dining Guide</a>
+          <a href="#rooms">Rooms & Rates</a>
+          <a href="#sightseeing">Sightseeing Guide</a>
+          <a href="#dining">Nearby Dining</a>
           <a href="#amenities">Resort Amenities</a>
-          <a href="#" class="open-faq-trigger" style="color:#e0c69b;">❓ Frequently Asked Questions</a>
-          <a href="#" class="open-rules-trigger" style="color:#e0c69b;">📜 View House Rules</a>
+          <a href="#" class="open-faq-trigger" style="color:#e0c69b;">❓ FAQs</a>
+          <a href="#" class="open-rules-trigger" style="color:#e0c69b;">📜 House Rules</a>
+        </div>
+      </div>
+
+      <div>
+        <h3>Coastal Stays</h3>
+        <div class="footer-links">
+          <a href="resort-in-shrivardhan.html">Resorts in Shrivardhan</a>
+          <a href="resort-near-diveagar.html">Resorts near Diveagar</a>
+          <a href="hotels-near-harihareshwar.html">Hotels near Harihareshwar</a>
+          <a href="#sightseeing">Aravi Beach Stays</a>
         </div>
       </div>
 
@@ -1542,18 +1596,17 @@ footer h3 {
 
     <div class="copyright">
       <div>© 2026 Zista Inn. All rights reserved.</div>
-      <div>Walwati, Aravi Beach Road, Shrivardhan</div>
+      <div>Boutique Hotel & Resort near Aravi Beach, Shrivardhan</div>
     </div>
   </div>
 </footer>
 
-<!-- BOOKING ENGINE MODAL -->
 <div class="modal-overlay" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">
   <div class="modal-box">
     <div class="modal-header">
       <div>
         <div class="eyebrow">Instant Reservation</div>
-        <h3 id="bookingTitle">Calculate Rates &amp; Book</h3>
+        <h3 id="bookingTitle">Calculate Rates & Book</h3>
       </div>
       <button class="modal-close" id="closeBookingBtn" aria-label="Close modal">×</button>
     </div>
@@ -1580,15 +1633,13 @@ footer h3 {
       <div class="booking-form-group">
         <label for="bookGuests">Total Guests</label>
         <select id="bookGuests">
-          <!-- Populated dynamically based on room type -->
-        </select>
+          </select>
       </div>
 
       <div class="booking-form-group">
         <label for="bookExtraGuests">Extra Mattress</label>
         <select id="bookExtraGuests">
-          <!-- Populated dynamically based on room type -->
-        </select>
+          </select>
       </div>
     </div>
 
@@ -1610,8 +1661,7 @@ footer h3 {
         <span id="summaryTotal">₹3,500</span>
       </div>
       <div class="savings-badge" id="savingsBadge" style="display:none;">
-        <!-- Filled dynamically -->
-      </div>
+        </div>
     </div>
 
     <button type="button" class="btn-book-confirm" id="btnConfirmWhatsApp">
@@ -1621,19 +1671,18 @@ footer h3 {
   </div>
 </div>
 
-<!-- FAQ POPUP MODAL -->
 <div class="modal-overlay" id="faqModal" role="dialog" aria-modal="true" aria-labelledby="faqTitle">
   <div class="modal-box">
     <div class="modal-header">
       <div>
-        <div class="eyebrow">Help &amp; Answers</div>
+        <div class="eyebrow">Help & Answers</div>
         <h3 id="faqTitle">Frequently Asked Questions</h3>
       </div>
       <button class="modal-close" id="closeFaqBtn" aria-label="Close modal">×</button>
     </div>
     <div class="modal-content">
       <h4>How do Direct Booking Discounts work?</h4>
-      <p>Direct weekday stays (Mon–Thu) start from ₹2,999/night, with our special <strong>Konkan Wednesday Escape at ₹2,499/night</strong> (Excludes public holidays &amp; long holiday weekends). All direct bookings require a 50% advance confirmation.</p>
+      <p>Direct weekday stays (Mon–Thu) start from ₹2,999/night, with our special <strong>Konkan Wednesday Escape at ₹2,499/night</strong> (Excludes public holidays & long holiday weekends). All direct bookings require a 50% advance confirmation.</p>
 
       <h4>What are the check-in and check-out timings?</h4>
       <p>Check-in: <strong>12:00 PM (Noon)</strong> | Check-out: <strong>10:00 AM</strong>. Early/late requests depend on room availability.</p>
@@ -1650,13 +1699,12 @@ footer h3 {
       <h4>Is there power backup?</h4>
       <p>Yes, inverter power backup runs essential lights, fans, and Wi-Fi during outages. (AC operates on the main power supply).</p>
 
-      <h4>What is the alcohol &amp; smoking policy?</h4>
+      <h4>What is the alcohol & smoking policy?</h4>
       <p>Alcohol is strictly prohibited on resort premises. Smoking is allowed only in designated outdoor zones.</p>
     </div>
   </div>
 </div>
 
-<!-- HOUSE RULES POPUP MODAL -->
 <div class="modal-overlay" id="rulesModal" role="dialog" aria-modal="true" aria-labelledby="rulesTitle">
   <div class="modal-box">
     <div class="modal-header">
@@ -1667,7 +1715,7 @@ footer h3 {
       <button class="modal-close" id="closeRulesBtn" aria-label="Close modal">×</button>
     </div>
     <div class="modal-content">
-      <h4>Check-In &amp; Check-Out</h4>
+      <h4>Check-In & Check-Out</h4>
       <p>Check-in: 12:00 PM | Check-out: 10:00 AM. Early check-in or late check-out is subject to availability and extra charges.</p>
 
       <h4>Photo ID Requirement</h4>
@@ -1685,13 +1733,12 @@ footer h3 {
       <h4>Power Outage Backup</h4>
       <p>Backup power operates lights and fans. Air conditioners run exclusively on the main electrical grid.</p>
 
-      <h4>Pets &amp; Damages</h4>
+      <h4>Pets & Damages</h4>
       <p>Pets are not allowed unless approved in advance. Guests are responsible for any damages caused to property.</p>
     </div>
   </div>
 </div>
 
-<!-- MOBILE FLOATING ACTION BAR -->
 <aside class="mobile-bottom-bar" aria-label="Quick contact buttons">
   <a href="tel:+919270740015" class="btn-mobile-action btn-mobile-call">
     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
@@ -1703,7 +1750,6 @@ footer h3 {
   </button>
 </aside>
 
-<!-- INTERACTIVE SCRIPTS -->
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   // Mobile Hamburger Menu
@@ -1818,7 +1864,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       bookGuests.innerHTML = `
         <option value="2 Adults" selected>2 Adults</option>
-        <option value="2 Adults + 1 Kid (<12 yrs)">2 Adults + 1 Kid (&lt;12 yrs)</option>
+        <option value="2 Adults + 1 Kid (<12 yrs)">2 Adults + 1 Kid (<12 yrs)</option>
         <option value="1 Adult">1 Adult</option>
       `;
       bookExtraGuests.innerHTML = `
