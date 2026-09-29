@@ -11,4 +11,5 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
+# Sitemap Location
 Sitemap: https://zistaresort.in/sitemap.xml
